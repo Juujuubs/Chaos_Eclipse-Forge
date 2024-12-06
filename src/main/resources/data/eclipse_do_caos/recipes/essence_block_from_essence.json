@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "eclipse_do_caos:essence"
+    }
+  },
+  "result": {
+    "item": "eclipse_do_caos:essence_block"
+  }
+}

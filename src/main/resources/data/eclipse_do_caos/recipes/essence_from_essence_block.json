@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category":"misc",
+  "ingredients": [
+    {
+      "item": "eclipse_do_caos:essence_block"
+    }
+  ],
+  "result": {
+    "item": "eclipse_do_caos:essence",
+    "count": 9
+  }
+}
