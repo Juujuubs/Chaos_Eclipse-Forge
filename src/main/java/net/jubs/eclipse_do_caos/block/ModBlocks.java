@@ -1,6 +1,7 @@
 package net.jubs.eclipse_do_caos.block;
 
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
+import net.jubs.eclipse_do_caos.block.custom.TeethBlock;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -30,6 +31,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.SCULK)));
     public static final RegistryObject<Block> MEAT_BLOCK = registerBlock("meat_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.SLIME_BLOCK)));
+
+    public static final RegistryObject<Block> TEETH_BLOCK = registerBlock("teeth_block",
+            () -> new TeethBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).sound(SoundType.BONE_BLOCK)));
 
 
 

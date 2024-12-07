@@ -25,6 +25,7 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
                     pOutput.accept(ModBlocks.ESSENCE_BLOCK.get());
                     pOutput.accept(ModBlocks.ESSENCE_ORE_BLOCK.get());
                     pOutput.accept(ModBlocks.MEAT_BLOCK.get());
+                    pOutput.accept(ModBlocks.TEETH_BLOCK.get());
                 })
                 .build());
 // Alterar depois para a Lua
