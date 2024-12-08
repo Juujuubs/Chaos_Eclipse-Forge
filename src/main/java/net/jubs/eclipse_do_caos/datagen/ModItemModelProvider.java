@@ -23,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TILAPIA);
         simpleItem(ModItems.SYMBOL);
         simpleItem(ModItems.VOX);
+        simpleItem(ModItems.BEAN);
         simpleItem(ModItems.FRIED_TILAPIA);
         simpleItem(ModItems.SUSHI_TILAPIA);
         simpleItem(ModItems.DEVIL_HORN);

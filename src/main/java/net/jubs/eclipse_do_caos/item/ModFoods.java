@@ -72,7 +72,7 @@ public class ModFoods {
                     new MobEffectInstance(MobEffects.CONFUSION, 200), 0.25f).build();
 
     public static final FoodProperties ELF_EAR = new FoodProperties.Builder().nutrition(4)
-            .saturationMod(0.5f).fast().effect(() ->
+            .saturationMod(0.5f).effect(() ->
                     new MobEffectInstance(MobEffects.CONFUSION, 200), 0.35f).build();
 
 }
