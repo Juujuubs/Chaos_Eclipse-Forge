@@ -12,13 +12,21 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, EclipseDoCaos.MOD_ID);
 
-public static final RegistryObject<Item> CONTRACT = ITEMS.register("contract",
+    public static final RegistryObject<Item> CONTRACT = ITEMS.register("contract",
         () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ESSENCE = ITEMS.register("essence",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> DELS = ITEMS.register("dels",
             () -> new DelsItem(new Item.Properties().durability(512)));
+
+    public static final RegistryObject<Item> TILAPIA = ITEMS.register("tilapia",
+            () -> new Item(new Item.Properties().food(ModFoods.TILAPIA)));
+
+
+
+
+
 
     public static void register(IEventBus eventBus){
 ITEMS.register(eventBus);

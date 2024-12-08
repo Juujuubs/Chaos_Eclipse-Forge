@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "eclipse_do_caos:item/dels"
-  }
-}

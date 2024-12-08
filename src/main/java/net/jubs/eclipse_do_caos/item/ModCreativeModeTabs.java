@@ -22,6 +22,8 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
                     pOutput.accept(ModItems.ESSENCE.get());
                     pOutput.accept(ModItems.DELS.get());
 
+                    pOutput.accept(ModItems.TILAPIA.get());
+
                     pOutput.accept(ModBlocks.ESSENCE_BLOCK.get());
                     pOutput.accept(ModBlocks.ESSENCE_ORE_BLOCK.get());
                     pOutput.accept(ModBlocks.MEAT_BLOCK.get());
