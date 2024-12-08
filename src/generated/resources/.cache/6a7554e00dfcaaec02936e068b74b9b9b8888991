@@ -1,5 +1,19 @@
-// 1.20.1	2024-12-08T17:58:28.3173585	Item Models: eclipse_do_caos
+// 1.20.1	2024-12-08T20:04:26.3842626	Item Models: eclipse_do_caos
+8ea88da74745b73354eb9df993c9684104e8e705 assets/eclipse_do_caos/models/item/cannonball.json
 56d6c9f2361cb1913876f9b5c980569fc1317e03 assets/eclipse_do_caos/models/item/contract.json
+99aa59903eb8b6b4c600abbfff36c88949fd0267 assets/eclipse_do_caos/models/item/cooked_bean.json
 52d84dd56ddac7cbff417b67aaa0d8fdd80dd9f3 assets/eclipse_do_caos/models/item/dels.json
+60b2773c3978242eabbcd9873ced0949fe1ef148 assets/eclipse_do_caos/models/item/devil_horn.json
+63da5d5808783b94812c848e858bfafa378ed7d9 assets/eclipse_do_caos/models/item/eden_apple.json
+cf0e4664734e5b682db6533e5d034b68b51b901c assets/eclipse_do_caos/models/item/eden_tree_apple.json
+edef73e168d5b9578f2eebb3f5d2aac1376cb166 assets/eclipse_do_caos/models/item/elf_ear.json
 f20cba63a3ab4422d3d4d10ad34b5a91abdd2d59 assets/eclipse_do_caos/models/item/essence.json
+f027429135959fa0077230c3808a94fbc9902dce assets/eclipse_do_caos/models/item/fried_tilapia.json
+b157f7313e7e031075d673bb37696ae6741fad47 assets/eclipse_do_caos/models/item/goblin_eye.json
+589c3eb024a6a9f25cf4d902089d993bf6a33512 assets/eclipse_do_caos/models/item/human_tooth.json
+550a5d94cf2fca3679a778fba3c8c570b88540ec assets/eclipse_do_caos/models/item/sushi_tilapia.json
+5b88634f63857bed31f86726cf320fc0d04d256b assets/eclipse_do_caos/models/item/symbol.json
+05ebe1307b3d3bf2434950887ef91e97964625fa assets/eclipse_do_caos/models/item/ticket_arcanumrails.json
+a8ef76965efad8797bfc83fc19cebcda84e811c5 assets/eclipse_do_caos/models/item/ticket_deluxe_arcanumrails.json
 58dc1ad6bb1f0a8b68865cc7240e986cecb53e82 assets/eclipse_do_caos/models/item/tilapia.json
+93e1e69a367f93091e16afab4fd77296a0cf1e0d assets/eclipse_do_caos/models/item/vox.json

@@ -18,16 +18,36 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
         () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ESSENCE.get()))
                 .title(Component.translatable("creativetab.eclipse_tab"))
                 .displayItems((pParameters, pOutput) -> {
+                    pOutput.accept(ModItems.SYMBOL.get());
                     pOutput.accept(ModItems.CONTRACT.get());
-                    pOutput.accept(ModItems.ESSENCE.get());
-                    pOutput.accept(ModItems.DELS.get());
+                    pOutput.accept(ModItems.VOX.get());
+                    pOutput.accept(ModItems.TICKET_ARCANUMRAILS.get());
+                    pOutput.accept(ModItems.TICKET_DELUXE_ARCANUMRAILS.get());
+                    pOutput.accept(ModItems.DEVIL_HORN.get());
+                    pOutput.accept(ModItems.GOBLIN_EYE.get());
+                    pOutput.accept(ModItems.ELF_EAR.get());
+                    pOutput.accept(ModItems.HUMAN_TOOTH.get());
 
                     pOutput.accept(ModItems.TILAPIA.get());
+                    pOutput.accept(ModItems.FRIED_TILAPIA.get());
+                    pOutput.accept(ModItems.SUSHI_TILAPIA.get());
+                    pOutput.accept(ModItems.BEAN.get());
+                    pOutput.accept(ModItems.COOKED_BEAN.get());
+                    pOutput.accept(ModItems.EDEN_TREE_APPLE.get());
+                    pOutput.accept(ModItems.EDEN_APPLE.get());
 
-                    pOutput.accept(ModBlocks.ESSENCE_BLOCK.get());
                     pOutput.accept(ModBlocks.ESSENCE_ORE_BLOCK.get());
+                    pOutput.accept(ModBlocks.ESSENCE_BLOCK.get());
+
+                    pOutput.accept(ModItems.ESSENCE.get());
+
+                    pOutput.accept(ModBlocks.EYE_BLOCK.get());
                     pOutput.accept(ModBlocks.MEAT_BLOCK.get());
                     pOutput.accept(ModBlocks.TEETH_BLOCK.get());
+
+                    pOutput.accept(ModItems.DELS.get());
+
+                    pOutput.accept(ModItems.CANNONBALL.get());
                 })
                 .build());
 // Alterar depois para a Lua

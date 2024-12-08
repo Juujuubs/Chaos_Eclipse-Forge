@@ -21,6 +21,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DELS);
         simpleItem(ModItems.ESSENCE);
         simpleItem(ModItems.TILAPIA);
+        simpleItem(ModItems.SYMBOL);
+        simpleItem(ModItems.VOX);
+        simpleItem(ModItems.FRIED_TILAPIA);
+        simpleItem(ModItems.SUSHI_TILAPIA);
+        simpleItem(ModItems.DEVIL_HORN);
+        simpleItem(ModItems.GOBLIN_EYE);
+        simpleItem(ModItems.ELF_EAR);
+        simpleItem(ModItems.HUMAN_TOOTH);
+        simpleItem(ModItems.TICKET_ARCANUMRAILS);
+        simpleItem(ModItems.TICKET_DELUXE_ARCANUMRAILS);
+        simpleItem(ModItems.COOKED_BEAN);
+        simpleItem(ModItems.CANNONBALL);
+        simpleItem(ModItems.EDEN_APPLE);
+        simpleItem(ModItems.EDEN_TREE_APPLE);
     }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),

@@ -1,6 +1,7 @@
 package net.jubs.eclipse_do_caos.block;
 
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
+import net.jubs.eclipse_do_caos.block.custom.EyeBlock;
 import net.jubs.eclipse_do_caos.block.custom.TeethBlock;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -35,6 +36,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> TEETH_BLOCK = registerBlock("teeth_block",
             () -> new TeethBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).sound(SoundType.BONE_BLOCK)));
 
+    public static final RegistryObject<Block> EYE_BLOCK = registerBlock("eye_block",
+            () -> new EyeBlock(BlockBehaviour.Properties.copy(Blocks.HONEYCOMB_BLOCK).sound(SoundType.WART_BLOCK)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

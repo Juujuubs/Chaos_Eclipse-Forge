@@ -42,5 +42,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.TEETH_BLOCK.get()
 
                 );
+
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.EYE_BLOCK.get()
+
+                );
     }
 }

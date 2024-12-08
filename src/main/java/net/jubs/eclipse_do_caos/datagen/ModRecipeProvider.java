@@ -5,6 +5,7 @@ import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -38,7 +39,94 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.ESSENCE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.ESSENCE_BLOCK.get()), has(ModBlocks.ESSENCE_BLOCK.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DELS.get(), 1)
+                .pattern("#A#")
+                .pattern("ECE")
+                .pattern("#A#")
+                .define('#', ModItems.ESSENCE.get())
+                .define('A', Items.AMETHYST_SHARD)
+                .define('E', Items.ECHO_SHARD)
+                .define('C', Items.COMPASS)
+                .unlockedBy(getHasName(Items.ECHO_SHARD), has(Items.ECHO_SHARD))
+                .unlockedBy(getHasName(Items.AMETHYST_SHARD), has(Items.AMETHYST_SHARD))
+                .unlockedBy(getHasName(Items.COMPASS), has(Items.COMPASS))
+                .unlockedBy(getHasName(ModItems.ESSENCE.get()), has(ModItems.ESSENCE.get()))
+                .save(pWriter);
+
+        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BONE_MEAL)
+                //.requires(ModItems.HUMAN_TOOTH.get())
+                //.unlockedBy(getHasName(ModItems.HUMAN_TOOTH.get()), has(ModItems.HUMAN_TOOTH.get()))
+                //.save(pWriter);
+        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BONE_MEAL, 2)
+                //.requires(ModItems.DEVIL_HORN.get())
+                //.unlockedBy(getHasName(ModItems.DEVIL_HORN.get()), has(ModItems.DEVIL_HORN.get()))
+                //.save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.SUSHI_TILAPIA.get(), 4)
+                .requires(ModItems.TILAPIA.get())
+                .requires(Items.DRIED_KELP)
+                .unlockedBy(getHasName(ModItems.TILAPIA.get()), has(ModItems.TILAPIA.get()))
+                .unlockedBy(getHasName(Items.DRIED_KELP), has(Items.DRIED_KELP))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.CANNONBALL.get(), 4)
+                .requires(Items.IRON_INGOT)
+                .requires(Items.IRON_INGOT)
+                .requires(Items.COAL)
+                .requires(Items.GUNPOWDER)
+                .unlockedBy(getHasName(Items.GUNPOWDER), has(Items.GUNPOWDER))
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(pWriter);
+
+        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_NUGGET, 4)
+                //.requires(ModItems.CANNONBALL.get())
+                //.unlockedBy(getHasName(ModItems.CANNONBALL.get()), has(ModItems.CANNONBALL.get()))
+                //.save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.TEETH_BLOCK.get(), 1)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.HUMAN_TOOTH.get())
+                .unlockedBy(getHasName(ModItems.HUMAN_TOOTH.get()), has(ModItems.HUMAN_TOOTH.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.HUMAN_TOOTH.get(), 9)
+                .requires(ModBlocks.TEETH_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.TEETH_BLOCK.get()), has(ModBlocks.TEETH_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.EYE_BLOCK.get(), 1)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.GOBLIN_EYE.get())
+                .unlockedBy(getHasName(ModItems.GOBLIN_EYE.get()), has(ModItems.GOBLIN_EYE.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOBLIN_EYE.get(), 9)
+                .requires(ModBlocks.EYE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.EYE_BLOCK.get()), has(ModBlocks.EYE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.MEAT_BLOCK.get(), 1)
+                .pattern("###")
+                .pattern("#E#")
+                .pattern("###")
+                .define('#', Items.ROTTEN_FLESH)
+                .define('E', ModItems.ELF_EAR.get())
+                .unlockedBy(getHasName(ModItems.ELF_EAR.get()), has(ModItems.ELF_EAR.get()))
+                .unlockedBy(getHasName(Items.ROTTEN_FLESH), has(Items.ROTTEN_FLESH))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ELF_EAR.get(), 1)
+                .requires(ModBlocks.MEAT_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.MEAT_BLOCK.get()), has(ModBlocks.MEAT_BLOCK.get()))
+                .save(pWriter);
     }
+
+
 
 
 

@@ -26,6 +26,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ESSENCE_BLOCK.get());
         this.dropSelf(ModBlocks.TEETH_BLOCK.get());
         this.dropSelf(ModBlocks.MEAT_BLOCK.get());
+        this.dropSelf(ModBlocks.EYE_BLOCK.get());
 
         this.add(ModBlocks.ESSENCE_ORE_BLOCK.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.ESSENCE_ORE_BLOCK.get(), ModItems.ESSENCE.get()));
