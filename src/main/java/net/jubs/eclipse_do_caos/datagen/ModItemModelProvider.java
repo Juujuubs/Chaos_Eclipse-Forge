@@ -18,7 +18,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.CONTRACT);
-        simpleItem(ModItems.DELS);
         simpleItem(ModItems.ESSENCE);
         simpleItem(ModItems.TILAPIA);
         simpleItem(ModItems.SYMBOL);
@@ -34,8 +33,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TICKET_DELUXE_ARCANUMRAILS);
         simpleItem(ModItems.COOKED_BEAN);
         simpleItem(ModItems.CANNONBALL);
-        simpleItem(ModItems.EDEN_APPLE);
-        simpleItem(ModItems.EDEN_TREE_APPLE);
     }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
