@@ -79,6 +79,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, ModItems.ESSENCE_PAXEL.get(), 1)
+                .requires(Items.NETHERITE_PICKAXE)
+                .requires(Items.NETHERITE_AXE)
+                .requires(Items.NETHERITE_SHOVEL)
+                .requires(ModBlocks.ESSENCE_BLOCK.get())
+                .unlockedBy(getHasName(Items.NETHERITE_PICKAXE), has(Items.NETHERITE_PICKAXE))
+                .unlockedBy(getHasName(Items.NETHERITE_AXE), has(Items.NETHERITE_AXE))
+                .unlockedBy(getHasName(Items.NETHERITE_SHOVEL), has(Items.NETHERITE_SHOVEL))
+                .unlockedBy(getHasName(ModBlocks.ESSENCE_BLOCK.get()), has(ModBlocks.ESSENCE_BLOCK.get()))
+                .save(pWriter);
+
         //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_NUGGET, 4)
                 //.requires(ModItems.CANNONBALL.get())
                 //.unlockedBy(getHasName(ModItems.CANNONBALL.get()), has(ModItems.CANNONBALL.get()))

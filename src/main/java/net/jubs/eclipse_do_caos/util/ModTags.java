@@ -12,8 +12,9 @@ public class ModTags {
     public static class Blocks {
 
         public static final TagKey<Block> DELS_UNKNOWN_BLOCKS = tag("dels_unknown_blocks");
-        public static final TagKey<Block> PAXEL_MINEABLE = tag("paxel/mineable");
-        public static final TagKey<Block> SAW_EATER_MINEABLE = tag("saw_eater/mineable");
+        public static final TagKey<Block> NEEDS_ESSENCE_TOOL = tag("needs_essence_tool");
+        public static final TagKey<Block> PAXEL_MINEABLE = tag("mineable/paxel");
+        public static final TagKey<Block> SAW_EATER_MINEABLE = tag("mineable/saw_eater");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(EclipseDoCaos.MOD_ID, name));

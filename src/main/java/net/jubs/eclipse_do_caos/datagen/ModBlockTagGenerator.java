@@ -47,5 +47,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.EYE_BLOCK.get()
 
                 );
+
+        this.tag(ModTags.Blocks.PAXEL_MINEABLE)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
     }
 }

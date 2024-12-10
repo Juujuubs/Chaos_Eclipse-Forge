@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-08T20:04:26.3882594	Recipes
+// 1.20.1	2024-12-09T22:46:06.7453614	Recipes
 c230fda03ed28dfa8024e4730f8f2993cf77d5b4 data/eclipse_do_caos/advancements/recipes/combat/cannonball.json
 e6ecf4a68d03c179bcc4047ecf9285141206cd60 data/eclipse_do_caos/advancements/recipes/decorations/eye_block.json
 454ceb278d86a265982d92c8963afe5979995049 data/eclipse_do_caos/advancements/recipes/decorations/meat_block.json
@@ -12,6 +12,7 @@ a1497046eea12d88bde1016be9d126d1566dbed4 data/eclipse_do_caos/advancements/recip
 00f73a6d56befc83a887d7ffc8f3bf85eec59975 data/eclipse_do_caos/advancements/recipes/misc/goblin_eye.json
 1e9873b07383746512bc4eacac13c84f68de5d5f data/eclipse_do_caos/advancements/recipes/misc/human_tooth.json
 31251bb20c99d1d9a11adfbdc136be560dacc436 data/eclipse_do_caos/advancements/recipes/tools/dels.json
+487574e023477636a893076fa21e7cb62991ba06 data/eclipse_do_caos/advancements/recipes/tools/essence_paxel.json
 cd2f7b32bf848125c996d5473c613831ab2de9e9 data/eclipse_do_caos/recipes/cannonball.json
 f06184bf8cedc8bef81bdf0b796e8d9ac551d8c1 data/eclipse_do_caos/recipes/dels.json
 b8ade78cc8f89aadb6371b628f117cbf5c4293d1 data/eclipse_do_caos/recipes/elf_ear.json
@@ -19,6 +20,7 @@ a334b9b20c8606f228098ab9deb933be1e657173 data/eclipse_do_caos/recipes/essence.js
 8f602cc4be526eaba755322faf697605de85e5d5 data/eclipse_do_caos/recipes/essence_block.json
 612e9ee75a41141b39443b58381b2f81125acbcb data/eclipse_do_caos/recipes/essence_from_blasting_essence_ore_block.json
 1e185a9097c25963477998bc6d3883ebed46e3e1 data/eclipse_do_caos/recipes/essence_from_smelting_essence_ore_block.json
+fa1268d4de749f1fddc76b16527ddae39ba39c88 data/eclipse_do_caos/recipes/essence_paxel.json
 11b9e7cf3b7c28877ad26017a5183b19670e5f39 data/eclipse_do_caos/recipes/eye_block.json
 cf9ff7e9068d8c4dae5fea4af6ccb48df1288b84 data/eclipse_do_caos/recipes/goblin_eye.json
 904f3aba50a952eb90af13fdee0608aa57fa1541 data/eclipse_do_caos/recipes/human_tooth.json

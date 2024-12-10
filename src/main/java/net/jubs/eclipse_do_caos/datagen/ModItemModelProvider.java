@@ -33,10 +33,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TICKET_DELUXE_ARCANUMRAILS);
         simpleItem(ModItems.COOKED_BEAN);
         simpleItem(ModItems.CANNONBALL);
+        handheldItem(ModItems.ESSENCE_PAXEL);
     }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(EclipseDoCaos.MOD_ID, "item/" + item.getId().getPath()));
     }
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(EclipseDoCaos.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
 }

@@ -2,6 +2,7 @@ package net.jubs.eclipse_do_caos.item;
 
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.item.custom.DelsItem;
+import net.jubs.eclipse_do_caos.item.custom.PaxelItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -59,6 +60,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.EDEN_TREE_APPLE)));
     public static final RegistryObject<Item> EDEN_APPLE = ITEMS.register("eden_apple",
             () -> new Item(new Item.Properties().food(ModFoods.EDEN_APPLE)));
+
+    public static final RegistryObject<Item> ESSENCE_PAXEL = ITEMS.register("essence_paxel",
+            () -> new PaxelItem(ModToolTiers.ESSENCE, 1.5f, -2.9f, new Item.Properties()));
 
 
 
