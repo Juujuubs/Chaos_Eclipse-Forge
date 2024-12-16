@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "eclipse_do_caos:the_first_kin",
+      "required": false
+    },
+    {
+      "id": "eclipse_do_caos:godwelling",
+      "required": false
+    },
+    {
+      "id": "eclipse_do_caos:godwelling_now",
+      "required": false
+    },
+    {
+      "id": "eclipse_do_caos:belaios",
+      "required": false
+    },
+    {
+      "id": "eclipse_do_caos:juno",
+      "required": false
+    },
+    {
+      "id": "eclipse_do_caos:qraz",
+      "required": false
+    },
+    {
+      "id": "eclipse_do_caos:raven",
+      "required": false
+    },
+    {
+      "id": "eclipse_do_caos:veigar",
+      "required": false
+    },
+    {
+      "id": "eclipse_do_caos:vex",
+      "required": false
+    },
+    {
+      "id": "eclipse_do_caos:beloria_bonissimo",
+      "required": false
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.item.ModCreativeModeTabs;
 import net.jubs.eclipse_do_caos.item.ModItems;
+import net.jubs.eclipse_do_caos.painting.ModPaintings;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -39,6 +40,7 @@ public class EclipseDoCaos
         ModBlocks.register(modEventBus);
 
         ModSounds.register(modEventBus);
+        ModPaintings.register(modEventBus);
 
 
 
