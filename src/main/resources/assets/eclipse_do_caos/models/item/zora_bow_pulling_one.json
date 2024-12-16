@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "eclipse_do_caos:item/zora_bow_3d_pulling_1"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "eclipse_do_caos:item/zora_bow_pulling_1"
+    },
+    "ground": {
+      "parent": "eclipse_do_caos:item/zora_bow_3d_pulling_1"
+    },
+    "fixed": {
+      "parent": "eclipse_do_caos:item/zora_bow_pulling_1"
+    }
+  }
+}

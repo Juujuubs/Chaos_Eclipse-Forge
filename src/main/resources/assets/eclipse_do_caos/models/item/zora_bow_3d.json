@@ -305,21 +305,21 @@
 			"predicate": {
 				"minecraft:pulling": 1
 			},
-			"model": "eclipse_do_caos:item/zora_bow_3d_pulling_0"
+			"model": "eclipse_do_caos:item/zora_bow_3d_pulling_zero"
 		},
 		{
 			"predicate": {
 				"minecraft:pulling": 1,
 				"minecraft:pull": 0.65
 			},
-			"model": "eclipse_do_caos:item/zora_bow_3d_pulling_1"
+			"model": "eclipse_do_caos:item/zora_bow_3d_pulling_one"
 		},
 		{
 			"predicate": {
 				"minecraft:pulling": 1,
 				"minecraft:pull": 0.9
 			},
-			"model": "eclipse_do_caos:item/zora_bow_3d_pulling_2"
+			"model": "eclipse_do_caos:item/zora_bow_3d_pulling_two"
 		}
 	]
 }

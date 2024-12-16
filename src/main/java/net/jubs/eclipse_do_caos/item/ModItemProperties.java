@@ -7,6 +7,10 @@ import net.minecraft.world.item.Item;
 public class ModItemProperties {
     public static void addCustomItemProperties() {
 
+        ItemProperties.register(ModItems.PALLIS_SHIELD.get(), new ResourceLocation("blocking"), (p_174575_, p_174576_, p_174577_, p_174578_) -> {
+            return p_174577_ != null && p_174577_.isUsingItem() && p_174577_.getUseItem() == p_174575_ ? 1.0F : 0.0F;
+        });
+
         makeBow(ModItems.ZORA_BOW.get());
     }
 

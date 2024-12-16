@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "item/generated",
   "textures": {
     "layer0": "eclipse_do_caos:item/eden_apple",
     "particle": "eclipse_do_caos:item/eden_apple"

@@ -52,6 +52,7 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
                     pOutput.accept(ModItems.ESSENCE_PAXEL.get());
 
                     pOutput.accept(ModItems.ZORA_BOW.get());
+                    pOutput.accept(ModItems.PALLIS_SHIELD.get());
                     pOutput.accept(ModItems.CANNONBALL.get());
                 })
                 .build());

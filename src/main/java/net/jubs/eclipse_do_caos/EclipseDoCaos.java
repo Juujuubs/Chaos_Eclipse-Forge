@@ -3,6 +3,7 @@ package net.jubs.eclipse_do_caos;
 import com.mojang.logging.LogUtils;
 import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.item.ModCreativeModeTabs;
+import net.jubs.eclipse_do_caos.item.ModItemProperties;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.painting.ModPaintings;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
@@ -110,6 +111,11 @@ public class EclipseDoCaos
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+
+                ModItemProperties.addCustomItemProperties();
+
+            });
         }
     }
 }

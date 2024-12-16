@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "eclipse_do_caos:item/pallis_shield_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "eclipse_do_caos:item/pallis_shield_2d"
+    },
+    "ground": {
+      "parent": "eclipse_do_caos:item/pallis_shield_3d"
+    },
+    "fixed": {
+      "parent": "eclipse_do_caos:item/pallis_shield_2d"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "eclipse_do_caos:item/pallis_shield_blocking"
+    }
+  ]
+}

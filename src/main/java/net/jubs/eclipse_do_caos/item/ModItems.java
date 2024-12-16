@@ -7,6 +7,7 @@ import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.RecordItem;
+import net.minecraft.world.item.ShieldItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -44,6 +45,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> ZORA_BOW = ITEMS.register("zora_bow",
             () -> new BowItem(new Item.Properties().durability(3000)));
+
+    public static final RegistryObject<Item> PALLIS_SHIELD = ITEMS.register("pallis_shield",
+            () -> new ShieldItem(new Item.Properties().durability(3000)));
 
     public static final RegistryObject<Item> TILAPIA = ITEMS.register("tilapia",
             () -> new Item(new Item.Properties().food(ModFoods.TILAPIA)));

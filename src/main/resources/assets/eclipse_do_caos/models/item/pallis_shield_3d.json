@@ -653,7 +653,7 @@
 			"predicate": {
 				"blocking": 1
 			},
-			"model": "eclipse_do_caos:item/pallis_shield_3d_blocking"
+			"model": "eclipse_do_caos:item/pallis_shield_blocking"
 		}
 	]
 }
