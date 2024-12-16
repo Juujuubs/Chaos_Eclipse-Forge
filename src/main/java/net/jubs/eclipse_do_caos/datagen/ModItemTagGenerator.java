@@ -2,6 +2,7 @@ package net.jubs.eclipse_do_caos.datagen;
 
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.item.ModItems;
+import net.jubs.eclipse_do_caos.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -21,6 +22,15 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
     this.tag(ItemTags.MUSIC_DISCS)
             .add(ModItems.ECLIPSE_BEGINS_MUSIC_DISC.get());
+
+        this.tag(ModTags.Items.LOST_WEAPONS)
+                .add(ModItems.ZORA_BOW.get());
+
+        this.tag(ModTags.Items.NOT_FROM_THIS_WORLD)
+                .add(ModItems.ZORA_BOW.get());
+
+        this.tag(ModTags.Items.RANGED_WEAPONS)
+                .add(ModItems.ZORA_BOW.get());
     }
 
     @Override

@@ -4,6 +4,7 @@ import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.item.custom.DelsItem;
 import net.jubs.eclipse_do_caos.item.custom.PaxelItem;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
+import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.RecordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -40,6 +41,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> DELS = ITEMS.register("dels",
             () -> new DelsItem(new Item.Properties().durability(512)));
+
+    public static final RegistryObject<Item> ZORA_BOW = ITEMS.register("zora_bow",
+            () -> new BowItem(new Item.Properties().durability(3000)));
 
     public static final RegistryObject<Item> TILAPIA = ITEMS.register("tilapia",
             () -> new Item(new Item.Properties().food(ModFoods.TILAPIA)));
