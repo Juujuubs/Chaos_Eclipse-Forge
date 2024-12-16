@@ -3,7 +3,9 @@ package net.jubs.eclipse_do_caos.item;
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.item.custom.DelsItem;
 import net.jubs.eclipse_do_caos.item.custom.PaxelItem;
+import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.RecordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -60,6 +62,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.EDEN_TREE_APPLE)));
     public static final RegistryObject<Item> EDEN_APPLE = ITEMS.register("eden_apple",
             () -> new Item(new Item.Properties().food(ModFoods.EDEN_APPLE)));
+
+    public static final RegistryObject<Item> ECLIPSE_BEGINS_MUSIC_DISC = ITEMS.register("eclipse_begins_music_disc",
+            () -> new RecordItem(7, ModSounds.ECLIPSE_BEGINS, new Item.Properties().stacksTo(1), 4220));
 
     public static final RegistryObject<Item> ESSENCE_PAXEL = ITEMS.register("essence_paxel",
             () -> new PaxelItem(ModToolTiers.ESSENCE, 1.5f, -2.9f, new Item.Properties()));

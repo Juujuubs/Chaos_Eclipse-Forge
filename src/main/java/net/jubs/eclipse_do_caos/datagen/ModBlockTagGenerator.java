@@ -22,7 +22,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(ModTags.Blocks.DELS_UNKNOWN_BLOCKS)
                 .add(ModBlocks.ESSENCE_BLOCK.get(),
-                ModBlocks.ESSENCE_ORE_BLOCK.get()
+                ModBlocks.ESSENCE_ORE_BLOCK.get(),
+                ModBlocks.BROMELIAD.get(),
+                ModBlocks.POTTED_BROMELIAD.get()
 
                 );
 
@@ -52,5 +54,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .addTag(BlockTags.MINEABLE_WITH_AXE)
                 .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
+
+        this.tag(BlockTags.FLOWERS)
+                .add(ModBlocks.BROMELIAD.get()
+                );
+        this.tag(BlockTags.SMALL_FLOWERS)
+                .add(ModBlocks.BROMELIAD.get()
+                );
     }
 }

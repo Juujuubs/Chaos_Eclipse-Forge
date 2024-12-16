@@ -1,10 +1,12 @@
 package net.jubs.eclipse_do_caos.datagen;
 
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
+import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -33,7 +35,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TICKET_DELUXE_ARCANUMRAILS);
         simpleItem(ModItems.COOKED_BEAN);
         simpleItem(ModItems.CANNONBALL);
+        simpleItem(ModItems.ECLIPSE_BEGINS_MUSIC_DISC);
         handheldItem(ModItems.ESSENCE_PAXEL);
+
+        simpleBlockItem(ModBlocks.BROMELIAD);
     }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
@@ -44,6 +49,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(EclipseDoCaos.MOD_ID, "item/" + item.getId().getPath()));
+    }
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(EclipseDoCaos.MOD_ID,"item/" + item.getId().getPath()));
     }
 
 }

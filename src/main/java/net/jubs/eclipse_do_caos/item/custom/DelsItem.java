@@ -1,10 +1,12 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
 import net.jubs.eclipse_do_caos.block.ModBlocks;
+import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.jubs.eclipse_do_caos.util.ModTags;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -36,6 +38,9 @@ public class DelsItem extends Item {
                 if (isEssenceBlock(state)) {
                     outputEssenceCoordinates(positionClicked.below(i), player, state.getBlock());
                     foundBlock = true;
+
+                    pContext.getLevel().playSeededSound(null, player.getX(), player.getY(), player.getZ(),
+                            ModSounds.DELS_FOUND_ESSENCE.get(), SoundSource.BLOCKS, 1f, 1f, 0);
 
                     break;
                 }

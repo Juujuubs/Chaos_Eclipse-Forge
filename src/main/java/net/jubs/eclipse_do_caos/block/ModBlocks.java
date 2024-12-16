@@ -5,12 +5,10 @@ import net.jubs.eclipse_do_caos.block.custom.EyeBlock;
 import net.jubs.eclipse_do_caos.block.custom.TeethBlock;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -38,6 +36,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> EYE_BLOCK = registerBlock("eye_block",
             () -> new EyeBlock(BlockBehaviour.Properties.copy(Blocks.HONEYCOMB_BLOCK).sound(SoundType.WART_BLOCK)));
+
+    public static final RegistryObject<Block> BROMELIAD = registerBlock("bromeliad",
+            () -> new FlowerBlock(() -> MobEffects.REGENERATION, 10, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+    public static final RegistryObject<Block> POTTED_BROMELIAD = BLOCKS.register("potted_bromeliad",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), BROMELIAD, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

@@ -19,6 +19,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ESSENCE_BLOCK);
         blockWithItem(ModBlocks.ESSENCE_ORE_BLOCK);
         blockWithItem(ModBlocks.MEAT_BLOCK);
+
+        simpleBlock(ModBlocks.BROMELIAD.get(),
+                models().cross(blockTexture(ModBlocks.BROMELIAD.get()).getPath(), blockTexture(ModBlocks.BROMELIAD.get())).renderType("cutout"));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

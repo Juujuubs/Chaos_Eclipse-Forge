@@ -1,6 +1,8 @@
 {
   "values": [
     "eclipse_do_caos:essence_block",
-    "eclipse_do_caos:essence_ore_block"
+    "eclipse_do_caos:essence_ore_block",
+    "eclipse_do_caos:bromeliad",
+    "eclipse_do_caos:potted_bromeliad"
   ]
 }

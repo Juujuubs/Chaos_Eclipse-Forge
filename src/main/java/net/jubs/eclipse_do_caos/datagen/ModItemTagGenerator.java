@@ -1,9 +1,11 @@
 package net.jubs.eclipse_do_caos.datagen;
 
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -16,7 +18,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider) {
-
+    protected void addTags(HolderLookup.Provider pProvider) {
+    this.tag(ItemTags.MUSIC_DISCS)
+            .add(ModItems.ECLIPSE_BEGINS_MUSIC_DISC.get());
     }
+
+    @Override
+    public String getName() {
+        return "Item Tags";
+    }
+
 }

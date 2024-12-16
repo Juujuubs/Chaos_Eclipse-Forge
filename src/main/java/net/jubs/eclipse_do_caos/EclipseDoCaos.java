@@ -4,7 +4,11 @@ import com.mojang.logging.LogUtils;
 import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.item.ModCreativeModeTabs;
 import net.jubs.eclipse_do_caos.item.ModItems;
+import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -34,6 +38,8 @@ public class EclipseDoCaos
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModSounds.register(modEventBus);
+
 
 
         modEventBus.addListener(this::commonSetup);
@@ -43,6 +49,15 @@ public class EclipseDoCaos
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(ModItems.EDEN_APPLE.get(), 0.5f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.EDEN_TREE_APPLE.get(), 0.8f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.BEAN.get(), 0.2f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.COOKED_BEAN.get(), 0.35f);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.BROMELIAD.get().asItem(), 0.65f);
+
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BROMELIAD.getId(), ModBlocks.POTTED_BROMELIAD);
+        });
     }
 
     // Add the example block item to the building blocks tab

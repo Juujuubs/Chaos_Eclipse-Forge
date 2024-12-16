@@ -36,6 +36,7 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
                     pOutput.accept(ModItems.EDEN_TREE_APPLE.get());
                     pOutput.accept(ModItems.EDEN_APPLE.get());
 
+                    pOutput.accept(ModBlocks.BROMELIAD.get());
                     pOutput.accept(ModBlocks.ESSENCE_ORE_BLOCK.get());
                     pOutput.accept(ModBlocks.ESSENCE_BLOCK.get());
 
@@ -44,6 +45,8 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
                     pOutput.accept(ModBlocks.EYE_BLOCK.get());
                     pOutput.accept(ModBlocks.MEAT_BLOCK.get());
                     pOutput.accept(ModBlocks.TEETH_BLOCK.get());
+
+                    pOutput.accept(ModItems.ECLIPSE_BEGINS_MUSIC_DISC.get());
 
                     pOutput.accept(ModItems.DELS.get());
                     pOutput.accept(ModItems.ESSENCE_PAXEL.get());
