@@ -4,10 +4,7 @@ import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.item.custom.DelsItem;
 import net.jubs.eclipse_do_caos.item.custom.PaxelItem;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
-import net.minecraft.world.item.BowItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.RecordItem;
-import net.minecraft.world.item.ShieldItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -77,8 +74,78 @@ public class ModItems {
     public static final RegistryObject<Item> ESSENCE_PAXEL = ITEMS.register("essence_paxel",
             () -> new PaxelItem(ModToolTiers.ESSENCE, 1.5f, -2.9f, new Item.Properties()));
 
+    public static final RegistryObject<Item> GAUNTLET = ITEMS.register("gauntlet",
+            () -> new SwordItem(ModToolTiers.ESSENCE, 2, -1.5f, new Item.Properties()));
 
+    public static final RegistryObject<Item> QUARTERSTAFF = ITEMS.register("quarterstaff",
+            () -> new SwordItem(ModToolTiers.ESSENCE, 6, -2.8f, new Item.Properties()));
 
+    public static final RegistryObject<Item> LADON_DRAGON_GLAIVE = ITEMS.register("ladon_dragon_glaive",
+            () -> new SwordItem(ModToolTiers.ESSENCE, 7, -3.2f, new Item.Properties()));
+
+    public static final RegistryObject<Item> HELENA_BASEBALL_BAT = ITEMS.register("helena_baseball_bat",
+            () -> new SwordItem(ModToolTiers.ESSENCE, 4, -2.6f, new Item.Properties()));
+
+    public static final RegistryObject<Item> CHALI_II_LANCE = ITEMS.register("chali_ii_lance",
+            () -> new SwordItem(ModToolTiers.ESSENCE, 5, -2.75f, new Item.Properties()));
+
+    public static final RegistryObject<Item> SAW_EATER = ITEMS.register("saw_eater",
+            () -> new AxeItem(ModToolTiers.ESSENCE, 10, -3.5f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ARTORIAS_DESPAIR = ITEMS.register("artorias_despair",
+            () -> new AxeItem(ModToolTiers.ESSENCE, 12, -3.75f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ERAK_BATTLEAXE = ITEMS.register("erak_battleaxe",
+            () -> new AxeItem(ModToolTiers.ESSENCE, 16, -3.85f, new Item.Properties()));
+
+    public static final RegistryObject<Item> NORR_FORR_HAMMER = ITEMS.register("norr_forr_hammer",
+            () -> new AxeItem(ModToolTiers.ESSENCE, 11, -3.65f, new Item.Properties()));
+
+    public static final RegistryObject<Item> CLAWS = ITEMS.register("claws",
+            () -> new SwordItem(ModToolTiers.ESSENCE, -3, 2f, new Item.Properties()));
+
+    public static final RegistryObject<Item> AKIRA_KATANA = ITEMS.register("akira_katana",
+            () -> new SwordItem(ModToolTiers.ESSENCE, 8, -2.2f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ODIN_DAGGER = ITEMS.register("odin_dagger",
+            () -> new SwordItem(ModToolTiers.ESSENCE, -1, 1f, new Item.Properties()));
+
+    public static final RegistryObject<Item> HILDA_SCYTHE = ITEMS.register("hilda_scythe",
+            () -> new SwordItem(ModToolTiers.ESSENCE, 0, 0.5f, new Item.Properties()));
+
+    public static final RegistryObject<Item> SAI = ITEMS.register("sai",
+            () -> new SwordItem(ModToolTiers.ESSENCE, -2, 1.5f, new Item.Properties()));
+
+    public static final RegistryObject<Item> DIEGO_RAPIER = ITEMS.register("diego_rapier",
+            () -> new SwordItem(ModToolTiers.ESSENCE, 1, -1f, new Item.Properties()));
+
+    public static final RegistryObject<Item> GRIMOIRE = ITEMS.register("grimoire",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BELAIOS_WAND = ITEMS.register("belaios_wand",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> OLD_GRIMOIRE = ITEMS.register("old_grimoire",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ASGORE_GRIMOIRE = ITEMS.register("asgore_grimoire",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> NOVUS_GRIMOIRE = ITEMS.register("novus_grimoire",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BEANS_SACK = ITEMS.register("beans_sack",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> FROG = ITEMS.register("frog",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> VEIGAR_STAFF = ITEMS.register("veigar_staff",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> QRAZ_STAFF = ITEMS.register("qraz_staff",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> SYLVERIA_STAFF = ITEMS.register("sylveria_staff",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CATALYST = ITEMS.register("catalyst",
+            () -> new Item(new Item.Properties().stacksTo(3)));
+    public static final RegistryObject<Item> CATALYST_EMPTY = ITEMS.register("catalyst_empty",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> CARSON_CANNON = ITEMS.register("carson_cannon",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
 
 

@@ -9,7 +9,7 @@
       "parent": "eclipse_do_caos:item/gauntlet_2d"
     },
     "ground": {
-      "parent": "eclipse_do_caos:item/gauntlet_left_3d"
+      "parent": "eclipse_do_caos:item/gauntlet_3d"
     },
     "fixed": {
       "parent": "eclipse_do_caos:item/gauntlet_2d"

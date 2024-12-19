@@ -96,5 +96,13 @@
 			"color": 0,
 			"children": [0, 1, 2]
 		}
+	],
+	"overrides": [
+		{
+			"predicate": {
+				"lefthand": 1
+			},
+			"model": "eclipse_do_caos:item/gauntlet_left"
+		}
 	]
 }

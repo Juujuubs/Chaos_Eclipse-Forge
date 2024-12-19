@@ -51,8 +51,36 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
                     pOutput.accept(ModItems.DELS.get());
                     pOutput.accept(ModItems.ESSENCE_PAXEL.get());
 
+                    pOutput.accept(ModItems.QUARTERSTAFF.get());
+                    pOutput.accept(ModItems.HELENA_BASEBALL_BAT.get());
+                    pOutput.accept(ModItems.QRAZ_STAFF.get());
+                    pOutput.accept(ModItems.SYLVERIA_STAFF.get());
+                    pOutput.accept(ModItems.VEIGAR_STAFF.get());
+                    pOutput.accept(ModItems.LADON_DRAGON_GLAIVE.get());
+                    pOutput.accept(ModItems.NORR_FORR_HAMMER.get());
+                    pOutput.accept(ModItems.ERAK_BATTLEAXE.get());
+                    pOutput.accept(ModItems.ARTORIAS_DESPAIR.get());
+                    pOutput.accept(ModItems.SAW_EATER.get());
+                    pOutput.accept(ModItems.CHALI_II_LANCE.get());
+                    pOutput.accept(ModItems.AKIRA_KATANA.get());
+                    pOutput.accept(ModItems.DIEGO_RAPIER.get());
+                    pOutput.accept(ModItems.CLAWS.get());
+                    pOutput.accept(ModItems.SAI.get());
+                    pOutput.accept(ModItems.HILDA_SCYTHE.get());
+                    pOutput.accept(ModItems.ODIN_DAGGER.get());
+                    pOutput.accept(ModItems.GAUNTLET.get());
+                    pOutput.accept(ModItems.BEANS_SACK.get());
+                    pOutput.accept(ModItems.FROG.get());
+                    pOutput.accept(ModItems.BELAIOS_WAND.get());
+                    pOutput.accept(ModItems.GRIMOIRE.get());
+                    pOutput.accept(ModItems.OLD_GRIMOIRE.get());
+                    pOutput.accept(ModItems.ASGORE_GRIMOIRE.get());
+                    pOutput.accept(ModItems.NOVUS_GRIMOIRE.get());
                     pOutput.accept(ModItems.ZORA_BOW.get());
+                    pOutput.accept(ModItems.CARSON_CANNON.get());
                     pOutput.accept(ModItems.PALLIS_SHIELD.get());
+                    pOutput.accept(ModItems.CATALYST.get());
+                    pOutput.accept(ModItems.CATALYST_EMPTY.get());
                     pOutput.accept(ModItems.CANNONBALL.get());
                 })
                 .build());

@@ -27,9 +27,11 @@ public class ModTags {
         public static final TagKey<Item> LOST_WEAPONS = tag("lost_weapons");
         public static final TagKey<Item> NOT_FROM_THIS_WORLD = tag("not_from_this_world");
         public static final TagKey<Item> GRIMOIRES = tag("grimoires");
+        public static final TagKey<Item> WANDS = tag("wands");
         public static final TagKey<Item> STAFFS = tag("staffs");
         public static final TagKey<Item> RANGED_WEAPONS = tag("ranged_weapons");
         public static final TagKey<Item> SHIELDS = tag("shields");
+        public static final TagKey<Item> BOWS = tag("bows");
         public static final TagKey<Item> GUNS = tag("guns");
 
         private static TagKey<Item> tag(String name) {

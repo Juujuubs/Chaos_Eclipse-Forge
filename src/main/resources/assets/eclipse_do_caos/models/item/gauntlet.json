@@ -14,5 +14,13 @@
     "fixed": {
       "parent": "eclipse_do_caos:item/gauntlet_2d"
     }
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "lefthand": 1
+      },
+      "model": "eclipse_do_caos:item/gauntlet_left"
+    }
+  ]
 }

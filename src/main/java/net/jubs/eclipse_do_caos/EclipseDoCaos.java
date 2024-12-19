@@ -66,7 +66,13 @@ public class EclipseDoCaos
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.ECLIPSE_BEGINS_MUSIC_DISC);
             event.accept(ModItems.DELS);
+            event.accept(ModItems.ESSENCE_PAXEL);
+            event.accept(ModItems.SAW_EATER);
+            event.accept(ModItems.ARTORIAS_DESPAIR);
+            event.accept(ModItems.NORR_FORR_HAMMER);
+            event.accept(ModItems.ERAK_BATTLEAXE);
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SYMBOL);
@@ -84,10 +90,40 @@ public class EclipseDoCaos
             event.accept(ModItems.BEAN);
         }
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.QUARTERSTAFF);
+            event.accept(ModItems.OLD_GRIMOIRE);
+            event.accept(ModItems.GRIMOIRE);
+            event.accept(ModItems.FROG);
+            event.accept(ModItems.CATALYST);
+            event.accept(ModItems.CLAWS);
+            event.accept(ModItems.PALLIS_SHIELD);
+            event.accept(ModItems.ASGORE_GRIMOIRE);
+            event.accept(ModItems.ARTORIAS_DESPAIR);
+            event.accept(ModItems.HELENA_BASEBALL_BAT);
+            event.accept(ModItems.HILDA_SCYTHE);
+            event.accept(ModItems.DIEGO_RAPIER);
+            event.accept(ModItems.AKIRA_KATANA);
+            event.accept(ModItems.ODIN_DAGGER);
+            event.accept(ModItems.SAI);
+            event.accept(ModItems.VEIGAR_STAFF);
+            event.accept(ModItems.QRAZ_STAFF);
+            event.accept(ModItems.SYLVERIA_STAFF);
+            event.accept(ModItems.NOVUS_GRIMOIRE);
+            event.accept(ModItems.CARSON_CANNON);
+            event.accept(ModItems.ZORA_BOW);
             event.accept(ModItems.CANNONBALL);
-            // Adicionar as Armas aqui
+            event.accept(ModItems.SAW_EATER);
+            event.accept(ModItems.LADON_DRAGON_GLAIVE);
+            event.accept(ModItems.ERAK_BATTLEAXE);
+            event.accept(ModItems.BELAIOS_WAND);
+            event.accept(ModItems.GAUNTLET);
+            event.accept(ModItems.NORR_FORR_HAMMER);
+            event.accept(ModItems.CHALI_II_LANCE);
+            event.accept(ModItems.ESSENCE_PAXEL);
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.CATALYST);
+            event.accept(ModItems.CATALYST_EMPTY);
             event.accept(ModItems.TILAPIA);
             event.accept(ModItems.FRIED_TILAPIA);
             event.accept(ModItems.SUSHI_TILAPIA);

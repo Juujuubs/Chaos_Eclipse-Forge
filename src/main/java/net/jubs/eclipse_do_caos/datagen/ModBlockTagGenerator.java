@@ -55,6 +55,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(BlockTags.MINEABLE_WITH_AXE)
                 .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
 
+        this.tag(ModTags.Blocks.SAW_EATER_MINEABLE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE);
+
         this.tag(BlockTags.FLOWERS)
                 .add(ModBlocks.BROMELIAD.get()
                 );
