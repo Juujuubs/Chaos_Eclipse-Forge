@@ -46,6 +46,14 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
                     pOutput.accept(ModBlocks.MEAT_BLOCK.get());
                     pOutput.accept(ModBlocks.TEETH_BLOCK.get());
 
+                    pOutput.accept(ModBlocks.EDEN_LOG.get());
+                    pOutput.accept(ModBlocks.EDEN_WOOD.get());
+                    pOutput.accept(ModBlocks.STRIPPED_EDEN_LOG.get());
+                    pOutput.accept(ModBlocks.STRIPPED_EDEN_WOOD.get());
+                    pOutput.accept(ModBlocks.EDEN_PLANKS.get());
+                    pOutput.accept(ModBlocks.EDEN_LEAVES.get());
+                    pOutput.accept(ModBlocks.EDEN_SAPLING.get());
+
                     pOutput.accept(ModItems.ECLIPSE_BEGINS_MUSIC_DISC.get());
 
                     pOutput.accept(ModItems.DELS.get());

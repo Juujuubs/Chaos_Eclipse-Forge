@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-18T23:27:44.621546	Item Tags
+// 1.20.1	2024-12-19T01:35:24.5093286	Item Tags
 b13f40e01937444e75caa972e727113a20e5d0b7 data/eclipse_do_caos/tags/items/bows.json
 d118363007ee785351c228f2aa463833c921eefc data/eclipse_do_caos/tags/items/grimoires.json
 30dfdb536fd52ae3083bdb34435441fd562509b9 data/eclipse_do_caos/tags/items/guns.json
@@ -12,8 +12,13 @@ f3cca6aef1bd72c53246c121d450cdb1362a0f7d data/minecraft/tags/items/axes.json
 57b715a0da850ea9ebd9839af0861416071881c4 data/minecraft/tags/items/creeper_drop_music_discs.json
 2deaaa6fe2839e4796a27d163393c42cd59a15f4 data/minecraft/tags/items/fishes.json
 20f4d56dfe1ce9c8ac5a7671c644608719b58258 data/minecraft/tags/items/flowers.json
+cc1fc57294253366e215de29db614f80160890bf data/minecraft/tags/items/leaves.json
+872e5a7dc522564833c34e1b045b3b55cf6486ee data/minecraft/tags/items/logs.json
+872e5a7dc522564833c34e1b045b3b55cf6486ee data/minecraft/tags/items/logs_that_burn.json
 57b715a0da850ea9ebd9839af0861416071881c4 data/minecraft/tags/items/music_discs.json
 fb0a0318ddacee6922fcd29d79050c29151cd379 data/minecraft/tags/items/pickaxes.json
+9ee1651063598e20d306a77066d0dc4795823ea6 data/minecraft/tags/items/planks.json
+e338f674d01098c2aac1f9e980a1241e401d28a4 data/minecraft/tags/items/saplings.json
 fb0a0318ddacee6922fcd29d79050c29151cd379 data/minecraft/tags/items/shovels.json
 20f4d56dfe1ce9c8ac5a7671c644608719b58258 data/minecraft/tags/items/small_flowers.json
 9382781e2baf8652c9b9194584e41327a466d8f0 data/minecraft/tags/items/swords.json

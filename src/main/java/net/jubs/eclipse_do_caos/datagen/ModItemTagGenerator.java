@@ -7,6 +7,7 @@ import net.jubs.eclipse_do_caos.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -149,6 +150,23 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.ZORA_BOW.get())
                 .add(ModItems.BELAIOS_WAND.get())
                 .add(ModItems.FROG.get());
+
+        this.tag(ItemTags.LOGS)
+                .add(ModBlocks.EDEN_LOG.get().asItem())
+                .add(ModBlocks.EDEN_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_EDEN_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_EDEN_WOOD.get().asItem());
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.EDEN_LOG.get().asItem())
+                .add(ModBlocks.EDEN_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_EDEN_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_EDEN_WOOD.get().asItem());
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.EDEN_PLANKS.get().asItem());
+        this.tag(ItemTags.LEAVES)
+                .add(ModBlocks.EDEN_LEAVES.get().asItem());
+        this.tag(ItemTags.SAPLINGS)
+                .add(ModBlocks.EDEN_SAPLING.get().asItem());
     }
 
     @Override

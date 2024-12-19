@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-16T00:33:44.7553858	Item Models: eclipse_do_caos
+// 1.20.1	2024-12-19T01:35:24.5003334	Item Models: eclipse_do_caos
 00c38a95c315a7302ac1093653d077cdf183c8ae assets/eclipse_do_caos/models/item/bean.json
 33c897605ea44f3c8448e6fcf617f9ddebe94f85 assets/eclipse_do_caos/models/item/bromeliad.json
 8ea88da74745b73354eb9df993c9684104e8e705 assets/eclipse_do_caos/models/item/cannonball.json
@@ -6,6 +6,7 @@
 99aa59903eb8b6b4c600abbfff36c88949fd0267 assets/eclipse_do_caos/models/item/cooked_bean.json
 60b2773c3978242eabbcd9873ced0949fe1ef148 assets/eclipse_do_caos/models/item/devil_horn.json
 29764b82c384bcf14f9e06f51c956555e6e03b64 assets/eclipse_do_caos/models/item/eclipse_begins_music_disc.json
+c800155d3bd95f4402658c3a68b80af7bdacd554 assets/eclipse_do_caos/models/item/eden_sapling.json
 edef73e168d5b9578f2eebb3f5d2aac1376cb166 assets/eclipse_do_caos/models/item/elf_ear.json
 f20cba63a3ab4422d3d4d10ad34b5a91abdd2d59 assets/eclipse_do_caos/models/item/essence.json
 f3577d4ff2d5901100c0036218ad9321e9819037 assets/eclipse_do_caos/models/item/essence_paxel.json

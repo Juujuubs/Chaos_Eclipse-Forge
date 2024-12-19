@@ -39,6 +39,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ESSENCE_PAXEL);
 
         simpleBlockItem(ModBlocks.BROMELIAD);
+
+        saplingItem(ModBlocks.EDEN_SAPLING);
     }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
@@ -54,6 +56,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(EclipseDoCaos.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(EclipseDoCaos.MOD_ID,"block/" + item.getId().getPath()));
     }
 
 }

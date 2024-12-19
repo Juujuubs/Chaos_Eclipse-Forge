@@ -54,14 +54,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ESSENCE.get()), has(ModItems.ESSENCE.get()))
                 .save(pWriter);
 
-        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BONE_MEAL)
-                //.requires(ModItems.HUMAN_TOOTH.get())
-                //.unlockedBy(getHasName(ModItems.HUMAN_TOOTH.get()), has(ModItems.HUMAN_TOOTH.get()))
-                //.save(pWriter);
-        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BONE_MEAL, 2)
-                //.requires(ModItems.DEVIL_HORN.get())
-                //.unlockedBy(getHasName(ModItems.DEVIL_HORN.get()), has(ModItems.DEVIL_HORN.get()))
-                //.save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.RED_DYE)
+                .requires(ModBlocks.BROMELIAD.get())
+                .unlockedBy(getHasName(ModBlocks.BROMELIAD.get()), has(ModBlocks.BROMELIAD.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BONE_MEAL)
+                .requires(ModItems.HUMAN_TOOTH.get())
+                .unlockedBy(getHasName(ModItems.HUMAN_TOOTH.get()), has(ModItems.HUMAN_TOOTH.get()))
+                .save(pWriter, "bone_meal_from_human_tooth");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BONE_MEAL, 2)
+                .requires(ModItems.DEVIL_HORN.get())
+                .unlockedBy(getHasName(ModItems.DEVIL_HORN.get()), has(ModItems.DEVIL_HORN.get()))
+                .save(pWriter, "bone_meal_from_devil_horn");
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CATALYST_EMPTY.get(), 3)
+                .pattern("###")
+                .pattern("#E#")
+                .pattern("###")
+                .define('E', ModItems.ESSENCE.get())
+                .define('#', Items.GLASS_BOTTLE)
+                .unlockedBy(getHasName(Items.GLASS_BOTTLE), has(Items.GLASS_BOTTLE))
+                .unlockedBy(getHasName(ModItems.ESSENCE.get()), has(ModItems.ESSENCE.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GLASS_BOTTLE, 7)
+                .requires(ModItems.CATALYST_EMPTY.get())
+                .unlockedBy(getHasName(ModItems.CATALYST_EMPTY.get()), has(ModItems.CATALYST_EMPTY.get()))
+                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.SUSHI_TILAPIA.get(), 4)
                 .requires(ModItems.TILAPIA.get())
@@ -90,10 +112,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.ESSENCE_BLOCK.get()), has(ModBlocks.ESSENCE_BLOCK.get()))
                 .save(pWriter);
 
-        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_NUGGET, 4)
-                //.requires(ModItems.CANNONBALL.get())
-                //.unlockedBy(getHasName(ModItems.CANNONBALL.get()), has(ModItems.CANNONBALL.get()))
-                //.save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_NUGGET, 4)
+                .requires(ModItems.CANNONBALL.get())
+                .unlockedBy(getHasName(ModItems.CANNONBALL.get()), has(ModItems.CANNONBALL.get()))
+                .save(pWriter, "iron_nugget_from_cannonball");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.TEETH_BLOCK.get(), 1)
                 .pattern("###")

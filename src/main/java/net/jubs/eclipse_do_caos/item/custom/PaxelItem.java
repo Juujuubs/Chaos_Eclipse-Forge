@@ -2,6 +2,7 @@ package net.jubs.eclipse_do_caos.item.custom;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
+import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.util.ModTags;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
@@ -39,7 +40,9 @@ public class PaxelItem extends DiggerItem implements Vanishable {
                 .put(Blocks.SPRUCE_LOG, Blocks.STRIPPED_SPRUCE_LOG).put(Blocks.WARPED_STEM, Blocks.STRIPPED_WARPED_STEM)
                 .put(Blocks.WARPED_HYPHAE, Blocks.STRIPPED_WARPED_HYPHAE).put(Blocks.CRIMSON_STEM, Blocks.STRIPPED_CRIMSON_STEM)
                 .put(Blocks.CRIMSON_HYPHAE, Blocks.STRIPPED_CRIMSON_HYPHAE).put(Blocks.MANGROVE_WOOD, Blocks.STRIPPED_MANGROVE_WOOD)
-                .put(Blocks.MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_LOG).put(Blocks.BAMBOO_BLOCK, Blocks.STRIPPED_BAMBOO_BLOCK).build();
+                .put(Blocks.MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_LOG).put(Blocks.BAMBOO_BLOCK, Blocks.STRIPPED_BAMBOO_BLOCK)
+                .put(ModBlocks.EDEN_LOG.get(), ModBlocks.STRIPPED_EDEN_LOG.get()).put(ModBlocks.EDEN_WOOD.get(), ModBlocks.STRIPPED_EDEN_WOOD.get())
+                .build();
 
     protected static final Map<Block, Block> FLATTENABLES = Maps.newHashMap((new ImmutableMap.Builder<Block, Block>())
             .put(Blocks.GRASS_BLOCK, Blocks.DIRT_PATH.defaultBlockState().getBlock())

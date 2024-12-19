@@ -1,8 +1,15 @@
-// 1.20.1	2024-12-15T23:22:28.9924339	Loot Tables
+// 1.20.1	2024-12-19T01:42:52.9728561	Loot Tables
 4619c7eec6cee41c9bd6ad43961056dc2495dbdd data/eclipse_do_caos/loot_tables/blocks/bromeliad.json
+29c1ae9681f5f02a3110695dd02bfb4ecfb82e35 data/eclipse_do_caos/loot_tables/blocks/eden_leaves.json
+cd1bc7f95fc1d2fa17c95ea150b7e519fa276546 data/eclipse_do_caos/loot_tables/blocks/eden_log.json
+097c8d22d192d98030d7e24e79f534d2d8cfd91c data/eclipse_do_caos/loot_tables/blocks/eden_planks.json
+27dc75d61b6ed23beb1ca5e3bd9b1be5b209a763 data/eclipse_do_caos/loot_tables/blocks/eden_sapling.json
+0d7d69ab8e9f423aa4703c848e4d7995fd98a4e2 data/eclipse_do_caos/loot_tables/blocks/eden_wood.json
 069163438fbb23f0e57e9a1b1ca8453f68577145 data/eclipse_do_caos/loot_tables/blocks/essence_block.json
 de79cecce8d2c8c342dbbef75f9b1a8ff9fa0571 data/eclipse_do_caos/loot_tables/blocks/essence_ore_block.json
 8be981bb286d2bd7e30bb8f3415c18f6f520f181 data/eclipse_do_caos/loot_tables/blocks/eye_block.json
 f2ea522995ebb280b44f23b2e01810e71ae3d6ba data/eclipse_do_caos/loot_tables/blocks/meat_block.json
 c42c53942803bb4ec0eaeb75d693316c2182123a data/eclipse_do_caos/loot_tables/blocks/potted_bromeliad.json
+3085c8b88aa063670bbd2f5ac04db833d3d9f0f9 data/eclipse_do_caos/loot_tables/blocks/stripped_eden_log.json
+ae4e949bc02cc32137b518174283392c954ca8b3 data/eclipse_do_caos/loot_tables/blocks/stripped_eden_wood.json
 02f97f038498e5b7670db620759245f615182c56 data/eclipse_do_caos/loot_tables/blocks/teeth_block.json

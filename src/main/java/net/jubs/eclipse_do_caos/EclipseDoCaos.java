@@ -5,6 +5,7 @@ import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.item.ModCreativeModeTabs;
 import net.jubs.eclipse_do_caos.item.ModItemProperties;
 import net.jubs.eclipse_do_caos.item.ModItems;
+import net.jubs.eclipse_do_caos.loot.ModLootModifiers;
 import net.jubs.eclipse_do_caos.painting.ModPaintings;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -42,6 +43,8 @@ public class EclipseDoCaos
 
         ModSounds.register(modEventBus);
         ModPaintings.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
 
 

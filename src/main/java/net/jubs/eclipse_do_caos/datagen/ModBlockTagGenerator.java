@@ -24,7 +24,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ESSENCE_BLOCK.get(),
                 ModBlocks.ESSENCE_ORE_BLOCK.get(),
                 ModBlocks.BROMELIAD.get(),
-                ModBlocks.POTTED_BROMELIAD.get()
+                ModBlocks.POTTED_BROMELIAD.get(),
+                ModBlocks.EDEN_WOOD.get(),
+                ModBlocks.STRIPPED_EDEN_LOG.get(),
+                ModBlocks.STRIPPED_EDEN_WOOD.get(),
+                ModBlocks.EDEN_SAPLING.get(),
+                ModBlocks.EDEN_LOG.get()
 
                 );
 
@@ -63,6 +68,28 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 );
         this.tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.BROMELIAD.get()
+                );
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.EDEN_LOG.get(),
+                ModBlocks.EDEN_WOOD.get(),
+                ModBlocks.STRIPPED_EDEN_LOG.get(),
+                ModBlocks.STRIPPED_EDEN_WOOD.get()
+                );
+        this.tag(BlockTags.LOGS)
+                .add(ModBlocks.EDEN_LOG.get(),
+                        ModBlocks.EDEN_WOOD.get(),
+                        ModBlocks.STRIPPED_EDEN_LOG.get(),
+                        ModBlocks.STRIPPED_EDEN_WOOD.get()
+                );
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.EDEN_PLANKS.get()
+                );
+        this.tag(BlockTags.LEAVES)
+                .add(ModBlocks.EDEN_LEAVES.get()
+                );
+        this.tag(BlockTags.SAPLINGS)
+                .add(ModBlocks.EDEN_SAPLING.get()
                 );
     }
 }
