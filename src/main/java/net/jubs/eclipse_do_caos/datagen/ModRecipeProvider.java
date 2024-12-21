@@ -9,7 +9,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -68,6 +67,113 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.DEVIL_HORN.get())
                 .unlockedBy(getHasName(ModItems.DEVIL_HORN.get()), has(ModItems.DEVIL_HORN.get()))
                 .save(pWriter, "bone_meal_from_devil_horn");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EDEN_PLANKS.get(), 4)
+                .requires(ModBlocks.EDEN_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.EDEN_LOG.get()), has(ModBlocks.EDEN_LOG.get()))
+                .save(pWriter, "eden_planks_from_log");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EDEN_PLANKS.get(), 4)
+                .requires(ModBlocks.EDEN_WOOD.get())
+                .unlockedBy(getHasName(ModBlocks.EDEN_WOOD.get()), has(ModBlocks.EDEN_WOOD.get()))
+                .save(pWriter, "eden_planks_from_wood");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EDEN_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_EDEN_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.STRIPPED_EDEN_LOG.get()), has(ModBlocks.STRIPPED_EDEN_LOG.get()))
+                .save(pWriter, "eden_planks_from_stripped_log");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EDEN_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_EDEN_WOOD.get())
+                .unlockedBy(getHasName(ModBlocks.STRIPPED_EDEN_WOOD.get()), has(ModBlocks.STRIPPED_EDEN_WOOD.get()))
+                .save(pWriter, "eden_planks_from_stripped_wood");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EDEN_WOOD.get(), 3)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.EDEN_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.EDEN_LOG.get()), has(ModBlocks.EDEN_LOG.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_EDEN_WOOD.get(), 3)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.STRIPPED_EDEN_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.STRIPPED_EDEN_LOG.get()), has(ModBlocks.STRIPPED_EDEN_LOG.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, ModItems.EDEN_CHEST_BOAT.get(), 1)
+                .pattern("C")
+                .pattern("#")
+                .define('#', ModItems.EDEN_BOAT.get())
+                .define('C', Items.CHEST)
+                .unlockedBy(getHasName(ModItems.EDEN_BOAT.get()), has(ModItems.EDEN_BOAT.get()))
+                .unlockedBy(getHasName(Items.CHEST), has(Items.CHEST))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, ModItems.EDEN_BOAT.get(), 1)
+                .pattern("# #")
+                .pattern("###")
+                .define('#', ModBlocks.EDEN_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.EDEN_SIGN.get(), 3)
+                .pattern("###")
+                .pattern("###")
+                .pattern(" S ")
+                .define('#', ModBlocks.EDEN_PLANKS.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.EDEN_HANGING_SIGN.get(), 6)
+                .pattern("C C")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModBlocks.EDEN_PLANKS.get())
+                .define('C', Items.CHAIN)
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .unlockedBy(getHasName(Items.CHAIN), has(Items.CHAIN))
+                .save(pWriter);
+
+        fenceBuilder(ModBlocks.EDEN_FENCE.get(), Ingredient.of(ModBlocks.EDEN_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .save(pWriter);
+
+        fenceGateBuilder(ModBlocks.EDEN_FENCE_GATE.get(), Ingredient.of(ModBlocks.EDEN_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .save(pWriter);
+
+        stairBuilder(ModBlocks.EDEN_STAIRS.get(), Ingredient.of(ModBlocks.EDEN_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .save(pWriter);
+
+        doorBuilder(ModBlocks.EDEN_DOOR.get(), Ingredient.of(ModBlocks.EDEN_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .save(pWriter);
+
+        trapdoorBuilder(ModBlocks.EDEN_TRAPDOOR.get(), Ingredient.of(ModBlocks.EDEN_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EDEN_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', ModBlocks.EDEN_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EDEN_PRESSURE_PLATE.get(), 1)
+                .pattern("##")
+                .define('#', ModBlocks.EDEN_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EDEN_BUTTON.get())
+                .requires(ModBlocks.EDEN_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.EDEN_PLANKS.get()), has(ModBlocks.EDEN_PLANKS.get()))
+                .save(pWriter);
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CATALYST_EMPTY.get(), 3)
