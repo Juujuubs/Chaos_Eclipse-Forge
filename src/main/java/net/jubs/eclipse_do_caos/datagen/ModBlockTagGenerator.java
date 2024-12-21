@@ -85,11 +85,89 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.EDEN_PLANKS.get()
                 );
+        this.tag(BlockTags.STAIRS)
+                .add(ModBlocks.EDEN_STAIRS.get()
+                );
+        this.tag(BlockTags.WOODEN_STAIRS)
+                .add(ModBlocks.EDEN_STAIRS.get()
+                );
+        this.tag(BlockTags.SLABS)
+                .add(ModBlocks.EDEN_SLAB.get()
+                );
+        this.tag(BlockTags.WOODEN_SLABS)
+                .add(ModBlocks.EDEN_SLAB.get()
+                );
+        this.tag(BlockTags.BUTTONS)
+                .add(ModBlocks.EDEN_BUTTON.get()
+                );
+        this.tag(BlockTags.WOODEN_BUTTONS)
+                .add(ModBlocks.EDEN_BUTTON.get()
+                );
+        this.tag(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.EDEN_PRESSURE_PLATE.get()
+                );
+        this.tag(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.EDEN_PRESSURE_PLATE.get()
+                );
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.EDEN_FENCE.get()
+                );
+        this.tag(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.EDEN_FENCE.get()
+                );
+        this.tag(BlockTags.DOORS)
+                .add(ModBlocks.EDEN_DOOR.get()
+                );
+        this.tag(BlockTags.WOODEN_DOORS)
+                .add(ModBlocks.EDEN_DOOR.get()
+                );
+        this.tag(BlockTags.TRAPDOORS)
+                .add(ModBlocks.EDEN_TRAPDOOR.get()
+                );
+        this.tag(BlockTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.EDEN_TRAPDOOR.get()
+                );
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.EDEN_FENCE_GATE.get()
+                );
         this.tag(BlockTags.LEAVES)
                 .add(ModBlocks.EDEN_LEAVES.get()
                 );
         this.tag(BlockTags.SAPLINGS)
                 .add(ModBlocks.EDEN_SAPLING.get()
+                );
+        this.tag(BlockTags.SIGNS)
+                .add(ModBlocks.EDEN_SIGN.get(),
+                ModBlocks.EDEN_WALL_SIGN.get(),
+                ModBlocks.EDEN_HANGING_SIGN.get(),
+                ModBlocks.EDEN_HANGING_WALL_SIGN.get()
+                );
+        this.tag(BlockTags.STANDING_SIGNS)
+                .add(ModBlocks.EDEN_SIGN.get()
+                );
+        this.tag(BlockTags.WALL_POST_OVERRIDE)
+                .add(ModBlocks.EDEN_SIGN.get()
+                );
+        this.tag(BlockTags.ALL_SIGNS)
+                .add(ModBlocks.EDEN_SIGN.get(),
+                        ModBlocks.EDEN_WALL_SIGN.get(),
+                        ModBlocks.EDEN_HANGING_SIGN.get(),
+                        ModBlocks.EDEN_HANGING_WALL_SIGN.get()
+                );
+        this.tag(BlockTags.WALL_SIGNS)
+                .add(ModBlocks.EDEN_WALL_SIGN.get(),
+                        ModBlocks.EDEN_HANGING_WALL_SIGN.get()
+                );
+        this.tag(BlockTags.WALL_HANGING_SIGNS)
+                .add(ModBlocks.EDEN_HANGING_WALL_SIGN.get()
+                );
+        this.tag(BlockTags.ALL_HANGING_SIGNS)
+                .add(ModBlocks.EDEN_HANGING_SIGN.get(),
+                        ModBlocks.EDEN_HANGING_WALL_SIGN.get()
+                );
+        this.tag(BlockTags.CEILING_HANGING_SIGNS)
+                .add(ModBlocks.EDEN_HANGING_SIGN.get(),
+                        ModBlocks.EDEN_HANGING_WALL_SIGN.get()
                 );
     }
 }

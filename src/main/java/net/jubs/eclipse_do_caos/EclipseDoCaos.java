@@ -2,12 +2,18 @@ package net.jubs.eclipse_do_caos;
 
 import com.mojang.logging.LogUtils;
 import net.jubs.eclipse_do_caos.block.ModBlocks;
+import net.jubs.eclipse_do_caos.block.entity.ModBlockEntities;
+import net.jubs.eclipse_do_caos.entity.ModEntities;
+import net.jubs.eclipse_do_caos.entity.client.ModBoatRenderer;
 import net.jubs.eclipse_do_caos.item.ModCreativeModeTabs;
 import net.jubs.eclipse_do_caos.item.ModItemProperties;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.loot.ModLootModifiers;
 import net.jubs.eclipse_do_caos.painting.ModPaintings;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
+import net.jubs.eclipse_do_caos.util.ModWoodTypes;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -46,6 +52,9 @@ public class EclipseDoCaos
 
         ModLootModifiers.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+        ModEntities.register(modEventBus);
+
 
 
         modEventBus.addListener(this::commonSetup);
@@ -61,6 +70,8 @@ public class EclipseDoCaos
             ComposterBlock.COMPOSTABLES.put(ModItems.BEAN.get(), 0.2f);
             ComposterBlock.COMPOSTABLES.put(ModItems.COOKED_BEAN.get(), 0.35f);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.BROMELIAD.get().asItem(), 0.65f);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.EDEN_LEAVES.get().asItem(), 0.4f);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.EDEN_SAPLING.get().asItem(), 0.45f);
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BROMELIAD.getId(), ModBlocks.POTTED_BROMELIAD);
         });
@@ -69,6 +80,8 @@ public class EclipseDoCaos
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.EDEN_CHEST_BOAT);
+            event.accept(ModItems.EDEN_BOAT);
             event.accept(ModItems.ECLIPSE_BEGINS_MUSIC_DISC);
             event.accept(ModItems.DELS);
             event.accept(ModItems.ESSENCE_PAXEL);
@@ -137,6 +150,13 @@ public class EclipseDoCaos
             event.accept(ModItems.GOBLIN_EYE);
             event.accept(ModItems.ELF_EAR);
         }
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModItems.EDEN_SIGN);
+            event.accept(ModItems.EDEN_HANGING_SIGN);
+        }
+        if(event.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
+            event.accept(ModItems.ECLIPSE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -151,8 +171,12 @@ public class EclipseDoCaos
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(() -> {
+                Sheets.addWoodType(ModWoodTypes.EDEN);
 
                 ModItemProperties.addCustomItemProperties();
+
+                EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+                EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
 
             });
         }

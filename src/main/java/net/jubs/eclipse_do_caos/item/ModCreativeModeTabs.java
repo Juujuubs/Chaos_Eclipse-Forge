@@ -15,7 +15,7 @@ public class ModCreativeModeTabs {
            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EclipseDoCaos.MOD_ID);
 
 public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_TABS.register("eclipse_tab",
-        () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ESSENCE.get()))
+        () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ECLIPSE.get()))
                 .title(Component.translatable("creativetab.eclipse_tab"))
                 .displayItems((pParameters, pOutput) -> {
                     pOutput.accept(ModItems.SYMBOL.get());
@@ -51,6 +51,18 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
                     pOutput.accept(ModBlocks.STRIPPED_EDEN_LOG.get());
                     pOutput.accept(ModBlocks.STRIPPED_EDEN_WOOD.get());
                     pOutput.accept(ModBlocks.EDEN_PLANKS.get());
+                    pOutput.accept(ModBlocks.EDEN_DOOR.get());
+                    pOutput.accept(ModBlocks.EDEN_STAIRS.get());
+                    pOutput.accept(ModBlocks.EDEN_FENCE.get());
+                    pOutput.accept(ModBlocks.EDEN_FENCE_GATE.get());
+                    pOutput.accept(ModBlocks.EDEN_HANGING_SIGN.get());
+                    pOutput.accept(ModBlocks.EDEN_SIGN.get());
+                    pOutput.accept(ModItems.EDEN_CHEST_BOAT.get());
+                    pOutput.accept(ModItems.EDEN_BOAT.get());
+                    pOutput.accept(ModBlocks.EDEN_SLAB.get());
+                    pOutput.accept(ModBlocks.EDEN_TRAPDOOR.get());
+                    pOutput.accept(ModBlocks.EDEN_PRESSURE_PLATE.get());
+                    pOutput.accept(ModBlocks.EDEN_BUTTON.get());
                     pOutput.accept(ModBlocks.EDEN_LEAVES.get());
                     pOutput.accept(ModBlocks.EDEN_SAPLING.get());
 

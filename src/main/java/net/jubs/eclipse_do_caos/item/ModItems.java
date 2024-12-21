@@ -1,7 +1,10 @@
 package net.jubs.eclipse_do_caos.item;
 
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
+import net.jubs.eclipse_do_caos.block.ModBlocks;
+import net.jubs.eclipse_do_caos.entity.custom.ModBoatEntity;
 import net.jubs.eclipse_do_caos.item.custom.DelsItem;
+import net.jubs.eclipse_do_caos.item.custom.ModBoatItem;
 import net.jubs.eclipse_do_caos.item.custom.PaxelItem;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.world.item.*;
@@ -146,6 +149,20 @@ public class ModItems {
 
     public static final RegistryObject<Item> CARSON_CANNON = ITEMS.register("carson_cannon",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> ECLIPSE = ITEMS.register("eclipse",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
+
+    public static final RegistryObject<Item> EDEN_SIGN = ITEMS.register("eden_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.EDEN_SIGN.get(), ModBlocks.EDEN_WALL_SIGN.get()));
+    public static final RegistryObject<Item> EDEN_HANGING_SIGN = ITEMS.register("eden_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.EDEN_HANGING_SIGN.get(), ModBlocks.EDEN_HANGING_WALL_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> EDEN_BOAT = ITEMS.register("eden_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.EDEN, new Item.Properties()));
+    public static final RegistryObject<Item> EDEN_CHEST_BOAT = ITEMS.register("eden_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.EDEN, new Item.Properties()));
 
 
 

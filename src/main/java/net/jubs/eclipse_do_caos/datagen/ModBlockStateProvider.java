@@ -4,11 +4,11 @@ import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -44,6 +44,35 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leavesBlock(ModBlocks.EDEN_LEAVES);
 
         saplingBlock(ModBlocks.EDEN_SAPLING);
+
+        signBlock(((StandingSignBlock) ModBlocks.EDEN_SIGN.get()), ((WallSignBlock) ModBlocks.EDEN_WALL_SIGN.get()),
+                blockTexture(ModBlocks.EDEN_PLANKS.get()));
+
+        hangingSignBlock(ModBlocks.EDEN_HANGING_SIGN.get(), ModBlocks.EDEN_HANGING_WALL_SIGN.get(),
+                blockTexture(ModBlocks.STRIPPED_EDEN_LOG.get()));
+
+
+        stairsBlock(((StairBlock) ModBlocks.EDEN_STAIRS.get()), blockTexture(ModBlocks.EDEN_PLANKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.EDEN_SLAB.get()), blockTexture(ModBlocks.EDEN_PLANKS.get()), blockTexture(ModBlocks.EDEN_PLANKS.get()));
+
+        blockItem(ModBlocks.EDEN_STAIRS);
+        blockItem(ModBlocks.EDEN_SLAB);
+
+        buttonBlock(((ButtonBlock) ModBlocks.EDEN_BUTTON.get()), blockTexture(ModBlocks.EDEN_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.EDEN_PRESSURE_PLATE.get()), blockTexture(ModBlocks.EDEN_PLANKS.get()));
+
+        blockItem(ModBlocks.EDEN_PRESSURE_PLATE);
+
+        fenceBlock(((FenceBlock) ModBlocks.EDEN_FENCE.get()), blockTexture(ModBlocks.EDEN_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.EDEN_FENCE_GATE.get()), blockTexture(ModBlocks.EDEN_PLANKS.get()));
+
+        blockItem(ModBlocks.EDEN_FENCE_GATE);
+
+        doorBlockWithRenderType((DoorBlock)ModBlocks.EDEN_DOOR.get(), modLoc("block/eden_door_bottom"), modLoc("block/eden_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.EDEN_TRAPDOOR.get(), modLoc("block/eden_trapdoor"), true, "cutout");
+
+        blockItem(ModBlocks.EDEN_TRAPDOOR, "_bottom");
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
@@ -62,5 +91,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),
                 models().cubeAll(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+    private String name(Block block) {
+        return key(block).getPath();
+    }
+    private ResourceLocation key(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block);
     }
 }

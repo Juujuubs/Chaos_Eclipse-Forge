@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-19T01:35:24.5003334	Item Models: eclipse_do_caos
+// 1.20.1	2024-12-21T06:46:30.7131583	Item Models: eclipse_do_caos
 00c38a95c315a7302ac1093653d077cdf183c8ae assets/eclipse_do_caos/models/item/bean.json
 33c897605ea44f3c8448e6fcf617f9ddebe94f85 assets/eclipse_do_caos/models/item/bromeliad.json
 8ea88da74745b73354eb9df993c9684104e8e705 assets/eclipse_do_caos/models/item/cannonball.json
@@ -6,7 +6,14 @@
 99aa59903eb8b6b4c600abbfff36c88949fd0267 assets/eclipse_do_caos/models/item/cooked_bean.json
 60b2773c3978242eabbcd9873ced0949fe1ef148 assets/eclipse_do_caos/models/item/devil_horn.json
 29764b82c384bcf14f9e06f51c956555e6e03b64 assets/eclipse_do_caos/models/item/eclipse_begins_music_disc.json
+daeb7201e53c1403eb59e90cff5a71b19487171d assets/eclipse_do_caos/models/item/eden_boat.json
+c6fa5f640170842dd9dac93602dcd3ecb798910a assets/eclipse_do_caos/models/item/eden_button.json
+9aeb0aff89ed3d853ab61b69d8bc79685f5967cd assets/eclipse_do_caos/models/item/eden_chest_boat.json
+b778fe7215be1310efc2068a121e1f02d0f2b369 assets/eclipse_do_caos/models/item/eden_door.json
+a80a476bd2f27807bdbe1d05e6c741e58a2d5863 assets/eclipse_do_caos/models/item/eden_fence.json
+d10f6fc17d57ed05f48a2b2c9417b50357c558b3 assets/eclipse_do_caos/models/item/eden_hanging_sign.json
 c800155d3bd95f4402658c3a68b80af7bdacd554 assets/eclipse_do_caos/models/item/eden_sapling.json
+f302acca3cdce2aedffcd01e2a98c79f35eee9b6 assets/eclipse_do_caos/models/item/eden_sign.json
 edef73e168d5b9578f2eebb3f5d2aac1376cb166 assets/eclipse_do_caos/models/item/elf_ear.json
 f20cba63a3ab4422d3d4d10ad34b5a91abdd2d59 assets/eclipse_do_caos/models/item/essence.json
 f3577d4ff2d5901100c0036218ad9321e9819037 assets/eclipse_do_caos/models/item/essence_paxel.json

@@ -1,12 +1,12 @@
 package net.jubs.eclipse_do_caos.block;
 
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
-import net.jubs.eclipse_do_caos.block.custom.EyeBlock;
-import net.jubs.eclipse_do_caos.block.custom.ModFlammableRotatedPillarBlock;
-import net.jubs.eclipse_do_caos.block.custom.TeethBlock;
+import net.jubs.eclipse_do_caos.block.custom.*;
 import net.jubs.eclipse_do_caos.item.ModItems;
+import net.jubs.eclipse_do_caos.util.ModWoodTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -15,6 +15,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -94,6 +95,38 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> EDEN_SAPLING = registerBlock("eden_sapling",
             () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> EDEN_SLAB = registerBlock("eden_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EDEN_STAIRS = registerBlock("eden_stairs",
+            () -> new StairBlock(() -> ModBlocks.EDEN_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> EDEN_BUTTON = registerBlock("eden_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> EDEN_PRESSURE_PLATE = registerBlock("eden_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).sound(SoundType.WOOD), BlockSetType.OAK));
+
+    public static final RegistryObject<Block> EDEN_FENCE = registerBlock("eden_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EDEN_FENCE_GATE = registerBlock("eden_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> EDEN_DOOR = registerBlock("eden_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).sound(SoundType.WOOD), BlockSetType.OAK));
+    public static final RegistryObject<Block> EDEN_TRAPDOOR = registerBlock("eden_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
+
+    public static final RegistryObject<Block> EDEN_SIGN = BLOCKS.register("eden_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.EDEN));
+    public static final RegistryObject<Block> EDEN_WALL_SIGN = BLOCKS.register("eden_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.EDEN));
+    public static final RegistryObject<Block> EDEN_HANGING_SIGN = BLOCKS.register("eden_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.EDEN));
+    public static final RegistryObject<Block> EDEN_HANGING_WALL_SIGN = BLOCKS.register("eden_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.EDEN));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

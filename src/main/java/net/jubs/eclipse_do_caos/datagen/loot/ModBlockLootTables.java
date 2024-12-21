@@ -8,12 +8,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
@@ -38,6 +36,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.EDEN_SAPLING.get());
         this.dropSelf(ModBlocks.STRIPPED_EDEN_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_EDEN_LOG.get());
+        this.dropSelf(ModBlocks.EDEN_STAIRS.get());
+        this.dropSelf(ModBlocks.EDEN_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.EDEN_BUTTON.get());
+        this.dropSelf(ModBlocks.EDEN_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.EDEN_FENCE.get());
+        this.dropSelf(ModBlocks.EDEN_TRAPDOOR.get());
+
+        this.add(ModBlocks.EDEN_DOOR.get(),
+                block -> createDoorTable(ModBlocks.EDEN_DOOR.get()));
+
+        this.add(ModBlocks.EDEN_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.EDEN_SLAB.get()));
+
         this.add(ModBlocks.POTTED_BROMELIAD.get(),
                 createPotFlowerItemTable(ModBlocks.POTTED_BROMELIAD.get()));
 
@@ -52,6 +63,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, Block.byItem(ModItems.EDEN_TREE_APPLE.get()), 0.02f));
         this.add(ModBlocks.EDEN_LEAVES.get(), block ->
                 createLeavesDrops(block, Block.byItem(Items.STICK), 0.12f));
+
+        this.add(ModBlocks.EDEN_SIGN.get(), block ->
+                createSingleItemTable(ModItems.EDEN_SIGN.get()));
+        this.add(ModBlocks.EDEN_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.EDEN_SIGN.get()));
+
+        this.add(ModBlocks.EDEN_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.EDEN_HANGING_SIGN.get()));
+        this.add(ModBlocks.EDEN_HANGING_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.EDEN_HANGING_SIGN.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

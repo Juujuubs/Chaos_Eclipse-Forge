@@ -7,7 +7,6 @@ import net.jubs.eclipse_do_caos.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -163,10 +162,48 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.STRIPPED_EDEN_WOOD.get().asItem());
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.EDEN_PLANKS.get().asItem());
+        this.tag(ItemTags.STAIRS)
+                .add(ModBlocks.EDEN_STAIRS.get().asItem());
+        this.tag(ItemTags.WOODEN_STAIRS)
+                .add(ModBlocks.EDEN_STAIRS.get().asItem());
+        this.tag(ItemTags.SLABS)
+                .add(ModBlocks.EDEN_SLAB.get().asItem());
+        this.tag(ItemTags.WOODEN_SLABS)
+                .add(ModBlocks.EDEN_SLAB.get().asItem());
+        this.tag(ItemTags.BUTTONS)
+                .add(ModBlocks.EDEN_BUTTON.get().asItem());
+        this.tag(ItemTags.WOODEN_BUTTONS)
+                .add(ModBlocks.EDEN_BUTTON.get().asItem());
+        this.tag(ItemTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.EDEN_PRESSURE_PLATE.get().asItem());
+        this.tag(ItemTags.FENCES)
+                .add(ModBlocks.EDEN_FENCE.get().asItem());
+        this.tag(ItemTags.WOODEN_FENCES)
+                .add(ModBlocks.EDEN_FENCE.get().asItem());
+        this.tag(ItemTags.FENCE_GATES)
+                .add(ModBlocks.EDEN_FENCE_GATE.get().asItem());
+        this.tag(ItemTags.WOODEN_DOORS)
+                .add(ModBlocks.EDEN_DOOR.get().asItem());
+        this.tag(ItemTags.DOORS)
+                .add(ModBlocks.EDEN_DOOR.get().asItem());
+        this.tag(ItemTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.EDEN_TRAPDOOR.get().asItem());
+        this.tag(ItemTags.TRAPDOORS)
+                .add(ModBlocks.EDEN_TRAPDOOR.get().asItem());
         this.tag(ItemTags.LEAVES)
                 .add(ModBlocks.EDEN_LEAVES.get().asItem());
         this.tag(ItemTags.SAPLINGS)
                 .add(ModBlocks.EDEN_SAPLING.get().asItem());
+        this.tag(ItemTags.SIGNS)
+                .add(ModBlocks.EDEN_SIGN.get().asItem());
+        this.tag(ItemTags.HANGING_SIGNS)
+                .add(ModBlocks.EDEN_HANGING_SIGN.get().asItem());
+
+        this.tag(ItemTags.BOATS)
+                .add(ModItems.EDEN_BOAT.get())
+                .add(ModItems.EDEN_CHEST_BOAT.get());
+        this.tag(ItemTags.CHEST_BOATS)
+                .add(ModItems.EDEN_CHEST_BOAT.get());
     }
 
     @Override
