@@ -60,7 +60,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "chance": 0.05,
+          "chance": 0.12,
           "condition": "minecraft:random_chance"
         }
       ],
@@ -76,7 +76,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "chance": 0.036,
+          "chance": 0.027,
           "condition": "minecraft:random_chance"
         }
       ],
@@ -92,7 +92,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "chance": 0.02,
+          "chance": 0.015,
           "condition": "minecraft:random_chance"
         }
       ],
@@ -108,7 +108,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "chance": 0.12,
+          "chance": 0.09,
           "condition": "minecraft:random_chance"
         }
       ],

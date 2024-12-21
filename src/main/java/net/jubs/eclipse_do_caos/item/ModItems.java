@@ -3,6 +3,7 @@ package net.jubs.eclipse_do_caos.item;
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.entity.custom.ModBoatEntity;
+import net.jubs.eclipse_do_caos.item.custom.BeanItem;
 import net.jubs.eclipse_do_caos.item.custom.DelsItem;
 import net.jubs.eclipse_do_caos.item.custom.ModBoatItem;
 import net.jubs.eclipse_do_caos.item.custom.PaxelItem;
@@ -57,7 +58,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.SUSHI_TILAPIA)));
 
     public static final RegistryObject<Item> BEAN = ITEMS.register("bean",
-            () -> new Item(new Item.Properties().food(ModFoods.BEAN)));
+            () -> new BeanItem(ModBlocks.BEAN_CROP, new Item.Properties().food(ModFoods.BEAN)));
     public static final RegistryObject<Item> COOKED_BEAN = ITEMS.register("cooked_bean",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_BEAN)));
 

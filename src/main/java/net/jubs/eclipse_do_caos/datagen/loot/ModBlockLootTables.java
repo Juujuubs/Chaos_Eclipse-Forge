@@ -1,10 +1,12 @@
 package net.jubs.eclipse_do_caos.datagen.loot;
 
 import net.jubs.eclipse_do_caos.block.ModBlocks;
+import net.jubs.eclipse_do_caos.block.custom.BeanCropBlock;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.minecraft.advancements.critereon.EnchantmentPredicate;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.advancements.critereon.MinMaxBounds;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -17,8 +19,11 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.level.storage.loot.predicates.MatchTool;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -76,7 +81,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.EDEN_HANGING_SIGN.get()));
         this.add(ModBlocks.EDEN_HANGING_WALL_SIGN.get(), block ->
                 createSingleItemTable(ModItems.EDEN_HANGING_SIGN.get()));
+
+
+        LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BEAN_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BeanCropBlock.AGE, 5));
+        this.add(ModBlocks.BEAN_CROP.get(), this.createCropDrops(ModBlocks.BEAN_CROP.get(),
+                ModItems.BEAN.get(), ModItems.BEAN.get(), lootitemcondition$builder1));
     }
+
+
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)

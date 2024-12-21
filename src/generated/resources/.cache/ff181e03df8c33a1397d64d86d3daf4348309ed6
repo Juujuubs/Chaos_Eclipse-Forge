@@ -1,4 +1,5 @@
-// 1.20.1	2024-12-21T06:46:30.707161	Block States: eclipse_do_caos
+// 1.20.1	2024-12-21T13:00:01.0618724	Block States: eclipse_do_caos
+7288ef58f7e952266c4197599acba08a4164b0f8 assets/eclipse_do_caos/blockstates/bean_crop.json
 483e62af1e28e5f76bb62174e7f25e34d700ee7d assets/eclipse_do_caos/blockstates/bromeliad.json
 30ac70810b5d48361d7192ebcea87bda74b3b050 assets/eclipse_do_caos/blockstates/eden_button.json
 616468b09739b252aea8bd71960660c98872ed6d assets/eclipse_do_caos/blockstates/eden_door.json
@@ -22,6 +23,12 @@ eeb8926b78f1e368c9de3af8d43a7c16107d4cbf assets/eclipse_do_caos/blockstates/esse
 ff03e1a212cda52044447f79b8f48ecd502ab0ff assets/eclipse_do_caos/blockstates/meat_block.json
 452f988d61a86d5ba5e076cf83e247c852e90a10 assets/eclipse_do_caos/blockstates/stripped_eden_log.json
 9c3ed48caa0438f90791f86497c897d77aa1c9fc assets/eclipse_do_caos/blockstates/stripped_eden_wood.json
+0a2b8e139b2e288a911ffba2c5024bc651c3bf1e assets/eclipse_do_caos/models/block/bean_stage0.json
+c0043a7c38e2702f033ef3913926e58cecfaabe9 assets/eclipse_do_caos/models/block/bean_stage1.json
+5879989b22d25c4bb37df7c34693fccf7468e90a assets/eclipse_do_caos/models/block/bean_stage2.json
+2cfedecbc63c3842c0da722ca76eef76c5579509 assets/eclipse_do_caos/models/block/bean_stage3.json
+67088ec52180788072705867c7d38db7514e1126 assets/eclipse_do_caos/models/block/bean_stage4.json
+18cf66b9d5af5a6842a6c2d7e5b929aa3119b80c assets/eclipse_do_caos/models/block/bean_stage5.json
 908e1b3781b091b432d484c0c1651bf2f54a5a11 assets/eclipse_do_caos/models/block/bromeliad.json
 b62709deb31fd1e6250452980fff390c3440e7db assets/eclipse_do_caos/models/block/eden_button.json
 86e1efd91d6d4e57bdb1a36d8be6d06cba68f2f8 assets/eclipse_do_caos/models/block/eden_button_pressed.json

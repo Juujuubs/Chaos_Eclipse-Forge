@@ -127,6 +127,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.EDEN_TRAPDOOR.get()
                 );
+        this.tag(BlockTags.CROPS)
+                .add(ModBlocks.BEAN_CROP.get()
+                );
+        this.tag(BlockTags.MAINTAINS_FARMLAND)
+                .add(ModBlocks.BEAN_CROP.get()
+                );
         this.tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.EDEN_FENCE_GATE.get()
                 );

@@ -128,6 +128,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> EDEN_HANGING_WALL_SIGN = BLOCKS.register("eden_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.EDEN));
 
+    public static final RegistryObject<Block> BEAN_CROP = BLOCKS.register("bean_crop",
+            () -> new BeanCropBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noCollission().noOcclusion()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
