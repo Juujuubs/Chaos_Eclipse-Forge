@@ -48,6 +48,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_BROMELIAD = BLOCKS.register("potted_bromeliad",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), BROMELIAD, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
 
+
     public static final RegistryObject<Block> EDEN_LOG = registerBlock("eden_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> EDEN_WOOD = registerBlock("eden_wood",
@@ -130,6 +131,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BEAN_CROP = BLOCKS.register("bean_crop",
             () -> new BeanCropBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noCollission().noOcclusion()));
+
+    public static final RegistryObject<Block> SAMARA_PLUSHIE = registerBlock("samara_plushie",
+            () -> new SamaraPlushieBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.SNOW).noOcclusion()));
+
+    public static final RegistryObject<Block> RADIO_ANNOUNCER = registerBlock("radio_announcer",
+            () -> new RadioAnnouncerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.COPPER).noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

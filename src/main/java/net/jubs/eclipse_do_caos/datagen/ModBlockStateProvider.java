@@ -81,7 +81,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         makeCrop(((BeanCropBlock) ModBlocks.BEAN_CROP.get()), "bean_stage", "bean_stage");
 
-
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

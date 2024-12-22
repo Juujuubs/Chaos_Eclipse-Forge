@@ -55,6 +55,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.EDEN_FENCE_GATE.get());
         this.dropSelf(ModBlocks.EDEN_FENCE.get());
         this.dropSelf(ModBlocks.EDEN_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.SAMARA_PLUSHIE.get());
+        this.dropSelf(ModBlocks.RADIO_ANNOUNCER.get());
 
         this.add(ModBlocks.EDEN_DOOR.get(),
                 block -> createDoorTable(ModBlocks.EDEN_DOOR.get()));

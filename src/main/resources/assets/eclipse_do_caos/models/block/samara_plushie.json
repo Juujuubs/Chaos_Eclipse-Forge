@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
+	"render_type": "minecraft:cutout",
 	"textures": {
 		"0": "eclipse_do_caos:block/samara_plushie",
 		"particle": "eclipse_do_caos:item/samara_plushie"

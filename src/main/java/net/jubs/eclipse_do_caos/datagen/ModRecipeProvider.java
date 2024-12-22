@@ -53,6 +53,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ESSENCE.get()), has(ModItems.ESSENCE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RADIO_ANNOUNCER.get(), 1)
+                .pattern("###")
+                .pattern("#J#")
+                .pattern("###")
+                .define('#', ModItems.ESSENCE.get())
+                .define('J', Items.JUKEBOX)
+                .unlockedBy(getHasName(Items.JUKEBOX), has(Items.JUKEBOX))
+                .unlockedBy(getHasName(ModItems.ESSENCE.get()), has(ModItems.ESSENCE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAMARA_PLUSHIE.get(), 1)
+                .pattern("EHE")
+                .pattern("LBG")
+                .pattern("EDE")
+                .define('E', ModItems.ESSENCE.get())
+                .define('H', ModItems.HUMAN_TOOTH.get())
+                .define('G', ModItems.GOBLIN_EYE.get())
+                .define('D', ModItems.DEVIL_HORN.get())
+                .define('L', ModItems.ELF_EAR.get())
+                .define('B', Items.BEEF)
+                .unlockedBy(getHasName(Items.BEEF), has(Items.BEEF))
+                .unlockedBy(getHasName(ModItems.ESSENCE.get()), has(ModItems.ESSENCE.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.RED_DYE)
                 .requires(ModBlocks.BROMELIAD.get())
                 .unlockedBy(getHasName(ModBlocks.BROMELIAD.get()), has(ModBlocks.BROMELIAD.get()))

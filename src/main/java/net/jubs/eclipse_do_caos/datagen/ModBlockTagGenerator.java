@@ -29,12 +29,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.STRIPPED_EDEN_LOG.get(),
                 ModBlocks.STRIPPED_EDEN_WOOD.get(),
                 ModBlocks.EDEN_SAPLING.get(),
+                ModBlocks.SAMARA_PLUSHIE.get(),
+                ModBlocks.RADIO_ANNOUNCER.get(),
                 ModBlocks.EDEN_LOG.get()
 
                 );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.ESSENCE_BLOCK.get()
+                .add(ModBlocks.ESSENCE_BLOCK.get(),
+                ModBlocks.RADIO_ANNOUNCER.get()
 
                 );
 
@@ -46,12 +49,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ESSENCE_BLOCK.get(),
                 ModBlocks.ESSENCE_ORE_BLOCK.get(),
+                ModBlocks.RADIO_ANNOUNCER.get(),
                 ModBlocks.TEETH_BLOCK.get()
 
                 );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(ModBlocks.EYE_BLOCK.get()
+                .add(ModBlocks.EYE_BLOCK.get(),
+                ModBlocks.SAMARA_PLUSHIE.get()
 
                 );
 
