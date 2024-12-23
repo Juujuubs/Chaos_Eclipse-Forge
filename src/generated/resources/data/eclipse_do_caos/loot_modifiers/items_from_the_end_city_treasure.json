@@ -1,0 +1,40 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    },
+    {
+      "chance": 1.0,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 1.0,
+      "count": 2,
+      "item": "eclipse_do_caos:devil_horn"
+    },
+    {
+      "chance": 1.0,
+      "count": 2,
+      "item": "eclipse_do_caos:human_tooth"
+    },
+    {
+      "chance": 1.0,
+      "count": 2,
+      "item": "eclipse_do_caos:catalyst"
+    },
+    {
+      "chance": 1.0,
+      "count": 2,
+      "item": "eclipse_do_caos:ticket_deluxe_arcanumrails"
+    },
+    {
+      "chance": 1.0,
+      "count": 2,
+      "item": "eclipse_do_caos:cannonball"
+    }
+  ]
+}

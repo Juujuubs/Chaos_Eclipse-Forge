@@ -1,0 +1,160 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:grimoire"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:asgore_grimoire"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:old_grimoire"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:odin_dagger"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:pallis_shield"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:quarterstaff"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:helena_baseball_bat"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:artorias_despair"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:saw_eater"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:akira_katana"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:beans_sack"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:diego_rapier"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:hilda_scythe"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:frog"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:claws"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:catalyst"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:sai"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:qraz_staff"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:veigar_staff"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:sylveria_staff"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:novus_grimoire"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:carson_cannon"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:zora_bow"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:ladon_dragon_glaive"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:erak_battleaxe"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:belaios_wand"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:gauntlet"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:norr_forr_hammer"
+    },
+    {
+      "chance": 0.12,
+      "count": 1,
+      "item": "eclipse_do_caos:chali_ii_lance"
+    }
+  ]
+}

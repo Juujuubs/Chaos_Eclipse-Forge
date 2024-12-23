@@ -1,0 +1,30 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/buried_treasure"
+    },
+    {
+      "chance": 1.0,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 0.35,
+      "count": 1,
+      "item": "eclipse_do_caos:ticket_deluxe_arcanumrails"
+    },
+    {
+      "chance": 0.35,
+      "count": 1,
+      "item": "eclipse_do_caos:eden_tree_apple"
+    },
+    {
+      "chance": 0.35,
+      "count": 1,
+      "item": "eclipse_do_caos:cannonball"
+    }
+  ]
+}

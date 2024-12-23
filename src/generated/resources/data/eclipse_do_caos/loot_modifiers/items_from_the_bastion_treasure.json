@@ -1,0 +1,45 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/bastion_treasure"
+    },
+    {
+      "chance": 1.0,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 1.0,
+      "count": 3,
+      "item": "eclipse_do_caos:devil_horn"
+    },
+    {
+      "chance": 1.0,
+      "count": 3,
+      "item": "eclipse_do_caos:goblin_eye"
+    },
+    {
+      "chance": 1.0,
+      "count": 3,
+      "item": "eclipse_do_caos:elf_ear"
+    },
+    {
+      "chance": 1.0,
+      "count": 3,
+      "item": "eclipse_do_caos:catalyst_empty"
+    },
+    {
+      "chance": 1.0,
+      "count": 1,
+      "item": "eclipse_do_caos:ticket_arcanumrails"
+    },
+    {
+      "chance": 1.0,
+      "count": 2,
+      "item": "eclipse_do_caos:cannonball"
+    }
+  ]
+}

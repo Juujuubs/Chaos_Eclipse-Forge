@@ -107,6 +107,373 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.ESSENCE_PAXEL.get(), 0.01f, 1)
 
                 )));
+        add("items_from_the_bastion_treasure", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_treasure")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.DEVIL_HORN.get(), 1f, 3),
+                        new ItemEntry(ModItems.GOBLIN_EYE.get(), 1f, 3),
+                        new ItemEntry(ModItems.ELF_EAR.get(), 1f, 3),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 1f, 3),
+                        new ItemEntry(ModItems.TICKET_ARCANUMRAILS.get(), 1f, 1),
+                        new ItemEntry(ModItems.CANNONBALL.get(), 1f, 2)
+                )));
+        add("weapons_from_the_bastion_treasure", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_treasure")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.AKIRA_KATANA.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.GRIMOIRE.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.QUARTERSTAFF.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.CATALYST.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.PALLIS_SHIELD.get(), 0.03f, 1)
+
+                )));
+        add("weapons_from_the_ruined_portal", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/ruined_portal")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.AKIRA_KATANA.get(), 0.01f, 1),
+                        new ItemEntry(ModItems.GRIMOIRE.get(), 0.01f, 1),
+                        new ItemEntry(ModItems.QUARTERSTAFF.get(), 0.01f, 1),
+                        new ItemEntry(ModItems.CATALYST.get(), 0.01f, 1),
+                        new ItemEntry(ModItems.PALLIS_SHIELD.get(), 0.01f, 1)
+
+                )));
+        add("items_from_the_desert_pyramid", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/desert_pyramid")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.DEVIL_HORN.get(), 0.8f, 2),
+                        new ItemEntry(ModItems.HUMAN_TOOTH.get(), 0.8f, 2),
+                        new ItemEntry(ModItems.ELF_EAR.get(), 0.8f, 2),
+                        new ItemEntry(ModItems.BEAN.get(), 0.8f, 2),
+                        new ItemEntry(ModItems.VOX.get(), 0.8f, 2),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 0.8f, 2),
+                        new ItemEntry(ModItems.TICKET_ARCANUMRAILS.get(), 0.8f, 2)
+                )));
+        add("weapons_from_the_desert_pyramid", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/desert_pyramid")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.BEANS_SACK.get(), 0.01f, 1),
+                        new ItemEntry(ModItems.QRAZ_STAFF.get(), 0.01f, 1),
+                        new ItemEntry(ModItems.PALLIS_SHIELD.get(), 0.01f, 1),
+                        new ItemEntry(ModItems.CARSON_CANNON.get(), 0.01f, 1),
+                        new ItemEntry(ModItems.BELAIOS_WAND.get(), 0.01f, 1),
+                        new ItemEntry(ModItems.GAUNTLET.get(), 0.01f, 1)
+
+                )));
+        add("items_from_the_end_city_treasure", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/end_city_treasure")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.DEVIL_HORN.get(), 1f, 2),
+                        new ItemEntry(ModItems.HUMAN_TOOTH.get(), 1f, 2),
+                        new ItemEntry(ModItems.CATALYST.get(), 1f, 2),
+                        new ItemEntry(ModItems.TICKET_DELUXE_ARCANUMRAILS.get(), 1f, 2),
+                        new ItemEntry(ModItems.CANNONBALL.get(), 1f, 2)
+                )));
+        add("weapons_from_the_end_city_treasure", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/end_city_treasure")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GRIMOIRE.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.ASGORE_GRIMOIRE.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.OLD_GRIMOIRE.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.ODIN_DAGGER.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.PALLIS_SHIELD.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.QUARTERSTAFF.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.HELENA_BASEBALL_BAT.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.ARTORIAS_DESPAIR.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.SAW_EATER.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.AKIRA_KATANA.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.BEANS_SACK.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.DIEGO_RAPIER.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.HILDA_SCYTHE.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.FROG.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.CLAWS.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.CATALYST.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.SAI.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.QRAZ_STAFF.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.VEIGAR_STAFF.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.SYLVERIA_STAFF.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.NOVUS_GRIMOIRE.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.CARSON_CANNON.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.ZORA_BOW.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.LADON_DRAGON_GLAIVE.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.ERAK_BATTLEAXE.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.BELAIOS_WAND.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.GAUNTLET.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.NORR_FORR_HAMMER.get(), 0.12f, 1),
+                        new ItemEntry(ModItems.CHALI_II_LANCE.get(), 0.12f, 1)
+
+                )));
+        add("items_from_the_jungle_temple", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GOBLIN_EYE.get(), 1f, 3),
+                        new ItemEntry(ModItems.HUMAN_TOOTH.get(), 1f, 3),
+                        new ItemEntry(ModItems.BEAN.get(), 1f, 3),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 1f, 3),
+                        new ItemEntry(ModItems.TICKET_DELUXE_ARCANUMRAILS.get(), 1f, 3)
+                )));
+        add("weapons_from_the_jungle_temple", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.BEANS_SACK.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.QRAZ_STAFF.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.SYLVERIA_STAFF.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.OLD_GRIMOIRE.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.ZORA_BOW.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.BELAIOS_WAND.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.GAUNTLET.get(), 0.04f, 1)
+
+                )));
+        add("items_from_the_pillager_outpost", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/pillager_outpost")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GOBLIN_EYE.get(), 0.7f, 2),
+                        new ItemEntry(ModItems.HUMAN_TOOTH.get(), 0.7f, 2),
+                        new ItemEntry(ModItems.ELF_EAR.get(), 0.7f, 2),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 0.7f, 2),
+                        new ItemEntry(ModItems.TICKET_ARCANUMRAILS.get(), 0.7f, 2),
+                        new ItemEntry(ModItems.VOX.get(), 0.7f, 2),
+                        new ItemEntry(ModItems.CANNONBALL.get(), 0.7f, 2)
+                )));
+        add("weapons_from_the_pillager_outpost", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/pillager_outpost")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.ARTORIAS_DESPAIR.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.SAW_EATER.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.HELENA_BASEBALL_BAT.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.AKIRA_KATANA.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.DIEGO_RAPIER.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.OLD_GRIMOIRE.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.NOVUS_GRIMOIRE.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.CLAWS.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.PALLIS_SHIELD.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.SYLVERIA_STAFF.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.VEIGAR_STAFF.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.SAI.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.LADON_DRAGON_GLAIVE.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.GAUNTLET.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.NORR_FORR_HAMMER.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.CHALI_II_LANCE.get(), 0.02f, 1),
+                        new ItemEntry(ModItems.DELS.get(), 0.02f, 1)
+
+                )));
+        add("items_from_the_igloo_chest", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/igloo_chest")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GOBLIN_EYE.get(), 0.5f, 4),
+                        new ItemEntry(ModItems.HUMAN_TOOTH.get(), 0.5f, 4),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 0.5f, 4)
+                )));
+        add("weapons_from_the_igloo_chest", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/igloo_chest")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                List.of(
+                        new ItemEntry(ModItems.CLAWS.get(), 0.04f, 1)
+
+                )));
+        add("items_from_the_simple_dungeon", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/simple_dungeon")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GOBLIN_EYE.get(), 0.75f, 6),
+                        new ItemEntry(ModItems.HUMAN_TOOTH.get(), 0.75f, 6),
+                        new ItemEntry(ModItems.ELF_EAR.get(), 0.75f, 6),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 0.75f, 6),
+                        new ItemEntry(ModItems.DEVIL_HORN.get(), 0.75f, 6)
+                )));
+        add("weapons_from_the_simple_dungeon", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/simple_dungeon")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GRIMOIRE.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.ASGORE_GRIMOIRE.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.OLD_GRIMOIRE.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.NOVUS_GRIMOIRE.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.QUARTERSTAFF.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.HILDA_SCYTHE.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.FROG.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.VEIGAR_STAFF.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.SYLVERIA_STAFF.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.ZORA_BOW.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.BELAIOS_WAND.get(), 0.03f, 1)
+
+                )));
+        add("items_from_the_woodland_mansion", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/woodland_mansion")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GOBLIN_EYE.get(), 0.8f, 6),
+                        new ItemEntry(ModItems.ELF_EAR.get(), 0.8f, 6),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 0.8f, 6),
+                        new ItemEntry(ModItems.DEVIL_HORN.get(), 0.8f, 6),
+                        new ItemEntry(ModItems.TICKET_ARCANUMRAILS.get(), 0.8f, 6),
+                        new ItemEntry(ModItems.TICKET_DELUXE_ARCANUMRAILS.get(), 0.8f, 6),
+                        new ItemEntry(ModItems.CANNONBALL.get(), 0.8f, 6)
+                )));
+        add("weapons_from_the_woodland_mansion", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/woodland_mansion")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.ARTORIAS_DESPAIR.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.SAW_EATER.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.HELENA_BASEBALL_BAT.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.AKIRA_KATANA.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.DIEGO_RAPIER.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.OLD_GRIMOIRE.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.SYLVERIA_STAFF.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.NOVUS_GRIMOIRE.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.CLAWS.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.PALLIS_SHIELD.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.VEIGAR_STAFF.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.NORR_FORR_HAMMER.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.CHALI_II_LANCE.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.DELS.get(), 0.04f, 1)
+
+                )));
+        add("items_from_the_stronghold_library", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/stronghold_library")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GOBLIN_EYE.get(), 0.9f, 7),
+                        new ItemEntry(ModItems.HUMAN_TOOTH.get(), 0.9f, 7),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 0.9f, 7),
+                        new ItemEntry(ModItems.DEVIL_HORN.get(), 0.9f, 7),
+                        new ItemEntry(ModItems.TICKET_ARCANUMRAILS.get(), 0.9f, 7),
+                        new ItemEntry(ModItems.TICKET_DELUXE_ARCANUMRAILS.get(), 0.9f, 7)
+                )));
+        add("weapons_from_the_stronghold_library", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/stronghold_library")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.ODIN_DAGGER.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.PALLIS_SHIELD.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.QUARTERSTAFF.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.HELENA_BASEBALL_BAT.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.ARTORIAS_DESPAIR.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.SAW_EATER.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.AKIRA_KATANA.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.DIEGO_RAPIER.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.HILDA_SCYTHE.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.CLAWS.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.FROG.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.QRAZ_STAFF.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.GRIMOIRE.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.ASGORE_GRIMOIRE.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.NOVUS_GRIMOIRE.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.OLD_GRIMOIRE.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.LADON_DRAGON_GLAIVE.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.CHALI_II_LANCE.get(), 0.05f, 1)
+
+                )));
+        add("items_from_the_underwater_ruin_big", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/underwater_ruin_big")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GOBLIN_EYE.get(), 0.75f, 3),
+                        new ItemEntry(ModItems.HUMAN_TOOTH.get(), 0.75f, 3),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 0.75f, 3),
+                        new ItemEntry(ModItems.BEAN.get(), 0.75f, 3),
+                        new ItemEntry(ModItems.CANNONBALL.get(), 0.75f, 3)
+                )));
+        add("weapons_from_the_underwater_ruin_big", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/underwater_ruin_big")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.FROG.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.BEANS_SACK.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.SAI.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.VEIGAR_STAFF.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.QRAZ_STAFF.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.CLAWS.get(), 0.04f, 1),
+                        new ItemEntry(ModItems.ERAK_BATTLEAXE.get(), 0.04f, 1)
+
+                )));
+        add("items_from_the_underwater_ruin_small", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/underwater_ruin_small")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.GOBLIN_EYE.get(), 0.65f, 3),
+                        new ItemEntry(ModItems.HUMAN_TOOTH.get(), 0.65f, 3),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 0.65f, 3),
+                        new ItemEntry(ModItems.BEAN.get(), 0.65f, 3),
+                        new ItemEntry(ModItems.CANNONBALL.get(), 0.65f, 3)
+                )));
+        add("weapons_from_the_underwater_ruin_small", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/underwater_ruin_small")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.FROG.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.BEANS_SACK.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.SAI.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.VEIGAR_STAFF.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.QRAZ_STAFF.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.CLAWS.get(), 0.03f, 1),
+                        new ItemEntry(ModItems.ERAK_BATTLEAXE.get(), 0.03f, 1)
+
+                )));
+        add("items_from_the_shipwreck_treasure", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/shipwreck_treasure")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.TICKET_DELUXE_ARCANUMRAILS.get(), 0.25f, 2),
+                        new ItemEntry(ModItems.EDEN_APPLE.get(), 0.25f, 2),
+                        new ItemEntry(ModItems.BEAN.get(), 0.25f, 2),
+                        new ItemEntry(ModItems.CATALYST_EMPTY.get(), 0.25f, 2),
+                        new ItemEntry(ModItems.CANNONBALL.get(), 0.25f, 2)
+                )));
+        add("weapons_from_the_shipwreck_treasure", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/shipwreck_treasure")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.FROG.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.BEANS_SACK.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.SAI.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.VEIGAR_STAFF.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.QRAZ_STAFF.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.CLAWS.get(), 0.05f, 1),
+                        new ItemEntry(ModItems.ERAK_BATTLEAXE.get(), 0.05f, 1)
+
+                )));
+        add("items_from_the_buried_treasure", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/buried_treasure")).build(),
+                LootItemRandomChanceCondition.randomChance(1f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.TICKET_DELUXE_ARCANUMRAILS.get(), 0.35f, 1),
+                        new ItemEntry(ModItems.EDEN_TREE_APPLE.get(), 0.35f, 1),
+                        new ItemEntry(ModItems.CANNONBALL.get(), 0.35f, 1)
+                )));
+        add("weapons_from_the_buried_treasure", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/buried_treasure")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
+                Arrays.asList(
+                        new ItemEntry(ModItems.FROG.get(), 0.06f, 1),
+                        new ItemEntry(ModItems.BEANS_SACK.get(), 0.06f, 1),
+                        new ItemEntry(ModItems.SAI.get(), 0.06f, 1),
+                        new ItemEntry(ModItems.VEIGAR_STAFF.get(), 0.06f, 1),
+                        new ItemEntry(ModItems.QRAZ_STAFF.get(), 0.06f, 1),
+                        new ItemEntry(ModItems.CLAWS.get(), 0.06f, 1),
+                        new ItemEntry(ModItems.ERAK_BATTLEAXE.get(), 0.06f, 1),
+                        new ItemEntry(ModItems.BELAIOS_WAND.get(), 0.06f, 1)
+
+                )));
+        add("extra_item_from_the_buried_treasure", new AddItemsModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/buried_treasure")).build(),
+                LootItemRandomChanceCondition.randomChance(0.3f).build()},
+                List.of(
+                        new ItemEntry(ModBlocks.SAMARA_PLUSHIE.get().asItem(), 0.03f, 1)
+
+                )));
 
         //MOBS
         add("items_from_the_zombie", new AddItemsModifier(new LootItemCondition[]{

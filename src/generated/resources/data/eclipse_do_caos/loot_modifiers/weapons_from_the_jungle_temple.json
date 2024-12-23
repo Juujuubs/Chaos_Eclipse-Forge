@@ -1,0 +1,50 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/jungle_temple"
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 0.04,
+      "count": 1,
+      "item": "eclipse_do_caos:beans_sack"
+    },
+    {
+      "chance": 0.04,
+      "count": 1,
+      "item": "eclipse_do_caos:qraz_staff"
+    },
+    {
+      "chance": 0.04,
+      "count": 1,
+      "item": "eclipse_do_caos:sylveria_staff"
+    },
+    {
+      "chance": 0.04,
+      "count": 1,
+      "item": "eclipse_do_caos:old_grimoire"
+    },
+    {
+      "chance": 0.04,
+      "count": 1,
+      "item": "eclipse_do_caos:zora_bow"
+    },
+    {
+      "chance": 0.04,
+      "count": 1,
+      "item": "eclipse_do_caos:belaios_wand"
+    },
+    {
+      "chance": 0.04,
+      "count": 1,
+      "item": "eclipse_do_caos:gauntlet"
+    }
+  ]
+}

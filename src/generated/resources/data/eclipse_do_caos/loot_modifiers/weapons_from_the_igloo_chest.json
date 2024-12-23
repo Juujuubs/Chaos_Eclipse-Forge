@@ -3,18 +3,18 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:gameplay/fishing/fish"
+      "loot_table_id": "minecraft:chests/igloo_chest"
     },
     {
-      "chance": 1.0,
+      "chance": 0.5,
       "condition": "minecraft:random_chance"
     }
   ],
   "items": [
     {
-      "chance": 1.0,
+      "chance": 0.04,
       "count": 1,
-      "item": "eclipse_do_caos:tilapia"
+      "item": "eclipse_do_caos:claws"
     }
   ]
 }
