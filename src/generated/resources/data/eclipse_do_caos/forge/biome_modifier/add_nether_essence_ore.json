@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "eclipse_do_caos:nether_essence_ore_block_placed",
+  "step": "underground_ores"
+}

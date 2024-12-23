@@ -1,4 +1,10 @@
-// 1.20.1	2024-12-23T09:04:13.9307559	Registries
+// 1.20.1	2024-12-23T09:51:56.5734779	Registries
+46262ab3b16269a2338f860d900916ef3ce0b02f data/eclipse_do_caos/forge/biome_modifier/add_essence_ore.json
+90f961606c02111458f567372c170fbc3a4edeee data/eclipse_do_caos/forge/biome_modifier/add_nether_essence_ore.json
 c416618f06a5a0baced0e4502318ad5a5f6ca15d data/eclipse_do_caos/forge/biome_modifier/add_tree_eden.json
 0c1a298b1da8bb143f90e0586891ae65e6adf09a data/eclipse_do_caos/worldgen/configured_feature/eden.json
+b4371b64216b0d6ba57359b01e70a6ea8ee84292 data/eclipse_do_caos/worldgen/configured_feature/essence_ore_block.json
+cfe0b9bd4a9f6d35eddc3850a6f4a2c8bce4bb58 data/eclipse_do_caos/worldgen/configured_feature/nether_essence_ore_block.json
 270b457cd79f1b414dbdaebef73cf7aa9b57ce4c data/eclipse_do_caos/worldgen/placed_feature/eden_placed.json
+4bfa7b3de23cf5eef18af1b10e083f46788cf770 data/eclipse_do_caos/worldgen/placed_feature/essence_ore_block_placed.json
+c5727655e5654a21048dd0c296cad001e0fc82ea data/eclipse_do_caos/worldgen/placed_feature/nether_essence_ore_block_placed.json

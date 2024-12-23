@@ -1,35 +1,35 @@
-[23dez.2024 09:03:50.823] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\MICRO\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.12, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, eclipse_do_caos, --all, --output, D:\MICRO\Desktop\Eclipse do Caos - Forge\Eclipse do Caos - Forge\src\generated\resources, --existing, D:\MICRO\Desktop\Eclipse do Caos - Forge\Eclipse do Caos - Forge\src\main\resources]
-[23dez.2024 09:03:50.831] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
-[23dez.2024 09:03:51.935] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[23dez.2024 09:03:52.086] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/MICRO/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[23dez.2024 09:03:52.860] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MICRO\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.12\f6b9f7f45e33548b47f78d9f54c7b4eb1e94e9bd\javafmllanguage-1.20.1-47.3.12.jar is missing mods.toml file
-[23dez.2024 09:03:52.866] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MICRO\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.12\81de74e1180787af25604b6ecb3728fc485bd3c7\lowcodelanguage-1.20.1-47.3.12.jar is missing mods.toml file
-[23dez.2024 09:03:52.873] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MICRO\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.12\1ff4ed058e0774b82d8da352d9e051e6d2a154eb\mclanguage-1.20.1-47.3.12.jar is missing mods.toml file
-[23dez.2024 09:03:52.879] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MICRO\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.12\9a4d9f99e106aa2358cdbe6777921855d353371\fmlcore-1.20.1-47.3.12.jar is missing mods.toml file
-[23dez.2024 09:03:53.092] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[23dez.2024 09:03:58.139] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\MICRO\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, eclipse_do_caos, --all, --output, D:\MICRO\Desktop\Eclipse do Caos - Forge\Eclipse do Caos - Forge\src\generated\resources, --existing, D:\MICRO\Desktop\Eclipse do Caos - Forge\Eclipse do Caos - Forge\src\main\resources]
-[23dez.2024 09:03:58.868] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [eclipse_do_caos]
-[23dez.2024 09:04:07.296] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.12, for MC 1.20.1 with MCP 20230612.114412
-[23dez.2024 09:04:07.306] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.12 Initialized
-[23dez.2024 09:04:09.854] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MICRO/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.12_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[23dez.2024 09:04:09.855] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MICRO/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.12_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[23dez.2024 09:04:11.301] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[23dez.2024 09:04:12.332] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1027 ms
-[23dez.2024 09:04:12.333] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[23dez.2024 09:04:12.548] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 215 ms
-[23dez.2024 09:04:12.549] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: eclipse_do_caos
-[23dez.2024 09:04:13.309] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: eclipse_do_caos finished after 759 ms
-[23dez.2024 09:04:13.309] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: eclipse_do_caos
-[23dez.2024 09:04:13.506] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: eclipse_do_caos finished after 196 ms
-[23dez.2024 09:04:13.506] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:painting_variant mod id eclipse_do_caos
-[23dez.2024 09:04:13.574] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:painting_variant mod id eclipse_do_caos finished after 67 ms
-[23dez.2024 09:04:13.574] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id eclipse_do_caos
-[23dez.2024 09:04:13.649] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id eclipse_do_caos finished after 73 ms
-[23dez.2024 09:04:13.649] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Tags
-[23dez.2024 09:04:13.693] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Tags finished after 43 ms
-[23dez.2024 09:04:13.693] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : eclipse_do_caos
-[23dez.2024 09:04:13.854] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : eclipse_do_caos finished after 160 ms
-[23dez.2024 09:04:13.855] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[23dez.2024 09:04:13.922] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 66 ms
-[23dez.2024 09:04:13.923] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 2624 ms
-[23dez.2024 09:04:13.997] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 371, old count: 368, new count: 372, removed stale: 0, written: 3
+[23dez.2024 09:51:14.770] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\MICRO\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.12, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, eclipse_do_caos, --all, --output, D:\MICRO\Desktop\Eclipse do Caos - Forge\Eclipse do Caos - Forge\src\generated\resources, --existing, D:\MICRO\Desktop\Eclipse do Caos - Forge\Eclipse do Caos - Forge\src\main\resources]
+[23dez.2024 09:51:14.778] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[23dez.2024 09:51:15.720] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[23dez.2024 09:51:15.852] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/MICRO/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[23dez.2024 09:51:18.068] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MICRO\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.12\f6b9f7f45e33548b47f78d9f54c7b4eb1e94e9bd\javafmllanguage-1.20.1-47.3.12.jar is missing mods.toml file
+[23dez.2024 09:51:18.075] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MICRO\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.12\81de74e1180787af25604b6ecb3728fc485bd3c7\lowcodelanguage-1.20.1-47.3.12.jar is missing mods.toml file
+[23dez.2024 09:51:18.083] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MICRO\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.12\1ff4ed058e0774b82d8da352d9e051e6d2a154eb\mclanguage-1.20.1-47.3.12.jar is missing mods.toml file
+[23dez.2024 09:51:18.090] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MICRO\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.12\9a4d9f99e106aa2358cdbe6777921855d353371\fmlcore-1.20.1-47.3.12.jar is missing mods.toml file
+[23dez.2024 09:51:18.255] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[23dez.2024 09:51:38.951] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\MICRO\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, eclipse_do_caos, --all, --output, D:\MICRO\Desktop\Eclipse do Caos - Forge\Eclipse do Caos - Forge\src\generated\resources, --existing, D:\MICRO\Desktop\Eclipse do Caos - Forge\Eclipse do Caos - Forge\src\main\resources]
+[23dez.2024 09:51:40.132] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [eclipse_do_caos]
+[23dez.2024 09:51:53.109] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.12, for MC 1.20.1 with MCP 20230612.114412
+[23dez.2024 09:51:53.114] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.12 Initialized
+[23dez.2024 09:51:54.370] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MICRO/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.12_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[23dez.2024 09:51:54.371] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MICRO/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.12_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[23dez.2024 09:51:55.014] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[23dez.2024 09:51:55.318] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 302 ms
+[23dez.2024 09:51:55.319] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[23dez.2024 09:51:55.604] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 285 ms
+[23dez.2024 09:51:55.605] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: eclipse_do_caos
+[23dez.2024 09:51:56.293] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: eclipse_do_caos finished after 687 ms
+[23dez.2024 09:51:56.293] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: eclipse_do_caos
+[23dez.2024 09:51:56.385] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: eclipse_do_caos finished after 91 ms
+[23dez.2024 09:51:56.385] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:painting_variant mod id eclipse_do_caos
+[23dez.2024 09:51:56.411] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:painting_variant mod id eclipse_do_caos finished after 25 ms
+[23dez.2024 09:51:56.411] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id eclipse_do_caos
+[23dez.2024 09:51:56.441] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id eclipse_do_caos finished after 29 ms
+[23dez.2024 09:51:56.441] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Tags
+[23dez.2024 09:51:56.463] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Tags finished after 21 ms
+[23dez.2024 09:51:56.464] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : eclipse_do_caos
+[23dez.2024 09:51:56.505] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : eclipse_do_caos finished after 40 ms
+[23dez.2024 09:51:56.505] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[23dez.2024 09:51:56.569] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 63 ms
+[23dez.2024 09:51:56.569] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 1556 ms
+[23dez.2024 09:51:56.618] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 377, old count: 371, new count: 378, removed stale: 0, written: 6
