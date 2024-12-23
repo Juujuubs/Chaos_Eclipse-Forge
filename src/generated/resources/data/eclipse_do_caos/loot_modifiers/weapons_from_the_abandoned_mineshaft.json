@@ -1,0 +1,85 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:grimoire"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:beans_sack"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:diego_rapier"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:hilda_scythe"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:old_grimoire"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:helena_baseball_bat"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:carson_cannon"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:zora_bow"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:ladon_dragon_glaive"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:erak_battleaxe"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:belaios_wand"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:norr_forr_hammer"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:chali_ii_lance"
+    },
+    {
+      "chance": 0.01,
+      "count": 1,
+      "item": "eclipse_do_caos:essence_paxel"
+    }
+  ]
+}

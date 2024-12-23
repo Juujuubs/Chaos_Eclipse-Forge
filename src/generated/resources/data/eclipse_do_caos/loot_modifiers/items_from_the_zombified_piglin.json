@@ -1,0 +1,30 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/zombified_piglin"
+    },
+    {
+      "chance": 1.0,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 0.45,
+      "count": 3,
+      "item": "eclipse_do_caos:elf_ear"
+    },
+    {
+      "chance": 0.45,
+      "count": 3,
+      "item": "eclipse_do_caos:goblin_eye"
+    },
+    {
+      "chance": 0.45,
+      "count": 3,
+      "item": "eclipse_do_caos:devil_horn"
+    }
+  ]
+}

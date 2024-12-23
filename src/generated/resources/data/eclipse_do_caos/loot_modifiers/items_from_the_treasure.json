@@ -1,0 +1,35 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/fishing/treasure"
+    },
+    {
+      "chance": 1.0,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 0.05,
+      "count": 1,
+      "item": "eclipse_do_caos:frog"
+    },
+    {
+      "chance": 0.05,
+      "count": 1,
+      "item": "eclipse_do_caos:essence"
+    },
+    {
+      "chance": 0.05,
+      "count": 1,
+      "item": "eclipse_do_caos:catalyst_empty"
+    },
+    {
+      "chance": 0.05,
+      "count": 1,
+      "item": "eclipse_do_caos:ticket_deluxe_arcanumrails"
+    }
+  ]
+}

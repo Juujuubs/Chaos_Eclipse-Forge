@@ -1,0 +1,25 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/evoker"
+    },
+    {
+      "chance": 1.0,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 0.35,
+      "count": 2,
+      "item": "eclipse_do_caos:human_tooth"
+    },
+    {
+      "chance": 0.35,
+      "count": 2,
+      "item": "eclipse_do_caos:elf_ear"
+    }
+  ]
+}

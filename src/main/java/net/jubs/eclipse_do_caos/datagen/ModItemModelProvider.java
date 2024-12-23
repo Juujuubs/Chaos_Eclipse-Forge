@@ -37,6 +37,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.COOKED_BEAN);
         simpleItem(ModItems.CANNONBALL);
         simpleItem(ModItems.ECLIPSE_BEGINS_MUSIC_DISC);
+        simpleItem(ModItems.LIGHTNING_STRIKE);
+        simpleItem(ModItems.POISON_BOLT);
         handheldItem(ModItems.ESSENCE_PAXEL);
 
         simpleBlockItem(ModBlocks.BROMELIAD);

@@ -1,0 +1,25 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/warden"
+    },
+    {
+      "chance": 1.0,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "chance": 0.55,
+      "count": 7,
+      "item": "eclipse_do_caos:essence"
+    },
+    {
+      "chance": 0.55,
+      "count": 7,
+      "item": "eclipse_do_caos:human_tooth"
+    }
+  ]
+}

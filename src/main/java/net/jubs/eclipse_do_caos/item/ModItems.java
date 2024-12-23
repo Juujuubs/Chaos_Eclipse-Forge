@@ -41,6 +41,11 @@ public class ModItems {
     public static final RegistryObject<Item> CANNONBALL = ITEMS.register("cannonball",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> LIGHTNING_STRIKE = ITEMS.register("lightning_strike",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISON_BOLT = ITEMS.register("poison_bolt",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> DELS = ITEMS.register("dels",
             () -> new DelsItem(new Item.Properties().durability(512)));
 
