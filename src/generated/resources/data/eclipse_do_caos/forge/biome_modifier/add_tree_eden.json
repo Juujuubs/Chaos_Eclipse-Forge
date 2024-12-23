@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_spooky",
+  "features": "eclipse_do_caos:eden_placed",
+  "step": "vegetal_decoration"
+}

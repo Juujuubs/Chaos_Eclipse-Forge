@@ -4,6 +4,7 @@ import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.block.custom.*;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.util.ModWoodTypes;
+import net.jubs.eclipse_do_caos.worldgen.tree.EdenTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -95,7 +96,7 @@ public class ModBlocks {
             });
 
     public static final RegistryObject<Block> EDEN_SAPLING = registerBlock("eden_sapling",
-            () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new EdenTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> EDEN_SLAB = registerBlock("eden_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
