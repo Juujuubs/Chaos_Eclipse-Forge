@@ -5,11 +5,13 @@ import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -74,6 +76,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('L', ModItems.ELF_EAR.get())
                 .define('B', Items.BEEF)
                 .unlockedBy(getHasName(Items.BEEF), has(Items.BEEF))
+                .unlockedBy(getHasName(ModItems.ESSENCE.get()), has(ModItems.ESSENCE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CATALYST_INFUSER.get(), 1)
+                .pattern("G#C")
+                .pattern("BJP")
+                .pattern("SLS")
+                .define('#', ModItems.CATALYST_EMPTY.get())
+                .define('C', Items.CAULDRON)
+                .define('J', ModItems.ESSENCE.get())
+                .define('P', ItemTags.PLANKS)
+                .define('L', ItemTags.WOODEN_SLABS)
+                .define('S', Items.STICK)
+                .define('B', Items.CHEST)
+                .define('G', Items.GLASS_BOTTLE)
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
                 .unlockedBy(getHasName(ModItems.ESSENCE.get()), has(ModItems.ESSENCE.get()))
                 .save(pWriter);
 

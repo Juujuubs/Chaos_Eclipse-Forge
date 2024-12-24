@@ -1,6 +1,7 @@
-// 1.20.1	2024-12-22T20:37:18.3879852	Loot Tables
+// 1.20.1	2024-12-24T03:31:23.627802	Loot Tables
 61f7680f838e0833fc3ffbd97f742dd512d7febe data/eclipse_do_caos/loot_tables/blocks/bean_crop.json
 4619c7eec6cee41c9bd6ad43961056dc2495dbdd data/eclipse_do_caos/loot_tables/blocks/bromeliad.json
+7e090b45b6fffbb3f50efb5d2f60f3ce99f34c14 data/eclipse_do_caos/loot_tables/blocks/catalyst_infuser.json
 f1bc089d7d11ed274446f06e3ab912738392eb46 data/eclipse_do_caos/loot_tables/blocks/eden_button.json
 a64e695b0cc0878b21f8dab725db4bfce2deb502 data/eclipse_do_caos/loot_tables/blocks/eden_door.json
 100cf95964d15efd243440c311aca96abb170287 data/eclipse_do_caos/loot_tables/blocks/eden_fence.json

@@ -139,6 +139,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> RADIO_ANNOUNCER = registerBlock("radio_announcer",
             () -> new RadioAnnouncerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.COPPER).noOcclusion()));
 
+    public static final RegistryObject<Block> CATALYST_INFUSER = registerBlock("catalyst_infuser",
+            () -> new CatalystInfuserBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).noOcclusion()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

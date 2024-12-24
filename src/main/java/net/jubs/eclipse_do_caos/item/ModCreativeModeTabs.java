@@ -45,6 +45,7 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
 
                     pOutput.accept(ModBlocks.RADIO_ANNOUNCER.get());
                     pOutput.accept(ModBlocks.SAMARA_PLUSHIE.get());
+                    pOutput.accept(ModBlocks.CATALYST_INFUSER.get());
 
                     pOutput.accept(ModBlocks.EYE_BLOCK.get());
                     pOutput.accept(ModBlocks.MEAT_BLOCK.get());

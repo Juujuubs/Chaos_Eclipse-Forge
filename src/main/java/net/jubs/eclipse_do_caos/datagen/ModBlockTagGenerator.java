@@ -31,12 +31,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.EDEN_SAPLING.get(),
                 ModBlocks.SAMARA_PLUSHIE.get(),
                 ModBlocks.RADIO_ANNOUNCER.get(),
+                ModBlocks.CATALYST_INFUSER.get(),
                 ModBlocks.EDEN_LOG.get()
 
                 );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ESSENCE_BLOCK.get(),
+                ModBlocks.CATALYST_INFUSER.get(),
                 ModBlocks.RADIO_ANNOUNCER.get()
 
                 );
@@ -56,6 +58,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.EYE_BLOCK.get(),
+                ModBlocks.CATALYST_INFUSER.get(),
                 ModBlocks.SAMARA_PLUSHIE.get()
 
                 );

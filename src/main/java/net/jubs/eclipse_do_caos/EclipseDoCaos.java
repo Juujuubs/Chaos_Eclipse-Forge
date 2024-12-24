@@ -153,6 +153,9 @@ public class EclipseDoCaos
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModItems.EDEN_SIGN);
             event.accept(ModItems.EDEN_HANGING_SIGN);
+            event.accept(ModBlocks.CATALYST_INFUSER);
+            event.accept(ModBlocks.RADIO_ANNOUNCER);
+            event.accept(ModBlocks.SAMARA_PLUSHIE);
         }
         if(event.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
             event.accept(ModItems.ECLIPSE);

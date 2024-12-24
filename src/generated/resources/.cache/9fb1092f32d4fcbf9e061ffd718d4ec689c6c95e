@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-22T20:37:18.3979773	Recipes
+// 1.20.1	2024-12-24T03:31:23.6497904	Recipes
 26a39bd140e4db955c0bc46c994308aca898d7b3 data/eclipse_do_caos/advancements/recipes/building_blocks/eden_button.json
 a588673fca19f32bd1fb962e4a63b1119191f7d2 data/eclipse_do_caos/advancements/recipes/building_blocks/eden_pressure_plate.json
 0ce212106c76a7ff15413306917d3e049e580e76 data/eclipse_do_caos/advancements/recipes/building_blocks/eden_slab.json
@@ -15,6 +15,7 @@ e6ecf4a68d03c179bcc4047ecf9285141206cd60 data/eclipse_do_caos/advancements/recip
 fdaa6d0e068efae37a9280dd28f3478633ef3277 data/eclipse_do_caos/advancements/recipes/decorations/teeth_block.json
 34d044ef38edb9c8ed4a68a45f5bdaa8ef1cd155 data/eclipse_do_caos/advancements/recipes/food/sushi_tilapia.json
 e70c20798a7e88bfaa586b516e254dfa66ebc23b data/eclipse_do_caos/advancements/recipes/misc/catalyst_empty.json
+8dcc8eb340893742aa9c8ebdb9debae80e656652 data/eclipse_do_caos/advancements/recipes/misc/catalyst_infuser.json
 4efb3d44ace4dc56bd63b9b13cc5d3f6968a05eb data/eclipse_do_caos/advancements/recipes/misc/elf_ear.json
 bf725c6247319bb3ec39ee0a33a989aefdc61019 data/eclipse_do_caos/advancements/recipes/misc/essence.json
 97df054e00c60bb0ff71bed93f3b6c3bac204858 data/eclipse_do_caos/advancements/recipes/misc/essence_block.json
@@ -32,6 +33,7 @@ d529fe63e1eba203d650c193aa64e895837b5aa7 data/eclipse_do_caos/advancements/recip
 c47242f1e440a37e7006b0ad5ab074908e3eb63c data/eclipse_do_caos/advancements/recipes/transportation/eden_chest_boat.json
 cd2f7b32bf848125c996d5473c613831ab2de9e9 data/eclipse_do_caos/recipes/cannonball.json
 6e1a76848fd55f4d936fa73d1c5e557e3eb68a9b data/eclipse_do_caos/recipes/catalyst_empty.json
+2f66d274014b977ce881d8f71ce5029061706413 data/eclipse_do_caos/recipes/catalyst_infuser.json
 f06184bf8cedc8bef81bdf0b796e8d9ac551d8c1 data/eclipse_do_caos/recipes/dels.json
 7c5fc847fbe303b8131f2533de0ef3c7336051c0 data/eclipse_do_caos/recipes/eden_boat.json
 38310381708898f22c7eb335e227edd4d5f9f39c data/eclipse_do_caos/recipes/eden_button.json
