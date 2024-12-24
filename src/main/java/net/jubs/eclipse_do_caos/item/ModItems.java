@@ -146,7 +146,7 @@ public class ModItems {
     public static final RegistryObject<Item> SYLVERIA_STAFF = ITEMS.register("sylveria_staff",
             () -> new SylveriaStaffItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> CATALYST = ITEMS.register("catalyst",
-            () -> new Item(new Item.Properties().stacksTo(3)));
+            () -> new CatalystItem(new Item.Properties().stacksTo(3)));
     public static final RegistryObject<Item> CATALYST_EMPTY = ITEMS.register("catalyst_empty",
             () -> new Item(new Item.Properties().stacksTo(64)));
 
