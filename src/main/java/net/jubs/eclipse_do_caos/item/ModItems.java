@@ -47,10 +47,10 @@ public class ModItems {
             () -> new DelsItem(new Item.Properties().durability(512)));
 
     public static final RegistryObject<Item> ZORA_BOW = ITEMS.register("zora_bow",
-            () -> new BowItem(new Item.Properties().durability(3000)));
+            () -> new ZoraBowItem(new Item.Properties().durability(3000)));
 
     public static final RegistryObject<Item> PALLIS_SHIELD = ITEMS.register("pallis_shield",
-            () -> new ShieldItem(new Item.Properties().durability(3000)));
+            () -> new PallisShieldItem(new Item.Properties().durability(3000)));
 
     public static final RegistryObject<Item> TILAPIA = ITEMS.register("tilapia",
             () -> new Item(new Item.Properties().food(ModFoods.TILAPIA)));
@@ -142,9 +142,9 @@ public class ModItems {
     public static final RegistryObject<Item> VEIGAR_STAFF = ITEMS.register("veigar_staff",
             () -> new VeigarStaffItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> QRAZ_STAFF = ITEMS.register("qraz_staff",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new QrazStaffItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> SYLVERIA_STAFF = ITEMS.register("sylveria_staff",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new SylveriaStaffItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> CATALYST = ITEMS.register("catalyst",
             () -> new Item(new Item.Properties().stacksTo(3)));
     public static final RegistryObject<Item> CATALYST_EMPTY = ITEMS.register("catalyst_empty",

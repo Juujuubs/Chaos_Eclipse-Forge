@@ -57,7 +57,7 @@ public class FrogItem extends Item {
 
             }
 
-        return InteractionResultHolder.pass(stack);
+        return InteractionResultHolder.consume(stack);
     }
 
     @Override
