@@ -128,7 +128,7 @@ public class ModItems {
     public static final RegistryObject<Item> GRIMOIRE = ITEMS.register("grimoire",
             () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> BELAIOS_WAND = ITEMS.register("belaios_wand",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new BelaiosWandItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> OLD_GRIMOIRE = ITEMS.register("old_grimoire",
             () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ASGORE_GRIMOIRE = ITEMS.register("asgore_grimoire",
