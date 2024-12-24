@@ -151,7 +151,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> CARSON_CANNON = ITEMS.register("carson_cannon",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new CarsonCannonItem(new Item.Properties().stacksTo(1), ModItems.CANNONBALL));
 
     public static final RegistryObject<Item> ECLIPSE = ITEMS.register("eclipse",
             () -> new Item(new Item.Properties().stacksTo(1)));

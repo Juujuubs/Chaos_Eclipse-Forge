@@ -1,7 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
 import net.jubs.eclipse_do_caos.sound.ModSounds;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;

@@ -78,6 +78,7 @@ public class EclipseDoCaos
             ComposterBlock.COMPOSTABLES.put(ModBlocks.EDEN_SAPLING.get().asItem(), 0.45f);
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BROMELIAD.getId(), ModBlocks.POTTED_BROMELIAD);
+
         });
     }
 

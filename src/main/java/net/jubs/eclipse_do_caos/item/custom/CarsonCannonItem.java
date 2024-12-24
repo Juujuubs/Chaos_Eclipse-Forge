@@ -1,6 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
-import net.jubs.eclipse_do_caos.entity.custom.BeanEntity;
+import net.jubs.eclipse_do_caos.entity.custom.CannonballEntity;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -20,59 +20,59 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class BeanSackItem extends Item {
-    private final RegistryObject<Item> beanItem;
+public class CarsonCannonItem extends Item {
+    private final RegistryObject<Item> cannonItem;
 
-    public BeanSackItem(Properties pProperties, RegistryObject<Item> beanItem) {
+    public CarsonCannonItem(Properties pProperties, RegistryObject<Item> cannonItem) {
         super(pProperties);
-        this.beanItem = beanItem;
+        this.cannonItem = cannonItem;
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
-        ItemStack beanStack = findBean(player);
+        ItemStack cannonballStack = findCannonball(player);
 
         if (!world.isClientSide()) {
-            if (beanStack.isEmpty()) {
+            if (cannonballStack.isEmpty()) {
 
                 ServerLevel serverWorld = (ServerLevel) world;
                 for (int i = 0; i < 15; i++) {
                     double offsetX = Math.random() * 0.5;
                     double offsetY = Math.random() * 2;
                     double offsetZ = Math.random() * 0.5;
-                    serverWorld.sendParticles(ParticleTypes.NAUTILUS,
+                    serverWorld.sendParticles(ParticleTypes.NOTE,
                             player.getX() + offsetX, player.getY() + offsetY, player.getZ() + offsetZ,
                             1, 0, 0, 0, 0.1);
                 }
-                world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.EMPTY_BEAN_SACK.get(), SoundSource.PLAYERS, 1F, 1.0F);
-                player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 400, 0));
-                player.getCooldowns().addCooldown(this, 650);
+                world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.EMPTY_CANNON.get(), SoundSource.PLAYERS, 1F, 1.0F);
+                player.addEffect(new MobEffectInstance(MobEffects.LUCK, 350, 0));
+                player.getCooldowns().addCooldown(this, 550);
 
                 return InteractionResultHolder.fail(stack);
             } else {
-                // Lança o feijão
-                BeanEntity beanEntity = new BeanEntity(world, player, 2.2F);
-                beanEntity.setItem(new ItemStack(beanStack.getItem()));
-                beanEntity.setPos(player.getX(), player.getEyeY(), player.getZ());
-                beanEntity.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
-                world.addFreshEntity(beanEntity);
+                // Lança a cannonball
+                CannonballEntity cannonballEntity = new CannonballEntity(world, player);
+                cannonballEntity.setItem(new ItemStack(cannonballStack.getItem()));
+                cannonballEntity.setPos(player.getX(), player.getEyeY(), player.getZ());
+                cannonballEntity.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2.0F, 1.0F);
+                world.addFreshEntity(cannonballEntity);
 
                 if (!player.isCreative()) {
-                    beanStack.shrink(1);
+                    cannonballStack.shrink(1);
                 }
 
                 ServerLevel serverWorld = (ServerLevel) world;
-                for (int i = 0; i < 50; i++) {
+                for (int i = 0; i < 80; i++) {
                     double offsetX = Math.random() * 0.5;
                     double offsetY = Math.random() * 2;
                     double offsetZ = Math.random() * 0.5;
-                    serverWorld.sendParticles(ParticleTypes.SPORE_BLOSSOM_AIR,
+                    serverWorld.sendParticles(ParticleTypes.ASH,
                             player.getX() + offsetX, player.getY() + offsetY, player.getZ() + offsetZ,
                             1, 0, 0, 0, 0.1);
                 }
 
-                world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.BEANS.get(), SoundSource.PLAYERS, 1F, 1.0F);
+                world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.CANNONBALL_BLAST.get(), SoundSource.PLAYERS, 1F, 1.0F);
                 player.getCooldowns().addCooldown(this, 45);
 
                 return InteractionResultHolder.pass(stack);
@@ -82,9 +82,9 @@ public class BeanSackItem extends Item {
         return InteractionResultHolder.pass(stack);
     }
 
-    private ItemStack findBean(Player player) {
+    private ItemStack findCannonball(Player player) {
         for (ItemStack stack : player.getInventory().items) {
-            if (stack.getItem() == beanItem.get()) {
+            if (stack.getItem() == cannonItem.get()) {
                 return stack;
             }
         }
@@ -93,14 +93,14 @@ public class BeanSackItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.beans_sack.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.beans_sackline2.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannon.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannonline2.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.beans_sack2.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.beans_sack3.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannon2.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannon3.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.beans_sackclick.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.beans_sackeffect.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannonclick.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannoneffect.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 
