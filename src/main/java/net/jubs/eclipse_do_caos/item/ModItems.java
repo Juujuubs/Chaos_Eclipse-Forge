@@ -41,7 +41,7 @@ public class ModItems {
     public static final RegistryObject<Item> LIGHTNING_STRIKE = ITEMS.register("lightning_strike",
             () -> new LightningStrikeItem(new Item.Properties()));
     public static final RegistryObject<Item> POISON_BOLT = ITEMS.register("poison_bolt",
-            () -> new Item(new Item.Properties()));
+            () -> new PoisonBoltItem(new Item.Properties()));
 
     public static final RegistryObject<Item> DELS = ITEMS.register("dels",
             () -> new DelsItem(new Item.Properties().durability(512)));
@@ -130,7 +130,7 @@ public class ModItems {
     public static final RegistryObject<Item> BELAIOS_WAND = ITEMS.register("belaios_wand",
             () -> new BelaiosWandItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> OLD_GRIMOIRE = ITEMS.register("old_grimoire",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new OldGrimoireItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ASGORE_GRIMOIRE = ITEMS.register("asgore_grimoire",
             () -> new AsgoreGrimoireItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> NOVUS_GRIMOIRE = ITEMS.register("novus_grimoire",
