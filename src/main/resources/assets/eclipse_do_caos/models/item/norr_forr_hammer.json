@@ -14,5 +14,7 @@
     "fixed": {
       "parent": "eclipse_do_caos:item/norr_forr_hammer_2d"
     }
+  }, "textures": {
+  "particle": "eclipse_do_caos:item/norr_forr_hammer"
   }
 }

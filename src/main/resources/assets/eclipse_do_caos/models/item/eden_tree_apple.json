@@ -14,5 +14,7 @@
     "fixed": {
       "parent": "eclipse_do_caos:item/eden_tree_apple_2d"
     }
+  }, "textures": {
+  "particle": "eclipse_do_caos:item/eden_tree_apple"
   }
 }

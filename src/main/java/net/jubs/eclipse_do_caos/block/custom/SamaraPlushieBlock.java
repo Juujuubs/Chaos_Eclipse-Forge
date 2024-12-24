@@ -2,7 +2,6 @@ package net.jubs.eclipse_do_caos.block.custom;
 
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;

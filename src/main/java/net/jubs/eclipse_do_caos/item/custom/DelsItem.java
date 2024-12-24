@@ -1,6 +1,5 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
-import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.jubs.eclipse_do_caos.util.ModTags;
 import net.minecraft.client.resources.language.I18n;

@@ -2,7 +2,6 @@ package net.jubs.eclipse_do_caos.block.custom;
 
 import net.jubs.eclipse_do_caos.block.entity.ModSignBlockEntity;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.block.StandingSignBlock;
 import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;

@@ -14,5 +14,7 @@
     "fixed": {
       "parent": "eclipse_do_caos:item/zora_bow_pulling_1"
     }
+  }, "textures": {
+  "particle": "eclipse_do_caos:item/zora_bow"
   }
 }
