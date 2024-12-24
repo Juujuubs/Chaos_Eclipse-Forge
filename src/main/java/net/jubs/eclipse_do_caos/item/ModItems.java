@@ -96,13 +96,13 @@ public class ModItems {
             () -> new SwordItem(ModToolTiers.ESSENCE, 5, -2.75f, new Item.Properties()));
 
     public static final RegistryObject<Item> SAW_EATER = ITEMS.register("saw_eater",
-            () -> new AxeItem(ModToolTiers.ESSENCE, 10, -3.5f, new Item.Properties()));
+            () -> new SawEaterItem(ModToolTiers.ESSENCE, 10, -3.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> ARTORIAS_DESPAIR = ITEMS.register("artorias_despair",
-            () -> new AxeItem(ModToolTiers.ESSENCE, 12, -3.75f, new Item.Properties()));
+            () -> new ArtoriasDespairItem(ModToolTiers.ESSENCE, 12, -3.75f, new Item.Properties()));
 
     public static final RegistryObject<Item> ERAK_BATTLEAXE = ITEMS.register("erak_battleaxe",
-            () -> new AxeItem(ModToolTiers.ESSENCE, 16, -3.85f, new Item.Properties()));
+            () -> new ErakBattleaxeItem(ModToolTiers.ESSENCE, 16, -3.85f, new Item.Properties()));
 
     public static final RegistryObject<Item> NORR_FORR_HAMMER = ITEMS.register("norr_forr_hammer",
             () -> new AxeItem(ModToolTiers.ESSENCE, 11, -3.65f, new Item.Properties()));
@@ -120,7 +120,7 @@ public class ModItems {
             () -> new HildaScytheItem(ModToolTiers.ESSENCE, 0, 0.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> SAI = ITEMS.register("sai",
-            () -> new SwordItem(ModToolTiers.ESSENCE, -2, 1.5f, new Item.Properties()));
+            () -> new SaiItem(ModToolTiers.ESSENCE, -2, 1.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> DIEGO_RAPIER = ITEMS.register("diego_rapier",
             () -> new DiegoRapierItem(ModToolTiers.ESSENCE, 1, -1f, new Item.Properties()));
