@@ -2,6 +2,7 @@ package net.jubs.eclipse_do_caos.block.entity;
 
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.block.ModBlocks;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,6 +22,11 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("mod_hanging_sign_entity", () ->
                     BlockEntityType.Builder.of(ModHangingSignBlockEntity::new,
                             ModBlocks.EDEN_HANGING_SIGN.get(), ModBlocks.EDEN_HANGING_WALL_SIGN.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<CatalystInfuserBlockEntity>> CATALYST_INFUSER_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("catalyst_infuser_be", () ->
+                    BlockEntityType.Builder.of(CatalystInfuserBlockEntity::new,
+                            ModBlocks.CATALYST_INFUSER.get()).build(null));
 
 
     public static void register(IEventBus eventBus) {

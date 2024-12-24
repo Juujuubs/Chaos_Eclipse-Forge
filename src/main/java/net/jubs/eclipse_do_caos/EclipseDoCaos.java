@@ -10,8 +10,11 @@ import net.jubs.eclipse_do_caos.item.ModItemProperties;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.loot.ModLootModifiers;
 import net.jubs.eclipse_do_caos.painting.ModPaintings;
+import net.jubs.eclipse_do_caos.screen.CatalystInfuserScreen;
+import net.jubs.eclipse_do_caos.screen.ModMenuTypes;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.jubs.eclipse_do_caos.util.ModWoodTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -54,6 +57,7 @@ public class EclipseDoCaos
 
         ModBlockEntities.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
 
 
@@ -181,6 +185,8 @@ public class EclipseDoCaos
                 EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
                 EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
 
+
+                MenuScreens.register(ModMenuTypes.CATALYST_INFUSER_MENU.get(), CatalystInfuserScreen::new);
             });
         }
     }
