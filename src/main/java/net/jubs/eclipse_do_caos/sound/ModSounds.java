@@ -61,7 +61,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> NORR_FORR_HAMMER_HIT = registerSoundEvents("norr_forr_hammer_hit");
     public static final RegistryObject<SoundEvent> ACCURSE = registerSoundEvents("accurse");
     public static final RegistryObject<SoundEvent> CHALI_II_LANCE_HIT = registerSoundEvents("chali_ii_lance_hit");
-    public static final RegistryObject<SoundEvent> SPIDER_DASH = registerSoundEvents("spider_dash");
+    public static final RegistryObject<SoundEvent> SPIDER_DASH = registerSoundEvents("chali_ii_spider_dash");
 
 
     public static final RegistryObject<SoundEvent> ECLIPSE_BEGINS = registerSoundEvents("eclipse_begins");

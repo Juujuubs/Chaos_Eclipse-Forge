@@ -84,7 +84,7 @@ public class ModItems {
             () -> new GauntletItem(ModToolTiers.ESSENCE, 2, -1.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> QUARTERSTAFF = ITEMS.register("quarterstaff",
-            () -> new SwordItem(ModToolTiers.ESSENCE, 6, -2.8f, new Item.Properties()));
+            () -> new QuarterstaffItem(ModToolTiers.ESSENCE, 6, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<Item> LADON_DRAGON_GLAIVE = ITEMS.register("ladon_dragon_glaive",
             () -> new LadonDragonGlaiveItem(ModToolTiers.ESSENCE, 7, -3.2f, new Item.Properties()));
@@ -93,7 +93,7 @@ public class ModItems {
             () -> new HelenaBaseballBatItem(ModToolTiers.ESSENCE, 4, -2.6f, new Item.Properties()));
 
     public static final RegistryObject<Item> CHALI_II_LANCE = ITEMS.register("chali_ii_lance",
-            () -> new SwordItem(ModToolTiers.ESSENCE, 5, -2.75f, new Item.Properties()));
+            () -> new ChaliIILanceItem(ModToolTiers.ESSENCE, 5, -2.75f, new Item.Properties()));
 
     public static final RegistryObject<Item> SAW_EATER = ITEMS.register("saw_eater",
             () -> new SawEaterItem(ModToolTiers.ESSENCE, 10, -3.5f, new Item.Properties()));
@@ -105,7 +105,7 @@ public class ModItems {
             () -> new ErakBattleaxeItem(ModToolTiers.ESSENCE, 16, -3.85f, new Item.Properties()));
 
     public static final RegistryObject<Item> NORR_FORR_HAMMER = ITEMS.register("norr_forr_hammer",
-            () -> new AxeItem(ModToolTiers.ESSENCE, 11, -3.65f, new Item.Properties()));
+            () -> new NorrForrHammerItem(ModToolTiers.ESSENCE, 11, -3.65f, new Item.Properties()));
 
     public static final RegistryObject<Item> CLAWS = ITEMS.register("claws",
             () -> new ClawsItem(ModToolTiers.ESSENCE, -3, 2f, new Item.Properties()));
@@ -140,7 +140,7 @@ public class ModItems {
     public static final RegistryObject<Item> FROG = ITEMS.register("frog",
             () -> new FrogItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> VEIGAR_STAFF = ITEMS.register("veigar_staff",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new VeigarStaffItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> QRAZ_STAFF = ITEMS.register("qraz_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> SYLVERIA_STAFF = ITEMS.register("sylveria_staff",
