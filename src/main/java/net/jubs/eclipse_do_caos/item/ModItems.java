@@ -136,7 +136,7 @@ public class ModItems {
     public static final RegistryObject<Item> NOVUS_GRIMOIRE = ITEMS.register("novus_grimoire",
             () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> BEANS_SACK = ITEMS.register("beans_sack",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new BeanSackItem(new Item.Properties().stacksTo(1), ModItems.BEAN));
     public static final RegistryObject<Item> FROG = ITEMS.register("frog",
             () -> new FrogItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> VEIGAR_STAFF = ITEMS.register("veigar_staff",
