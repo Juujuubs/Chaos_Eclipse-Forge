@@ -16,12 +16,12 @@ import net.minecraft.world.phys.HitResult;
 
 public class PoisonBoltEntity extends Snowball {
 
-    public PoisonBoltEntity(EntityType<? extends PoisonBoltEntity> entityType, Level world, ItemStack lightningStrikeItem) {
+    public PoisonBoltEntity(EntityType<? extends PoisonBoltEntity> entityType, Level world, ItemStack poisonBoltItem) {
         super(entityType, world);
         this.setNoGravity(true);
     }
 
-    public PoisonBoltEntity(Level world, LivingEntity owner, ItemStack lightningStrikeItem) {
+    public PoisonBoltEntity(Level world, LivingEntity owner, ItemStack poisonBoltItem) {
         super(EntityType.SNOWBALL, world);
         this.setOwner(owner);
         this.setNoGravity(true);

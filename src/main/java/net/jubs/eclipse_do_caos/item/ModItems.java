@@ -126,7 +126,7 @@ public class ModItems {
             () -> new DiegoRapierItem(ModToolTiers.ESSENCE, 1, -1f, new Item.Properties()));
 
     public static final RegistryObject<Item> GRIMOIRE = ITEMS.register("grimoire",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new GrimoireItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> BELAIOS_WAND = ITEMS.register("belaios_wand",
             () -> new BelaiosWandItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> OLD_GRIMOIRE = ITEMS.register("old_grimoire",
