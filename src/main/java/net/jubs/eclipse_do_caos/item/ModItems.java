@@ -62,7 +62,7 @@ public class ModItems {
     public static final RegistryObject<Item> BEAN = ITEMS.register("bean",
             () -> new BeanItem(ModBlocks.BEAN_CROP, new Item.Properties().food(ModFoods.BEAN)));
     public static final RegistryObject<Item> COOKED_BEAN = ITEMS.register("cooked_bean",
-            () -> new Item(new Item.Properties().food(ModFoods.COOKED_BEAN)));
+            () -> new CookedBeanItem(new Item.Properties().food(ModFoods.COOKED_BEAN)));
 
     public static final RegistryObject<Item> GOBLIN_EYE = ITEMS.register("goblin_eye",
             () -> new Item(new Item.Properties().food(ModFoods.GOBLIN_EYE)));
