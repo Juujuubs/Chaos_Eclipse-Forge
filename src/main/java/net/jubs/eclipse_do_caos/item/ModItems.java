@@ -87,7 +87,7 @@ public class ModItems {
             () -> new SwordItem(ModToolTiers.ESSENCE, 6, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<Item> LADON_DRAGON_GLAIVE = ITEMS.register("ladon_dragon_glaive",
-            () -> new SwordItem(ModToolTiers.ESSENCE, 7, -3.2f, new Item.Properties()));
+            () -> new LadonDragonGlaiveItem(ModToolTiers.ESSENCE, 7, -3.2f, new Item.Properties()));
 
     public static final RegistryObject<Item> HELENA_BASEBALL_BAT = ITEMS.register("helena_baseball_bat",
             () -> new HelenaBaseballBatItem(ModToolTiers.ESSENCE, 4, -2.6f, new Item.Properties()));
@@ -108,16 +108,16 @@ public class ModItems {
             () -> new AxeItem(ModToolTiers.ESSENCE, 11, -3.65f, new Item.Properties()));
 
     public static final RegistryObject<Item> CLAWS = ITEMS.register("claws",
-            () -> new SwordItem(ModToolTiers.ESSENCE, -3, 2f, new Item.Properties()));
+            () -> new ClawsItem(ModToolTiers.ESSENCE, -3, 2f, new Item.Properties()));
 
     public static final RegistryObject<Item> AKIRA_KATANA = ITEMS.register("akira_katana",
-            () -> new SwordItem(ModToolTiers.ESSENCE, 8, -2.2f, new Item.Properties()));
+            () -> new AkiraKatanaItem(ModToolTiers.ESSENCE, 8, -2.2f, new Item.Properties()));
 
     public static final RegistryObject<Item> ODIN_DAGGER = ITEMS.register("odin_dagger",
             () -> new OdinDaggerItem(ModToolTiers.ESSENCE, -1, 1f, new Item.Properties()));
 
     public static final RegistryObject<Item> HILDA_SCYTHE = ITEMS.register("hilda_scythe",
-            () -> new SwordItem(ModToolTiers.ESSENCE, 0, 0.5f, new Item.Properties()));
+            () -> new HildaScytheItem(ModToolTiers.ESSENCE, 0, 0.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> SAI = ITEMS.register("sai",
             () -> new SwordItem(ModToolTiers.ESSENCE, -2, 1.5f, new Item.Properties()));
@@ -138,7 +138,7 @@ public class ModItems {
     public static final RegistryObject<Item> BEANS_SACK = ITEMS.register("beans_sack",
             () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> FROG = ITEMS.register("frog",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new FrogItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> VEIGAR_STAFF = ITEMS.register("veigar_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> QRAZ_STAFF = ITEMS.register("qraz_staff",
