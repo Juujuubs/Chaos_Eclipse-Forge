@@ -3,10 +3,7 @@ package net.jubs.eclipse_do_caos.item;
 import net.jubs.eclipse_do_caos.EclipseDoCaos;
 import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.entity.custom.ModBoatEntity;
-import net.jubs.eclipse_do_caos.item.custom.BeanItem;
-import net.jubs.eclipse_do_caos.item.custom.DelsItem;
-import net.jubs.eclipse_do_caos.item.custom.ModBoatItem;
-import net.jubs.eclipse_do_caos.item.custom.PaxelItem;
+import net.jubs.eclipse_do_caos.item.custom.*;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -84,7 +81,7 @@ public class ModItems {
             () -> new PaxelItem(ModToolTiers.ESSENCE, 1.5f, -2.9f, new Item.Properties()));
 
     public static final RegistryObject<Item> GAUNTLET = ITEMS.register("gauntlet",
-            () -> new SwordItem(ModToolTiers.ESSENCE, 2, -1.5f, new Item.Properties()));
+            () -> new GauntletItem(ModToolTiers.ESSENCE, 2, -1.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> QUARTERSTAFF = ITEMS.register("quarterstaff",
             () -> new SwordItem(ModToolTiers.ESSENCE, 6, -2.8f, new Item.Properties()));
@@ -93,7 +90,7 @@ public class ModItems {
             () -> new SwordItem(ModToolTiers.ESSENCE, 7, -3.2f, new Item.Properties()));
 
     public static final RegistryObject<Item> HELENA_BASEBALL_BAT = ITEMS.register("helena_baseball_bat",
-            () -> new SwordItem(ModToolTiers.ESSENCE, 4, -2.6f, new Item.Properties()));
+            () -> new HelenaBaseballBatItem(ModToolTiers.ESSENCE, 4, -2.6f, new Item.Properties()));
 
     public static final RegistryObject<Item> CHALI_II_LANCE = ITEMS.register("chali_ii_lance",
             () -> new SwordItem(ModToolTiers.ESSENCE, 5, -2.75f, new Item.Properties()));
@@ -117,7 +114,7 @@ public class ModItems {
             () -> new SwordItem(ModToolTiers.ESSENCE, 8, -2.2f, new Item.Properties()));
 
     public static final RegistryObject<Item> ODIN_DAGGER = ITEMS.register("odin_dagger",
-            () -> new SwordItem(ModToolTiers.ESSENCE, -1, 1f, new Item.Properties()));
+            () -> new OdinDaggerItem(ModToolTiers.ESSENCE, -1, 1f, new Item.Properties()));
 
     public static final RegistryObject<Item> HILDA_SCYTHE = ITEMS.register("hilda_scythe",
             () -> new SwordItem(ModToolTiers.ESSENCE, 0, 0.5f, new Item.Properties()));
@@ -126,7 +123,7 @@ public class ModItems {
             () -> new SwordItem(ModToolTiers.ESSENCE, -2, 1.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> DIEGO_RAPIER = ITEMS.register("diego_rapier",
-            () -> new SwordItem(ModToolTiers.ESSENCE, 1, -1f, new Item.Properties()));
+            () -> new DiegoRapierItem(ModToolTiers.ESSENCE, 1, -1f, new Item.Properties()));
 
     public static final RegistryObject<Item> GRIMOIRE = ITEMS.register("grimoire",
             () -> new Item(new Item.Properties().stacksTo(1)));

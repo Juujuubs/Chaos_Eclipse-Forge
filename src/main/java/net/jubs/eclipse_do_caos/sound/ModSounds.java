@@ -37,7 +37,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> AKIRA_HIT = registerSoundEvents("akira_hit");
     public static final RegistryObject<SoundEvent> TORMENT = registerSoundEvents("torment");
     public static final RegistryObject<SoundEvent> ODIN_DAGGER_HIT = registerSoundEvents("odin_dagger_hit");
-    public static final RegistryObject<SoundEvent> ODIN_VISION = registerSoundEvents("odion_vision");
+    public static final RegistryObject<SoundEvent> ODIN_VISION = registerSoundEvents("odin_vision");
     public static final RegistryObject<SoundEvent> SAI_HIT = registerSoundEvents("sai_hit");
     public static final RegistryObject<SoundEvent> MISHAP = registerSoundEvents("mishap");
     public static final RegistryObject<SoundEvent> FLOW = registerSoundEvents("flow");
