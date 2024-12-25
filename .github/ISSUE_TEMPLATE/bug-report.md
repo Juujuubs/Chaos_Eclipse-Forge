@@ -32,6 +32,7 @@ If applicable, add screenshots/screen recordings to help explain your problem.
 ### **Info**
  - OS: [e.g. Windows 11]
  - Java: [e.g. 17]
+ - Forge Loader: [e.g. 47.3.12]
 <details>
 <summary>Other Mods Present</summary>
 
