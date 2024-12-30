@@ -49,7 +49,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_BROMELIAD = BLOCKS.register("potted_bromeliad",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), BROMELIAD, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
 
-
     public static final RegistryObject<Block> EDEN_LOG = registerBlock("eden_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> EDEN_WOOD = registerBlock("eden_wood",
@@ -97,6 +96,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> EDEN_SAPLING = registerBlock("eden_sapling",
             () -> new SaplingBlock(new EdenTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> POTTED_EDEN_SAPLING = BLOCKS.register("potted_eden_sapling",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), EDEN_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
     public static final RegistryObject<Block> EDEN_SLAB = registerBlock("eden_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));

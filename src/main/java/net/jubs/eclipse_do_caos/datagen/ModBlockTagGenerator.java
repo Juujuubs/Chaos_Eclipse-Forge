@@ -32,6 +32,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.SAMARA_PLUSHIE.get(),
                 ModBlocks.RADIO_ANNOUNCER.get(),
                 ModBlocks.CATALYST_INFUSER.get(),
+                ModBlocks.POTTED_EDEN_SAPLING.get(),
                 ModBlocks.EDEN_LOG.get()
 
                 );

@@ -65,7 +65,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.EDEN_SLAB.get()));
 
         this.add(ModBlocks.POTTED_BROMELIAD.get(),
-                createPotFlowerItemTable(ModBlocks.POTTED_BROMELIAD.get()));
+                createPotFlowerItemTable(ModBlocks.BROMELIAD.get()));
+
+        this.add(ModBlocks.POTTED_EDEN_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.EDEN_SAPLING.get()));
 
         this.add(ModBlocks.ESSENCE_ORE_BLOCK.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.ESSENCE_ORE_BLOCK.get(), ModItems.ESSENCE.get()));
