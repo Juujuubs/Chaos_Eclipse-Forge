@@ -3,6 +3,7 @@ package net.jubs.eclipse_do_caos.item.custom;
 import com.google.common.collect.ImmutableMap;
 import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
+import net.jubs.eclipse_do_caos.util.ModTags;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -136,6 +137,11 @@ public class SawEaterItem extends SwordItem {
             }
 
         return InteractionResultHolder.pass(stack);
+    }
+
+    @Override
+    public float getDestroySpeed(ItemStack pStack, BlockState pState) {
+        return pState.is(ModTags.Blocks.SAW_EATER_MINEABLE) ? 12.5f : 12.0f;
     }
 
     private Optional<BlockState> getStripped(BlockState pUnstrippedState) {
