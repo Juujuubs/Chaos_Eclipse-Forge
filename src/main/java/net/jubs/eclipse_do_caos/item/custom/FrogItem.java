@@ -1,5 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -55,6 +56,8 @@ public class FrogItem extends Item {
                 player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 200, 0));
                 player.getCooldowns().addCooldown(this, 350);
 
+                stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
+
             }
 
         return InteractionResultHolder.consume(stack);
@@ -73,6 +76,10 @@ public class FrogItem extends Item {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.frogeffect2.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.frogeffect3.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ModItems.ESSENCE.get()) || super.isValidRepairItem(pToRepair, pRepair);
     }
 
 }

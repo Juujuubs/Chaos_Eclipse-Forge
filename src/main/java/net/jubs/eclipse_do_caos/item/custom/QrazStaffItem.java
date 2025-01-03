@@ -1,5 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -70,6 +71,8 @@ public class QrazStaffItem extends Item {
                 player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 400, 0));
                 player.getCooldowns().addCooldown(this, 850);
 
+                stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
+
             }
 
         return InteractionResultHolder.consume(stack);
@@ -90,6 +93,10 @@ public class QrazStaffItem extends Item {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.qraz_staffeffect2.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.qraz_staffeffect3.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ModItems.ESSENCE.get()) || super.isValidRepairItem(pToRepair, pRepair);
     }
 
 }

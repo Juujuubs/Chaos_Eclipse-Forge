@@ -1,5 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -12,6 +13,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.monster.Shulker;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
@@ -34,7 +36,7 @@ public class VeigarStaffItem extends Item {
             List<LivingEntity> entities = world.getEntitiesOfClass(LivingEntity.class, area);
             for (LivingEntity entity : entities) {
                 if (entity != player) {
-                    boolean isHostile = entity instanceof Monster;
+                    boolean isHostile = entity instanceof Monster || entity instanceof Shulker;
 
                     if (entity instanceof Player || !isHostile) {
                     entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 400, 0));
@@ -60,6 +62,9 @@ public class VeigarStaffItem extends Item {
                 player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 400, 1));
                 player.getCooldowns().addCooldown(this, 650);
 
+
+                stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
+
             }
 
         return InteractionResultHolder.consume(stack);
@@ -80,6 +85,10 @@ public class VeigarStaffItem extends Item {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.veigar_staffeffect3.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.veigar_staffeffect4.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ModItems.ESSENCE.get()) || super.isValidRepairItem(pToRepair, pRepair);
     }
 
 }

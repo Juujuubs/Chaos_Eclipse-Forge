@@ -5,6 +5,7 @@ import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.block.entity.ModBlockEntities;
 import net.jubs.eclipse_do_caos.entity.ModEntities;
 import net.jubs.eclipse_do_caos.entity.client.ModBoatRenderer;
+import net.jubs.eclipse_do_caos.entity.custom.CannonballDispenserBehavior;
 import net.jubs.eclipse_do_caos.item.ModCreativeModeTabs;
 import net.jubs.eclipse_do_caos.item.ModItemProperties;
 import net.jubs.eclipse_do_caos.item.ModItems;
@@ -20,6 +21,7 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -79,6 +81,8 @@ public class EclipseDoCaos
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BROMELIAD.getId(), ModBlocks.POTTED_BROMELIAD);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.EDEN_SAPLING.getId(), ModBlocks.POTTED_EDEN_SAPLING);
+
+            DispenserBlock.registerBehavior(ModItems.CANNONBALL.get(), new CannonballDispenserBehavior());
 
         });
     }

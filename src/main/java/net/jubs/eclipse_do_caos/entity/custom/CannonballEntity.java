@@ -26,6 +26,13 @@ public class CannonballEntity extends Snowball {
         this.setOwner(owner);
         this.setNoGravity(false);
     }
+
+    public CannonballEntity(Level world, double x, double y, double z) {
+        super(EntityType.SNOWBALL, world);
+        this.setPos(x, y, z);
+        this.setNoGravity(false);
+    }
+
     @Override
     protected void onHit(HitResult result) {
         super.onHit(result);
@@ -47,7 +54,6 @@ public class CannonballEntity extends Snowball {
         }
         hitEntity.hurt(this.damageSources().thrown(this, this.getOwner()), 12.0F);
     }
-
 
     @Override
     protected void onHitBlock(BlockHitResult result) {

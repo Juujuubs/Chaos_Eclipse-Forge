@@ -1,5 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -84,6 +85,8 @@ public class SylveriaStaffItem extends Item {
                 world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.POSSESSED_CHAOS.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
                 player.getCooldowns().addCooldown(this, 550);
 
+                stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
+
             }
 
         return InteractionResultHolder.consume(stack);
@@ -108,6 +111,10 @@ public class SylveriaStaffItem extends Item {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.sylveria_staffeffect6.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.sylveria_staffeffect7.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ModItems.ESSENCE.get()) || super.isValidRepairItem(pToRepair, pRepair);
     }
 
 }

@@ -1,6 +1,7 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
 import net.jubs.eclipse_do_caos.entity.custom.CustomZombieEntity;
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -29,6 +30,7 @@ public class NovusGrimoireItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
+        ItemStack stack = player.getItemInHand(hand);
         if (!world.isClientSide()) {
             for (int i = 0; i < 4; i++) {
                 double offset = i * Math.PI / 2.0; // Cria uma distância para cada zumbi
@@ -58,8 +60,10 @@ public class NovusGrimoireItem extends Item {
             player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 800, 2));
             world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.SOUL_ALTERATION.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
             player.getCooldowns().addCooldown(this, 1200);
-        }
 
+            stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
+
+        }
         return super.use(world, player, hand);
     }
 
@@ -86,5 +90,9 @@ public class NovusGrimoireItem extends Item {
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.novus_grimoireeffect.tooltip"));
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.novus_grimoireeffect2.tooltip"));
         super.appendHoverText(stack, level, tooltip, flag);
+    }
+
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ModItems.ESSENCE.get()) || super.isValidRepairItem(pToRepair, pRepair);
     }
 }

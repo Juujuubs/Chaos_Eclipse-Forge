@@ -1,6 +1,7 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
 import net.jubs.eclipse_do_caos.entity.custom.CannonballEntity;
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -75,6 +76,8 @@ public class CarsonCannonItem extends Item {
                 world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.CANNONBALL_BLAST.get(), SoundSource.PLAYERS, 1F, 1.0F);
                 player.getCooldowns().addCooldown(this, 45);
 
+                stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
+
                 return InteractionResultHolder.pass(stack);
             }
         }
@@ -102,6 +105,10 @@ public class CarsonCannonItem extends Item {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannonclick.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannoneffect.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ModItems.ESSENCE.get()) || super.isValidRepairItem(pToRepair, pRepair);
     }
 
 }

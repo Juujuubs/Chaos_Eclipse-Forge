@@ -13,6 +13,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.monster.Shulker;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
@@ -29,11 +30,10 @@ public class SaiItem extends SwordItem {
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         Level world = attacker.level();
-            attacker.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20, 0), attacker);
-                world.playSound(null, target, ModSounds.SAI_HIT.get(), SoundSource.PLAYERS, 25.0F, 1.0F);
+        attacker.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20, 0), attacker);
+        world.playSound(null, target, ModSounds.SAI_HIT.get(), SoundSource.PLAYERS, 25.0F, 1.0F);
 
         return super.hurtEnemy(stack, target, attacker);
-
     }
 
     @Override
@@ -46,38 +46,36 @@ public class SaiItem extends SwordItem {
 
         for (LivingEntity entity : entities) {
             if (entity != player) {
-                boolean isHostile = entity instanceof Monster;
+                boolean isHostile = entity instanceof Monster || entity instanceof Shulker;
 
                 if (isHostile) {
                     entity.addEffect(new MobEffectInstance(MobEffects.HARM, 50, 1));
                     if (entity.getMobType() == MobType.UNDEAD) {
                         entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 50, 1));
-
                     }
                 } else {
-                        //mobs pacíficos
-                        entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 50, 1));
-                    }
+                    // mobs pacíficos
+                    entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 50, 1));
+                }
             }
         }
 
-            // Adiciona partículas na área de efeito
-            if (!world.isClientSide()) {
-                ServerLevel serverWorld = (ServerLevel) world;
-                for (int i = 0; i < 150; i++) {
-                    double offsetX = Math.random() * radius - radius / 2;
-                    double offsetY = Math.random() * 2;
-                    double offsetZ = Math.random() * radius - radius / 2;
-                    serverWorld.sendParticles(ParticleTypes.CLOUD,
-                            player.getX() + offsetX, player.getY() + offsetY, player.getZ() + offsetZ,
-                            1, 0, 0, 0, 0.1);
-                }
-
-                world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.MISHAP.get(), SoundSource.PLAYERS, 2.0F, 1.0F);
-                player.addEffect(new MobEffectInstance(MobEffects.HEAL, 50, 1));
-                player.getCooldowns().addCooldown(this, 200);
-
+        // Adiciona partículas na área de efeito
+        if (!world.isClientSide()) {
+            ServerLevel serverWorld = (ServerLevel) world;
+            for (int i = 0; i < 150; i++) {
+                double offsetX = Math.random() * radius - radius / 2;
+                double offsetY = Math.random() * 2;
+                double offsetZ = Math.random() * radius - radius / 2;
+                serverWorld.sendParticles(ParticleTypes.CLOUD,
+                        player.getX() + offsetX, player.getY() + offsetY, player.getZ() + offsetZ,
+                        1, 0, 0, 0, 0.1);
             }
+
+            world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.MISHAP.get(), SoundSource.PLAYERS, 2.0F, 1.0F);
+            player.addEffect(new MobEffectInstance(MobEffects.HEAL, 50, 1));
+            player.getCooldowns().addCooldown(this, 200);
+        }
 
         return InteractionResultHolder.pass(stack);
     }
@@ -102,5 +100,4 @@ public class SaiItem extends SwordItem {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.saieffect4.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
-
 }

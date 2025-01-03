@@ -126,32 +126,32 @@ public class ModItems {
             () -> new DiegoRapierItem(ModToolTiers.ESSENCE, 1, -1f, new Item.Properties()));
 
     public static final RegistryObject<Item> GRIMOIRE = ITEMS.register("grimoire",
-            () -> new GrimoireItem(new Item.Properties().stacksTo(1)));
+            () -> new GrimoireItem(new Item.Properties().stacksTo(1).durability(3000)));
     public static final RegistryObject<Item> BELAIOS_WAND = ITEMS.register("belaios_wand",
-            () -> new BelaiosWandItem(new Item.Properties().stacksTo(1)));
+            () -> new BelaiosWandItem(new Item.Properties().stacksTo(1).durability(3000)));
     public static final RegistryObject<Item> OLD_GRIMOIRE = ITEMS.register("old_grimoire",
-            () -> new OldGrimoireItem(new Item.Properties().stacksTo(1)));
+            () -> new OldGrimoireItem(new Item.Properties().stacksTo(1).durability(3000)));
     public static final RegistryObject<Item> ASGORE_GRIMOIRE = ITEMS.register("asgore_grimoire",
-            () -> new AsgoreGrimoireItem(new Item.Properties().stacksTo(1)));
+            () -> new AsgoreGrimoireItem(new Item.Properties().stacksTo(1).durability(3000)));
     public static final RegistryObject<Item> NOVUS_GRIMOIRE = ITEMS.register("novus_grimoire",
-            () -> new NovusGrimoireItem(new Item.Properties().stacksTo(1)));
+            () -> new NovusGrimoireItem(new Item.Properties().stacksTo(1).durability(3000)));
     public static final RegistryObject<Item> BEANS_SACK = ITEMS.register("beans_sack",
-            () -> new BeanSackItem(new Item.Properties().stacksTo(1), ModItems.BEAN));
+            () -> new BeanSackItem(new Item.Properties().stacksTo(1).durability(3000), ModItems.BEAN));
     public static final RegistryObject<Item> FROG = ITEMS.register("frog",
-            () -> new FrogItem(new Item.Properties().stacksTo(1)));
+            () -> new FrogItem(new Item.Properties().stacksTo(1).durability(3000)));
     public static final RegistryObject<Item> VEIGAR_STAFF = ITEMS.register("veigar_staff",
-            () -> new VeigarStaffItem(new Item.Properties().stacksTo(1)));
+            () -> new VeigarStaffItem(new Item.Properties().stacksTo(1).durability(3000)));
     public static final RegistryObject<Item> QRAZ_STAFF = ITEMS.register("qraz_staff",
-            () -> new QrazStaffItem(new Item.Properties().stacksTo(1)));
+            () -> new QrazStaffItem(new Item.Properties().stacksTo(1).durability(3000)));
     public static final RegistryObject<Item> SYLVERIA_STAFF = ITEMS.register("sylveria_staff",
-            () -> new SylveriaStaffItem(new Item.Properties().stacksTo(1)));
+            () -> new SylveriaStaffItem(new Item.Properties().stacksTo(1).durability(3000)));
     public static final RegistryObject<Item> CATALYST = ITEMS.register("catalyst",
             () -> new CatalystItem(new Item.Properties().stacksTo(3)));
     public static final RegistryObject<Item> CATALYST_EMPTY = ITEMS.register("catalyst_empty",
             () -> new Item(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> CARSON_CANNON = ITEMS.register("carson_cannon",
-            () -> new CarsonCannonItem(new Item.Properties().stacksTo(1), ModItems.CANNONBALL));
+            () -> new CarsonCannonItem(new Item.Properties().stacksTo(1).durability(3000), ModItems.CANNONBALL));
 
     public static final RegistryObject<Item> ECLIPSE = ITEMS.register("eclipse",
             () -> new Item(new Item.Properties().stacksTo(1)));

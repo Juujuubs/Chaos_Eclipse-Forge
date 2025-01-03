@@ -20,7 +20,6 @@ import java.util.List;
 public class CustomZombieEntity extends Zombie {
     private final Player owner;
     private int lifeTicks = 0;
-    private static final List<Class<? extends LivingEntity>> NON_ATTACKABLE = Arrays.asList(CustomZombieEntity.class, Player.class);
 
     public CustomZombieEntity(EntityType<? extends Zombie> entityType, Level world, Player owner) {
         super(entityType, world);
@@ -31,19 +30,10 @@ public class CustomZombieEntity extends Zombie {
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new MeleeAttackGoal(this, 1.0D, false));
-        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Monster.class, true) {
-            @Override
-            public boolean canUse() {
-                LivingEntity target = CustomZombieEntity.this.getTarget();
-                if (target == null || NON_ATTACKABLE.contains(target.getClass()) || target instanceof CustomZombieEntity) {
-                    return false;
-                }
-                return super.canUse();
-            }
-        });
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Slime.class, true));
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Phantom.class, true));
+        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Monster.class, true));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, 10, true, false, entity -> entity != CustomZombieEntity.this.owner));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Slime.class, true));
+        this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, Phantom.class, true));
     }
 
     @Override
@@ -61,18 +51,22 @@ public class CustomZombieEntity extends Zombie {
         super.tick();
         if (!this.level().isClientSide()) {
             this.lifeTicks++;
-            if (this.lifeTicks >= 600) {
+            if (this.lifeTicks >= 800) {
                 this.remove(RemovalReason.KILLED);
             }
         }
     }
 
-
-
     @Override
     public boolean hurt(DamageSource source, float amount) {
-        // Eles não dropam xp
-        return false;
+        return super.hurt(source, amount);
+    }
+
+    @Override
+    public void die(DamageSource cause) {
+        super.die(cause);
+        // Eles não dropam XP quando morrem
+        this.captureDrops(new java.util.ArrayList<>()).clear();
     }
 
     @Override

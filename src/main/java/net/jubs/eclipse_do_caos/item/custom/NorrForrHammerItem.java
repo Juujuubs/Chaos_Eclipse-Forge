@@ -13,6 +13,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.monster.Shulker;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
@@ -49,7 +50,7 @@ public class NorrForrHammerItem extends AxeItem {
 
         for (LivingEntity entity : entities) {
             if (entity != player) {
-                boolean isHostile = entity instanceof Monster;
+                boolean isHostile = entity instanceof Monster || entity instanceof Shulker;
 
                 if (isHostile) {
                     entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 3));

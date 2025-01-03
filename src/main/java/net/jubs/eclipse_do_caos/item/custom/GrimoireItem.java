@@ -56,6 +56,8 @@ public class GrimoireItem extends Item {
             world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.FIREBALL.get(), SoundSource.PLAYERS, 1F, 1.0F);
             player.getCooldowns().addCooldown(this, 35);
 
+            stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
+
             return InteractionResultHolder.consume(stack);
         }
 
@@ -72,5 +74,9 @@ public class GrimoireItem extends Item {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.old_grimoire3.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.grimoireeffect.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ModItems.ESSENCE.get()) || super.isValidRepairItem(pToRepair, pRepair);
     }
 }

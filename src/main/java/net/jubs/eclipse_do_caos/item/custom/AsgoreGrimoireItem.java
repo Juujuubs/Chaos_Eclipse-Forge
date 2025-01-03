@@ -55,6 +55,8 @@ public class AsgoreGrimoireItem extends Item {
             world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.LIGHTNING_STRIKE.get(), SoundSource.PLAYERS, 3F, 1.0F);
             player.getCooldowns().addCooldown(this, 85);
 
+            stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
+
             return InteractionResultHolder.consume(stack);
         }
 
@@ -70,5 +72,9 @@ public class AsgoreGrimoireItem extends Item {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.asgore_grimoireeffect.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ModItems.ESSENCE.get()) || super.isValidRepairItem(pToRepair, pRepair);
     }
 }
