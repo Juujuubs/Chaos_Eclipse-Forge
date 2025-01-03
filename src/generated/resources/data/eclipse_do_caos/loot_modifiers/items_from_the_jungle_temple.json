@@ -1,5 +1,6 @@
 {
   "type": "eclipse_do_caos:add_items",
+  "chance": 1.0,
   "conditions": [
     {
       "condition": "forge:loot_table_id",
@@ -12,29 +13,20 @@
   ],
   "items": [
     {
-      "chance": 1.0,
-      "count": 3,
       "item": "eclipse_do_caos:goblin_eye"
     },
     {
-      "chance": 1.0,
-      "count": 3,
       "item": "eclipse_do_caos:human_tooth"
     },
     {
-      "chance": 1.0,
-      "count": 3,
       "item": "eclipse_do_caos:bean"
     },
     {
-      "chance": 1.0,
-      "count": 3,
       "item": "eclipse_do_caos:catalyst_empty"
     },
     {
-      "chance": 1.0,
-      "count": 3,
       "item": "eclipse_do_caos:ticket_deluxe_arcanumrails"
     }
-  ]
+  ],
+  "totalItemCount": 3
 }

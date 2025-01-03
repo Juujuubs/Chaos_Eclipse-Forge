@@ -1,5 +1,6 @@
 {
   "type": "eclipse_do_caos:add_items",
+  "chance": 0.5,
   "conditions": [
     {
       "condition": "forge:loot_table_id",
@@ -12,19 +13,14 @@
   ],
   "items": [
     {
-      "chance": 0.5,
-      "count": 4,
       "item": "eclipse_do_caos:goblin_eye"
     },
     {
-      "chance": 0.5,
-      "count": 4,
       "item": "eclipse_do_caos:human_tooth"
     },
     {
-      "chance": 0.5,
-      "count": 4,
       "item": "eclipse_do_caos:catalyst_empty"
     }
-  ]
+  ],
+  "totalItemCount": 4
 }

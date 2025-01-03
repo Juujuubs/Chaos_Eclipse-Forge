@@ -1,40 +1,32 @@
 {
   "type": "eclipse_do_caos:add_items",
+  "chance": 0.01,
   "conditions": [
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:chests/ruined_portal"
     },
     {
-      "chance": 0.5,
+      "chance": 1.0,
       "condition": "minecraft:random_chance"
     }
   ],
   "items": [
     {
-      "chance": 0.01,
-      "count": 1,
       "item": "eclipse_do_caos:akira_katana"
     },
     {
-      "chance": 0.01,
-      "count": 1,
       "item": "eclipse_do_caos:grimoire"
     },
     {
-      "chance": 0.01,
-      "count": 1,
       "item": "eclipse_do_caos:quarterstaff"
     },
     {
-      "chance": 0.01,
-      "count": 1,
       "item": "eclipse_do_caos:catalyst"
     },
     {
-      "chance": 0.01,
-      "count": 1,
       "item": "eclipse_do_caos:pallis_shield"
     }
-  ]
+  ],
+  "totalItemCount": 1
 }

@@ -14,19 +14,26 @@ import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+import java.util.Random;
 import java.util.function.Supplier;
 
 public class AddItemsModifier extends LootModifier {
     public static final Supplier<Codec<AddItemsModifier>> CODEC = Suppliers.memoize(
             () -> RecordCodecBuilder.create(inst -> codecStart(inst).and(
                     Codec.list(ItemEntry.CODEC).fieldOf("items").forGetter(m -> m.items)
+            ).and(Codec.INT.fieldOf("totalItemCount").forGetter(m -> m.totalItemCount)
+            ).and(Codec.FLOAT.fieldOf("chance").forGetter(m -> m.chance)
             ).apply(inst, AddItemsModifier::new)));
 
     private final List<ItemEntry> items;
+    private final int totalItemCount;
+    private final float chance;
 
-    public AddItemsModifier(LootItemCondition[] conditionsIn, List<ItemEntry> items) {
+    public AddItemsModifier(LootItemCondition[] conditionsIn, List<ItemEntry> items, int totalItemCount, float chance) {
         super(conditionsIn);
         this.items = items;
+        this.totalItemCount = totalItemCount;
+        this.chance = chance;
     }
 
     @Override
@@ -37,9 +44,18 @@ public class AddItemsModifier extends LootModifier {
             }
         }
 
-        for (ItemEntry entry : items) {
-            if (context.getRandom().nextFloat() < entry.chance) {
-                generatedLoot.add(new ItemStack(entry.item, entry.count));
+        Random random = new Random();
+        if (random.nextFloat() < this.chance) {
+            int maxItemsToDrop = random.nextInt(this.totalItemCount) + 1;
+            int remainingItemCount = maxItemsToDrop;
+
+            while (remainingItemCount > 0 && !items.isEmpty()) {
+                int itemIndex = random.nextInt(items.size());
+                Item item = items.get(itemIndex).item;
+                int count = Math.min(remainingItemCount, item.getMaxStackSize());
+
+                generatedLoot.add(new ItemStack(item, count));
+                remainingItemCount -= count;
             }
         }
 
@@ -53,19 +69,13 @@ public class AddItemsModifier extends LootModifier {
 
     public static class ItemEntry {
         public static final Codec<ItemEntry> CODEC = RecordCodecBuilder.create(inst -> inst.group(
-                ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter(e -> e.item),
-                Codec.FLOAT.fieldOf("chance").forGetter(e -> e.chance),
-                Codec.INT.fieldOf("count").forGetter(e -> e.count)
+                ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter(e -> e.item)
         ).apply(inst, ItemEntry::new));
 
         public final Item item;
-        public final float chance;
-        public final int count;
 
-        public ItemEntry(Item item, float chance, int count) {
+        public ItemEntry(Item item) {
             this.item = item;
-            this.chance = chance;
-            this.count = count;
         }
     }
 }

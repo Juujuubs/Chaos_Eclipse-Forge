@@ -1,5 +1,6 @@
 {
   "type": "eclipse_do_caos:add_items",
+  "chance": 0.55,
   "conditions": [
     {
       "condition": "forge:loot_table_id",
@@ -12,14 +13,11 @@
   ],
   "items": [
     {
-      "chance": 0.55,
-      "count": 7,
       "item": "eclipse_do_caos:essence"
     },
     {
-      "chance": 0.55,
-      "count": 7,
       "item": "eclipse_do_caos:human_tooth"
     }
-  ]
+  ],
+  "totalItemCount": 7
 }

@@ -1,5 +1,6 @@
 {
   "type": "eclipse_do_caos:add_items",
+  "chance": 0.5,
   "conditions": [
     {
       "condition": "forge:loot_table_id",
@@ -12,29 +13,20 @@
   ],
   "items": [
     {
-      "chance": 0.25,
-      "count": 2,
       "item": "eclipse_do_caos:ticket_deluxe_arcanumrails"
     },
     {
-      "chance": 0.25,
-      "count": 2,
       "item": "eclipse_do_caos:eden_apple"
     },
     {
-      "chance": 0.25,
-      "count": 2,
       "item": "eclipse_do_caos:bean"
     },
     {
-      "chance": 0.25,
-      "count": 2,
       "item": "eclipse_do_caos:catalyst_empty"
     },
     {
-      "chance": 0.25,
-      "count": 2,
       "item": "eclipse_do_caos:cannonball"
     }
-  ]
+  ],
+  "totalItemCount": 2
 }

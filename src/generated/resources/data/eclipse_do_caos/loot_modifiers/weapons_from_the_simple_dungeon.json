@@ -1,70 +1,50 @@
 {
   "type": "eclipse_do_caos:add_items",
+  "chance": 0.03,
   "conditions": [
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:chests/simple_dungeon"
     },
     {
-      "chance": 0.5,
+      "chance": 1.0,
       "condition": "minecraft:random_chance"
     }
   ],
   "items": [
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:grimoire"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:asgore_grimoire"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:old_grimoire"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:novus_grimoire"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:quarterstaff"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:hilda_scythe"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:frog"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:veigar_staff"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:sylveria_staff"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:zora_bow"
     },
     {
-      "chance": 0.03,
-      "count": 1,
       "item": "eclipse_do_caos:belaios_wand"
     }
-  ]
+  ],
+  "totalItemCount": 1
 }

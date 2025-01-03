@@ -1,5 +1,6 @@
 {
   "type": "eclipse_do_caos:add_items",
+  "chance": 0.25,
   "conditions": [
     {
       "condition": "forge:loot_table_id",
@@ -12,9 +13,8 @@
   ],
   "items": [
     {
-      "chance": 0.25,
-      "count": 3,
       "item": "eclipse_do_caos:devil_horn"
     }
-  ]
+  ],
+  "totalItemCount": 3
 }
