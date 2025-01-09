@@ -244,22 +244,27 @@ public class ModEvents {
     public static void addCustomWanderingTrades(WandererTradesEvent event) {
         List<VillagerTrades.ItemListing> genericTrades = event.getGenericTrades();
         List<VillagerTrades.ItemListing> rareTrades = event.getRareTrades();
-        ItemStack stack = new ItemStack(ModItems.VOX.get(), 2);
-
-        genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
-                new ItemStack(Items.EMERALD, 8), stack, 6, 2, 0.1f
-        ));
 
         rareTrades.add((pTrader, pRandom) -> new MerchantOffer(
-                new ItemStack(ModItems.ESSENCE.get(), 2),
-                new ItemStack(Items.EMERALD, 64), 2, 8, 0.8f
-        ));
-        rareTrades.add((pTrader, pRandom) -> new MerchantOffer(
+                //Paga
+                new ItemStack(Items.EMERALD, 8),
                 //Compra
-                new ItemStack(ModItems.TICKET_DELUXE_ARCANUMRAILS.get(), 1),
+                new ItemStack(ModItems.VOX.get(), 2),
+                6, 2, 0.1f
+        ));
+        rareTrades.add((pTrader, pRandom) -> new MerchantOffer(
+                //Paga
+                new ItemStack(Items.EMERALD, 64),
+                //Compra
+                new ItemStack(ModItems.ESSENCE.get(), 2),
+                 2, 8, 0.8f
+        ));
+        rareTrades.add((pTrader, pRandom) -> new MerchantOffer(
                 //Paga
                 new ItemStack(Items.GOLD_NUGGET, 5),
                 new ItemStack(Items.IRON_NUGGET, 60),
+                //Compra
+                new ItemStack(ModItems.TICKET_DELUXE_ARCANUMRAILS.get(), 1),
                 3, 3, 1.2f
         ));
     }
