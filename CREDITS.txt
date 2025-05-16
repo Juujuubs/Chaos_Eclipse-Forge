@@ -13,6 +13,18 @@ Under the MIT License
 - https://www.youtube.com/@ModdingByKaupenjoe
 - https://www.youtube.com/playlist?list=PLKGarocXCE1H9Y21-pxjt5Pt8bW14twa-
 
+I could only fix the Hardcoding on the Paxel, thanks to the Mod Paxels for Dummies by GamingEinstein
+Under the MIT License
+- https://github.com/GamingEinstein/PaxelsForDummies/blob/mc1.20.1-forge/LICENSE
+
+I was only able to set the Pallis' Shield Animation in the Fabric Version correctly, and learned to make the Zora's Bow work because of the Mod RepsEverythingMod by Repook
+Under the MIT License
+- https://github.com/Repook/repseverythingmod-1.20.4/blob/master/LICENSE
+
+Pallis' Shield in the Fabric Version was only made correctly because of the Mod Mekanism by Aidan C. Brady
+Under the MIT License
+- https://github.com/Mekanism-Fabric/Mekanism/blob/main/LICENSE
+
 I used as a Reference for the Beloria Painting, the Luphie Frogman Washington Painting from the Mod Cluttered by beelake
 Under the MIT License
 - https://modrinth.com/mod/cluttered
