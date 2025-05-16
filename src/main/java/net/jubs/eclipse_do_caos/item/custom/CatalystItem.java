@@ -113,6 +113,11 @@ public class CatalystItem extends HoneyBottleItem {
     }
 
     @Override
+    public boolean isFireResistant() {
+        return (this == ModItems.CATALYST.get());
+    }
+
+    @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.catalyst.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.catalystline2.tooltip"));

@@ -150,6 +150,26 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.BELAIOS_WAND.get())
                 .add(ModItems.FROG.get());
 
+        this.tag(ItemTags.PIGLIN_LOVED)
+                .add(ModItems.ASGORE_GRIMOIRE.get())
+                .add(ModItems.ODIN_DAGGER.get())
+                .add(ModItems.CARSON_CANNON.get())
+                .add(ModItems.GRIMOIRE.get())
+                .add(ModItems.OLD_GRIMOIRE.get());
+
+        this.tag(ItemTags.BOOKSHELF_BOOKS)
+                .add(ModItems.NOVUS_GRIMOIRE.get())
+                .add(ModItems.ASGORE_GRIMOIRE.get())
+                .add(ModItems.GRIMOIRE.get())
+                .add(ModItems.VOX.get())
+                .add(ModItems.OLD_GRIMOIRE.get());
+
+        this.tag(ItemTags.BEACON_PAYMENT_ITEMS)
+                .add(ModItems.ESSENCE.get());
+
+        this.tag(ItemTags.VILLAGER_PLANTABLE_SEEDS)
+                .add(ModItems.BEAN.get());
+
         this.tag(ItemTags.LOGS)
                 .add(ModBlocks.EDEN_LOG.get().asItem())
                 .add(ModBlocks.EDEN_WOOD.get().asItem())

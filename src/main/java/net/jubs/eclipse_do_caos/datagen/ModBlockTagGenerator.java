@@ -79,6 +79,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.BROMELIAD.get()
                 );
 
+        this.tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(ModBlocks.ESSENCE_BLOCK.get()
+                );
+
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.EDEN_LOG.get(),
                 ModBlocks.EDEN_WOOD.get(),

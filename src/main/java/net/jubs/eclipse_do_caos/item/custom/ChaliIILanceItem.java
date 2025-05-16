@@ -1,5 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -84,6 +85,11 @@ public class ChaliIILanceItem extends SwordItem {
 
         }
         return super.use(world, player, hand);
+    }
+
+    @Override
+    public boolean isFireResistant() {
+        return (this == ModItems.CHALI_II_LANCE.get());
     }
 
     @Override

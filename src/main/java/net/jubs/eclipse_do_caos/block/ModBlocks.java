@@ -50,13 +50,26 @@ public class ModBlocks {
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), BROMELIAD, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
 
     public static final RegistryObject<Block> EDEN_LOG = registerBlock("eden_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.WOOD)));
+            () -> new ModFlammableRotatedPillarBlock(
+                    BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.WOOD),
+                    ModBlocks.STRIPPED_EDEN_LOG
+            ));
     public static final RegistryObject<Block> EDEN_WOOD = registerBlock("eden_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+            () -> new ModFlammableRotatedPillarBlock(
+                    BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD),
+                    ModBlocks.STRIPPED_EDEN_WOOD
+            ));
     public static final RegistryObject<Block> STRIPPED_EDEN_LOG = registerBlock("stripped_eden_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).sound(SoundType.WOOD)));
+            () -> new ModFlammableRotatedPillarBlock(
+                    BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).sound(SoundType.WOOD),
+                    null
+            ));
+
     public static final RegistryObject<Block> STRIPPED_EDEN_WOOD = registerBlock("stripped_eden_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).sound(SoundType.WOOD)));
+            () -> new ModFlammableRotatedPillarBlock(
+                    BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).sound(SoundType.WOOD),
+                    null
+            ));
 
     public static final RegistryObject<Block> EDEN_PLANKS = registerBlock("eden_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD)){

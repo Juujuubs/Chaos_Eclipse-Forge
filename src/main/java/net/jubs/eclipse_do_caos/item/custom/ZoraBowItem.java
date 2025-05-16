@@ -1,5 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
@@ -10,6 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
@@ -47,5 +49,11 @@ public class ZoraBowItem extends BowItem {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.zora_boweffect.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.zora_boweffect2.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+    @Override
+    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+        if (this == ModItems.ZORA_BOW.get())
+            return 6400;
+        return 0;
     }
 }

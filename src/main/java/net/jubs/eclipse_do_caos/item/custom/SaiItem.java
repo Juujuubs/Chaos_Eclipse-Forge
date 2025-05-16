@@ -1,5 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -78,6 +79,11 @@ public class SaiItem extends SwordItem {
         }
 
         return InteractionResultHolder.pass(stack);
+    }
+
+    @Override
+    public boolean isFireResistant() {
+        return (this == ModItems.SAI.get());
     }
 
     @Override

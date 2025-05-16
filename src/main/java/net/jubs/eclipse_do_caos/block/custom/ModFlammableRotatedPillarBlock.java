@@ -6,14 +6,21 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
+import net.minecraftforge.common.ToolActions;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.function.Supplier;
+
 public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
-    public ModFlammableRotatedPillarBlock(Properties pProperties) {
-        super(pProperties);
+    private final Supplier<Block> strippedBlock;
+
+    public ModFlammableRotatedPillarBlock(Properties properties, Supplier<Block> strippedBlock) {
+        super(properties);
+        this.strippedBlock = strippedBlock;
     }
 
     @Override
@@ -33,7 +40,7 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
     @Override
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
-        if(context.getItemInHand().getItem() instanceof AxeItem){
+        if (ToolActions.AXE_STRIP.equals(toolAction)) {
             if (state.is(ModBlocks.EDEN_LOG.get())) {
                 return ModBlocks.STRIPPED_EDEN_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
@@ -41,9 +48,9 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
             if (state.is(ModBlocks.EDEN_WOOD.get())) {
                 return ModBlocks.STRIPPED_EDEN_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
-
         }
 
         return super.getToolModifiedState(state, context, toolAction, simulate);
     }
+
 }

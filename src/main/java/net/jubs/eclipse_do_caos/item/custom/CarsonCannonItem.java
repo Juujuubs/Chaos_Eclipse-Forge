@@ -95,6 +95,11 @@ public class CarsonCannonItem extends Item {
     }
 
     @Override
+    public boolean isFireResistant() {
+        return (this == ModItems.CARSON_CANNON.get());
+    }
+
+    @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannon.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.carson_cannonline2.tooltip"));

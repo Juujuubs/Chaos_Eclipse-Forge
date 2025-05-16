@@ -82,6 +82,11 @@ public class NovusGrimoireItem extends Item {
     }
 
     @Override
+    public boolean isFireResistant() {
+        return (this == ModItems.NOVUS_GRIMOIRE.get());
+    }
+
+    @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.novus_grimoire.tooltip"));
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));

@@ -1,5 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.jubs.eclipse_do_caos.util.ModTags;
 import net.minecraft.client.resources.language.I18n;
@@ -65,6 +66,11 @@ public class DelsItem extends Item {
 
     private boolean isEssenceBlock(BlockState state) {
         return state.is(ModTags.Blocks.DELS_UNKNOWN_BLOCKS);
+    }
+
+    @Override
+    public boolean isFireResistant() {
+        return (this == ModItems.DELS.get());
     }
 
     @Override

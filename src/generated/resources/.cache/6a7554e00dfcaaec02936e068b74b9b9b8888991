@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-22T20:52:36.6097142	Item Models: eclipse_do_caos
+// 1.20.1	2025-05-16T19:50:28.5359269	Item Models: eclipse_do_caos
 00c38a95c315a7302ac1093653d077cdf183c8ae assets/eclipse_do_caos/models/item/bean.json
 33c897605ea44f3c8448e6fcf617f9ddebe94f85 assets/eclipse_do_caos/models/item/bromeliad.json
 8ea88da74745b73354eb9df993c9684104e8e705 assets/eclipse_do_caos/models/item/cannonball.json
@@ -16,7 +16,6 @@ c800155d3bd95f4402658c3a68b80af7bdacd554 assets/eclipse_do_caos/models/item/eden
 f302acca3cdce2aedffcd01e2a98c79f35eee9b6 assets/eclipse_do_caos/models/item/eden_sign.json
 edef73e168d5b9578f2eebb3f5d2aac1376cb166 assets/eclipse_do_caos/models/item/elf_ear.json
 f20cba63a3ab4422d3d4d10ad34b5a91abdd2d59 assets/eclipse_do_caos/models/item/essence.json
-f3577d4ff2d5901100c0036218ad9321e9819037 assets/eclipse_do_caos/models/item/essence_paxel.json
 f027429135959fa0077230c3808a94fbc9902dce assets/eclipse_do_caos/models/item/fried_tilapia.json
 b157f7313e7e031075d673bb37696ae6741fad47 assets/eclipse_do_caos/models/item/goblin_eye.json
 589c3eb024a6a9f25cf4d902089d993bf6a33512 assets/eclipse_do_caos/models/item/human_tooth.json

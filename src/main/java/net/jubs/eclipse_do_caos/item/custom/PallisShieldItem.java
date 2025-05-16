@@ -102,6 +102,11 @@ public class PallisShieldItem extends ShieldItem {
     }
 
     @Override
+    public boolean isFireResistant() {
+        return (this == ModItems.PALLIS_SHIELD.get());
+    }
+
+    @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.pallis_shield.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));

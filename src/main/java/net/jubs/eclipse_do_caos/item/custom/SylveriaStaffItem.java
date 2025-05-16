@@ -17,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import org.apache.commons.lang3.RandomUtils;
@@ -93,6 +94,11 @@ public class SylveriaStaffItem extends Item {
     }
 
     @Override
+    public boolean isFireResistant() {
+        return (this == ModItems.SYLVERIA_STAFF.get());
+    }
+
+    @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.sylveria_staff.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
@@ -115,6 +121,13 @@ public class SylveriaStaffItem extends Item {
 
     public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
         return pRepair.is(ModItems.ESSENCE.get()) || super.isValidRepairItem(pToRepair, pRepair);
+    }
+
+    @Override
+    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+        if (this == ModItems.SYLVERIA_STAFF.get())
+            return 6400;
+        return 0;
     }
 
 }

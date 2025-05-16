@@ -1,10 +1,11 @@
-// 1.20.1	2024-12-30T12:03:55.3234209	Tags for minecraft:block mod id eclipse_do_caos
+// 1.20.1	2025-05-16T19:50:28.5409249	Tags for minecraft:block mod id eclipse_do_caos
 0180a757e930f2362b359335f1a7c9b221f05953 data/eclipse_do_caos/tags/blocks/dels_unknown_blocks.json
 82362cfbd1836db13c7e9d36c8712821e795ac55 data/eclipse_do_caos/tags/blocks/mineable/paxel.json
 da0514fb2d41ce42b2afb44001920ec66b128528 data/eclipse_do_caos/tags/blocks/mineable/saw_eater.json
 a73a7e3d73f3e9a0f7cd1a484bb8ce942e7bfacf data/forge/tags/blocks/needs_netherite_tool.json
 286192f62fe1087942ac972669894225b3ad868f data/minecraft/tags/blocks/all_hanging_signs.json
 6ea0eb6a7ec75cb8440089b4e2dce009aaa539b9 data/minecraft/tags/blocks/all_signs.json
+ec86130479b5dbd90e126ec1ff245163a42a3060 data/minecraft/tags/blocks/beacon_base_blocks.json
 3c177f98cad614be144b69f8fd8dab31058353fa data/minecraft/tags/blocks/buttons.json
 286192f62fe1087942ac972669894225b3ad868f data/minecraft/tags/blocks/ceiling_hanging_signs.json
 f46a21af220dc11e7d9275b6b74473e69344da0e data/minecraft/tags/blocks/crops.json

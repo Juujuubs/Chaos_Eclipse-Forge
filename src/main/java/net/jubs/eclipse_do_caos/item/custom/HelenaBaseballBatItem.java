@@ -1,5 +1,6 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
+import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -15,6 +16,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
@@ -70,5 +72,12 @@ public class HelenaBaseballBatItem extends SwordItem {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.helena_baseball_bateffect2.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.helena_baseball_bateffect3.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+
+    @Override
+    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+        if (this == ModItems.HELENA_BASEBALL_BAT.get())
+            return 6400;
+        return 0;
     }
 }

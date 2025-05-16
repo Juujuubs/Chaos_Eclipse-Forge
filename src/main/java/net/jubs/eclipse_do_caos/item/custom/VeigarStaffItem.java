@@ -71,6 +71,11 @@ public class VeigarStaffItem extends Item {
     }
 
     @Override
+    public boolean isFireResistant() {
+        return (this == ModItems.VEIGAR_STAFF.get());
+    }
+
+    @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.veigar_staff.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.veigar_staffline2.tooltip"));

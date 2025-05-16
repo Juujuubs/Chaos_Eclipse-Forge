@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-21T06:46:30.7231516	Item Tags
+// 1.20.1	2025-05-16T20:08:22.8161742	Item Tags
 b13f40e01937444e75caa972e727113a20e5d0b7 data/eclipse_do_caos/tags/items/bows.json
 d118363007ee785351c228f2aa463833c921eefc data/eclipse_do_caos/tags/items/grimoires.json
 30dfdb536fd52ae3083bdb34435441fd562509b9 data/eclipse_do_caos/tags/items/guns.json
@@ -9,7 +9,9 @@ ea9fb149a83a2b15fd3fc34de04b27b2510a0f24 data/eclipse_do_caos/tags/items/ranged_
 ad382fab0d3e5fa5d76a7bb780e7d633586c5f19 data/eclipse_do_caos/tags/items/staffs.json
 74daf666c45bdaf5dca8abc1ff27ca9d07ab3a08 data/eclipse_do_caos/tags/items/wands.json
 f3cca6aef1bd72c53246c121d450cdb1362a0f7d data/minecraft/tags/items/axes.json
+2bdf7fe0dd015ec9e7576cbdc3830c4c11cae364 data/minecraft/tags/items/beacon_payment_items.json
 037d1394b057a36104183b3531a72ab470975576 data/minecraft/tags/items/boats.json
+0268a48c6fa8d928f15638091127e0fc5fd4a81f data/minecraft/tags/items/bookshelf_books.json
 3c177f98cad614be144b69f8fd8dab31058353fa data/minecraft/tags/items/buttons.json
 4952c2861ed311833fbfb2d46585264b9a29ae80 data/minecraft/tags/items/chest_boats.json
 57b715a0da850ea9ebd9839af0861416071881c4 data/minecraft/tags/items/creeper_drop_music_discs.json
@@ -24,6 +26,7 @@ cc1fc57294253366e215de29db614f80160890bf data/minecraft/tags/items/leaves.json
 872e5a7dc522564833c34e1b045b3b55cf6486ee data/minecraft/tags/items/logs_that_burn.json
 57b715a0da850ea9ebd9839af0861416071881c4 data/minecraft/tags/items/music_discs.json
 fb0a0318ddacee6922fcd29d79050c29151cd379 data/minecraft/tags/items/pickaxes.json
+f8e777269da1aab3b8a3575335201dacdfe55a51 data/minecraft/tags/items/piglin_loved.json
 9ee1651063598e20d306a77066d0dc4795823ea6 data/minecraft/tags/items/planks.json
 e338f674d01098c2aac1f9e980a1241e401d28a4 data/minecraft/tags/items/saplings.json
 fb0a0318ddacee6922fcd29d79050c29151cd379 data/minecraft/tags/items/shovels.json
@@ -34,6 +37,7 @@ fb0a0318ddacee6922fcd29d79050c29151cd379 data/minecraft/tags/items/shovels.json
 9382781e2baf8652c9b9194584e41327a466d8f0 data/minecraft/tags/items/swords.json
 f634f46649ca8f01235b46c1f10b3db36f223833 data/minecraft/tags/items/tools.json
 bf4dd6ea3fe2e2c7b86c928d5484fd0bf0e46b3e data/minecraft/tags/items/trapdoors.json
+69e0753cc7fd16fdd7bcd9decf556dc9fcdf53f5 data/minecraft/tags/items/villager_plantable_seeds.json
 3c177f98cad614be144b69f8fd8dab31058353fa data/minecraft/tags/items/wooden_buttons.json
 9e59611c4c18cc974fe6f621e6cdad6c46785b35 data/minecraft/tags/items/wooden_doors.json
 9dadedc6fc18b1bfc2f56eea269cdf7b2ff30e63 data/minecraft/tags/items/wooden_fences.json
