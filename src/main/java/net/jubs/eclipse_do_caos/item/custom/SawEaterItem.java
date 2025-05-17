@@ -53,7 +53,7 @@ public class SawEaterItem extends SwordItem {
 
         // Se aplicar o efeito aleatório, toca esse som
         if (effectApplied) {
-            world.playSound(null, target.blockPosition(), SoundEvents.COPPER_STEP, SoundSource.BLOCKS, 20.0F, 1.0F);
+            world.playSound(null, target.blockPosition(), SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS, 20.0F, 1.0F);
         }
 
         return super.hurtEnemy(stack, target, attacker);
