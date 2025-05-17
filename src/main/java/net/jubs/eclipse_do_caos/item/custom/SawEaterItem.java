@@ -1,13 +1,10 @@
 package net.jubs.eclipse_do_caos.item.custom;
 
-import com.google.common.collect.ImmutableMap;
-import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.sound.ModSounds;
 import net.jubs.eclipse_do_caos.util.ModTags;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -27,10 +24,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CampfireBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraftforge.common.ToolAction;
@@ -38,7 +31,6 @@ import net.minecraftforge.common.ToolActions;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 public class SawEaterItem extends SwordItem {
@@ -51,10 +43,18 @@ public class SawEaterItem extends SwordItem {
             attacker.addEffect(new MobEffectInstance(MobEffects.SATURATION, 20, 0), attacker);
                 world.playSound(null, target, ModSounds.SAW_EATER_HIT.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
 
-                if (new java.util.Random().nextFloat() < 0.5) {
-                    target.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 20, 1), attacker);
-                    target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 1), attacker);
-                }
+        boolean effectApplied = false;
+
+        if (new java.util.Random().nextFloat() < 0.5f) {
+            target.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 20, 1), attacker);
+            target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 1), attacker);
+            effectApplied = true;
+        }
+
+        // Se aplicar o efeito aleatório, toca esse som
+        if (effectApplied) {
+            world.playSound(null, target.blockPosition(), SoundEvents.COPPER_STEP, SoundSource.BLOCKS, 20.0F, 1.0F);
+        }
 
         return super.hurtEnemy(stack, target, attacker);
 
@@ -112,7 +112,6 @@ public class SawEaterItem extends SwordItem {
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
 
-            // Adiciona partículas na área de efeito
             if (!world.isClientSide()) {
                 ServerLevel serverWorld = (ServerLevel) world;
                 for (int i = 0; i < 80; i++) {
