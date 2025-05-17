@@ -32,29 +32,49 @@ public class NovusGrimoireItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
         if (!world.isClientSide()) {
-            for (int i = 0; i < 4; i++) {
-                double offset = i * Math.PI / 2.0; // Cria uma distância para cada zumbi
-                double x = player.getX() + Math.cos(offset);
-                double z = player.getZ() + Math.sin(offset);
+            BlockPos center = player.blockPosition();
+            BlockPos[] around = new BlockPos[] {
+                    center.north(),
+                    center.south(),
+                    center.east(),
+                    center.west()
+            };
 
-                BlockPos originalPos = new BlockPos((int)Math.round(x), (int)Math.round(player.getY()), (int)Math.round(z));
-                BlockPos spawnPos = findNearestAirBlock(world, originalPos);
+            for (BlockPos spawnPos : around) {
+                if (world.getBlockState(spawnPos).isAir() && world.getBlockState(spawnPos.above()).isAir()) {
+                    CustomZombieEntity zombie = new CustomZombieEntity(EntityType.ZOMBIE, world, player);
+                    zombie.moveTo(spawnPos.getX() + 0.5, spawnPos.getY(), spawnPos.getZ() + 0.5, 0, 0);
 
-                CustomZombieEntity zombie = new CustomZombieEntity(EntityType.ZOMBIE, world, player);
-                zombie.moveTo(spawnPos.getX(), spawnPos.getY(), spawnPos.getZ(), 0, 0);
-
-                if (world.noCollision(zombie) && !world.containsAnyLiquid(zombie.getBoundingBox())) {
-                    world.addFreshEntity(zombie);
+                    if (world.noCollision(zombie)) {
+                        world.addFreshEntity(zombie);
+                    }
                 }
             }
 
-            for (int i = 0; i < 120; i++) {
-                double offsetX = Math.random() * 4.0 - 3.0;
-                double offsetY = Math.random() * 2;
-                double offsetZ = Math.random() * 4.0 - 3.0;
-                ((ServerLevel) world).sendParticles(ParticleTypes.SCULK_SOUL,
-                        player.getX() + offsetX, player.getY() + offsetY, player.getZ() + offsetZ,
-                        1, 0, 0, 0, 0.1);
+            double[][] offsets = {
+                    {1, 0},
+                    {-1, 0},
+                    {0, 1},
+                    {0, -1}
+            };
+
+            for (double[] offset : offsets) {
+                double baseX = player.getX() + offset[0];
+                double baseZ = player.getZ() + offset[1];
+
+                for (int i = 0; i < 30; i++) {
+                    double offsetX = Math.random() * 0.6 - 0.3;
+                    double offsetY = Math.random() * 2.0;
+                    double offsetZ = Math.random() * 0.6 - 0.3;
+
+                    ((ServerLevel) world).sendParticles(
+                            ParticleTypes.SCULK_SOUL,
+                            baseX + offsetX,
+                            player.getY() + offsetY,
+                            baseZ + offsetZ,
+                            1, 0, 0, 0, 0.05
+                    );
+                }
             }
 
             player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 800, 2));
@@ -67,20 +87,6 @@ public class NovusGrimoireItem extends Item {
         return super.use(world, player, hand);
     }
 
-    private BlockPos findNearestAirBlock(Level world, BlockPos pos) {
-        for (int dx = -2; dx <= 2; dx++) {
-            for (int dy = -2; dy <= 2; dy++) {
-                for (int dz = -2; dz <= 2; dz++) {
-                    BlockPos checkPos = pos.offset(dx, dy, dz);
-                    if (world.getBlockState(checkPos).isAir()) {
-                        return checkPos;
-                    }
-                }
-            }
-        }
-        return pos; // Retorna a posição original se não encontrar um bloco vazio
-    }
-
     @Override
     public boolean isFireResistant() {
         return (this == ModItems.NOVUS_GRIMOIRE.get());
@@ -91,6 +97,7 @@ public class NovusGrimoireItem extends Item {
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.novus_grimoire.tooltip"));
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.novus_grimoire2.tooltip"));
+        tooltip.add(Component.translatable("tooltip.eclipse_do_caos.novus_grimoirepeaceful.tooltip"));
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.novus_grimoireeffect.tooltip"));
         tooltip.add(Component.translatable("tooltip.eclipse_do_caos.novus_grimoireeffect2.tooltip"));

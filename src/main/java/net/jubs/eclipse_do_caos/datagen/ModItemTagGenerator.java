@@ -150,6 +150,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.BELAIOS_WAND.get())
                 .add(ModItems.FROG.get());
 
+        this.tag(ModTags.Items.BOSS_WEAPONS)
+                .add(ModItems.DIEGO_RAPIER.get())
+                .add(ModItems.AKIRA_KATANA.get());
+
         this.tag(ItemTags.PIGLIN_LOVED)
                 .add(ModItems.ASGORE_GRIMOIRE.get())
                 .add(ModItems.ODIN_DAGGER.get())

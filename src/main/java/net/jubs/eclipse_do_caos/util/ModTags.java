@@ -33,6 +33,7 @@ public class ModTags {
         public static final TagKey<Item> SHIELDS = tag("shields");
         public static final TagKey<Item> BOWS = tag("bows");
         public static final TagKey<Item> GUNS = tag("guns");
+        public static final TagKey<Item> BOSS_WEAPONS = tag("boss_weapons");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(EclipseDoCaos.MOD_ID, name));
