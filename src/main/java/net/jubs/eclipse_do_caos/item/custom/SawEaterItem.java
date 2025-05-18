@@ -45,7 +45,7 @@ public class SawEaterItem extends SwordItem {
 
         boolean effectApplied = false;
 
-        if (new java.util.Random().nextFloat() < 0.5f) {
+        if (new java.util.Random().nextFloat() < 0.2f) {
             target.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 20, 1), attacker);
             target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 1), attacker);
             effectApplied = true;
@@ -53,7 +53,7 @@ public class SawEaterItem extends SwordItem {
 
         // Se aplicar o efeito aleatório, toca esse som
         if (effectApplied) {
-            world.playSound(null, target.blockPosition(), SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS, 20.0F, 1.0F);
+            world.playSound(null, target.blockPosition(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS, 1.0F, 1.0F);
         }
 
         return super.hurtEnemy(stack, target, attacker);
