@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "eclipse_do_caos:item/hilda_sickle_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "eclipse_do_caos:item/hilda_sickle_2d"
+    },
+    "ground": {
+      "parent": "eclipse_do_caos:item/hilda_sickle_3d"
+    },
+    "fixed": {
+      "parent": "eclipse_do_caos:item/hilda_sickle_2d"
+    }
+  }, "textures": {
+  "particle": "eclipse_do_caos:item/hilda_sickle"
+  }
+}

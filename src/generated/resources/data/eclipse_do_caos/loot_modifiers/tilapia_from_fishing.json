@@ -1,0 +1,20 @@
+{
+  "type": "eclipse_do_caos:add_items",
+  "chance": 0.35,
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/fishing/fish"
+    },
+    {
+      "chance": 1.0,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    {
+      "item": "eclipse_do_caos:tilapia"
+    }
+  ],
+  "totalItemCount": 1
+}

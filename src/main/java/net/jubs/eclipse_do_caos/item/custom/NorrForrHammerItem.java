@@ -35,7 +35,7 @@ public class NorrForrHammerItem extends AxeItem {
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         Level world = attacker.level();
-                world.playSound(null, target, ModSounds.NORR_FORR_HAMMER_HIT.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
+                world.playSound(null, target, ModSounds.NORR_FORR_HAMMER_HIT.get(), SoundSource.PLAYERS, 2.0F, 1.0F);
 
         return super.hurtEnemy(stack, target, attacker);
 

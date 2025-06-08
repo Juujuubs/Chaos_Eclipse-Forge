@@ -110,7 +110,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new AddItemsModifier.ItemEntry(ModItems.GRIMOIRE.get()),
                         new AddItemsModifier.ItemEntry(ModItems.BEANS_SACK.get()),
                         new AddItemsModifier.ItemEntry(ModItems.DIEGO_RAPIER.get()),
-                        new AddItemsModifier.ItemEntry(ModItems.HILDA_SCYTHE.get()),
+                        new AddItemsModifier.ItemEntry(ModItems.HILDA_SICKLE.get()),
                         new AddItemsModifier.ItemEntry(ModItems.OLD_GRIMOIRE.get()),
                         new AddItemsModifier.ItemEntry(ModItems.HELENA_BASEBALL_BAT.get()),
                         new AddItemsModifier.ItemEntry(ModItems.CARSON_CANNON.get()),
@@ -236,7 +236,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.AKIRA_KATANA.get()),
                         new ItemEntry(ModItems.BEANS_SACK.get()),
                         new ItemEntry(ModItems.DIEGO_RAPIER.get()),
-                        new ItemEntry(ModItems.HILDA_SCYTHE.get()),
+                        new ItemEntry(ModItems.HILDA_SICKLE.get()),
                         new ItemEntry(ModItems.FROG.get()),
                         new ItemEntry(ModItems.CLAWS.get()),
                         new ItemEntry(ModItems.CATALYST.get()),
@@ -383,7 +383,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.OLD_GRIMOIRE.get()),
                         new ItemEntry(ModItems.NOVUS_GRIMOIRE.get()),
                         new ItemEntry(ModItems.QUARTERSTAFF.get()),
-                        new ItemEntry(ModItems.HILDA_SCYTHE.get()),
+                        new ItemEntry(ModItems.HILDA_SICKLE.get()),
                         new ItemEntry(ModItems.FROG.get()),
                         new ItemEntry(ModItems.VEIGAR_STAFF.get()),
                         new ItemEntry(ModItems.SYLVERIA_STAFF.get()),
@@ -464,7 +464,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.SAW_EATER.get()),
                         new ItemEntry(ModItems.AKIRA_KATANA.get()),
                         new ItemEntry(ModItems.DIEGO_RAPIER.get()),
-                        new ItemEntry(ModItems.HILDA_SCYTHE.get()),
+                        new ItemEntry(ModItems.HILDA_SICKLE.get()),
                         new ItemEntry(ModItems.CLAWS.get()),
                         new ItemEntry(ModItems.FROG.get()),
                         new ItemEntry(ModItems.QRAZ_STAFF.get()),
@@ -891,6 +891,18 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                 },
                 List.of(
                         new ItemEntry(ModBlocks.BROMELIAD.get().asItem())
+                ),
+                1, // Máximo de Itens que podem Aparecer
+                0.35f // Chance dos Itens Aparecerem
+        ));
+
+        add("tilapia_from_fishing", new AddItemsModifier(
+                new LootItemCondition[]{
+                        LootTableIdCondition.builder(new ResourceLocation("gameplay/fishing/fish")).build(),
+                        LootItemRandomChanceCondition.randomChance(1f).build()
+                },
+                List.of(
+                        new ItemEntry(ModItems.TILAPIA.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer
                 0.35f // Chance dos Itens Aparecerem

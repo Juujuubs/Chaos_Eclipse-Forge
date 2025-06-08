@@ -126,7 +126,7 @@ public class EclipseDoCaos
             event.accept(ModItems.ASGORE_GRIMOIRE);
             event.accept(ModItems.ARTORIAS_DESPAIR);
             event.accept(ModItems.HELENA_BASEBALL_BAT);
-            event.accept(ModItems.HILDA_SCYTHE);
+            event.accept(ModItems.HILDA_SICKLE);
             event.accept(ModItems.DIEGO_RAPIER);
             event.accept(ModItems.AKIRA_KATANA);
             event.accept(ModItems.ODIN_DAGGER);

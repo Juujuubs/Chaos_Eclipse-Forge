@@ -21,8 +21,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class HildaScytheItem extends SwordItem {
-    public HildaScytheItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+public class HildaSickleItem extends SwordItem {
+    public HildaSickleItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
 
@@ -61,18 +61,18 @@ public class HildaScytheItem extends SwordItem {
 
     @Override
     public boolean isFireResistant() {
-        return (this == ModItems.HILDA_SCYTHE.get());
+        return (this == ModItems.HILDA_SICKLE.get());
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_scythe.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_scytheline2.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_sickle.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_sickleline2.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_scythe2.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_sickle2.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_scytheeffect.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_scytheeffect2.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_sickleeffect.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.hilda_sickleeffect2.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 }

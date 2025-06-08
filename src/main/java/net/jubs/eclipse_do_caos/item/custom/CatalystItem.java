@@ -79,7 +79,7 @@ public class CatalystItem extends HoneyBottleItem {
             MobEffect randomEffect = possibleEffects[new Random().nextInt(possibleEffects.length)];
 
 
-            user.addEffect(new MobEffectInstance(randomEffect, 600, 3));
+            user.addEffect(new MobEffectInstance(randomEffect, 1200, 3));
 
             ServerLevel serverWorld = (ServerLevel) world;
             for (int i = 0; i < 50; i++) {

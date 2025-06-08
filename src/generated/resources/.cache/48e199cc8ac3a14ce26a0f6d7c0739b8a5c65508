@@ -1,10 +1,10 @@
-// 1.20.1	2025-05-16T22:09:32.3015257	Item Tags
+// 1.20.1	2025-06-08T16:30:16.9962114	Item Tags
 0c17a972f46391e884fd19f79b17d02d6305b0e1 data/eclipse_do_caos/tags/items/boss_weapons.json
 b13f40e01937444e75caa972e727113a20e5d0b7 data/eclipse_do_caos/tags/items/bows.json
 d118363007ee785351c228f2aa463833c921eefc data/eclipse_do_caos/tags/items/grimoires.json
 30dfdb536fd52ae3083bdb34435441fd562509b9 data/eclipse_do_caos/tags/items/guns.json
-a4dd2ebc7c5c28d69bd2def990f5e5505b94d284 data/eclipse_do_caos/tags/items/lost_weapons.json
-21ab2a58da192905b2de88c271bb42df585a8d7c data/eclipse_do_caos/tags/items/not_from_this_world.json
+771ce5bef6951133f81f6d86be34d916620a94fd data/eclipse_do_caos/tags/items/lost_weapons.json
+28a838ba1d9c1f71a33408d578ca6ac27ce2f871 data/eclipse_do_caos/tags/items/not_from_this_world.json
 ea9fb149a83a2b15fd3fc34de04b27b2510a0f24 data/eclipse_do_caos/tags/items/ranged_weapons.json
 999ee26f410be030b447f380fe2b227f6e0cb070 data/eclipse_do_caos/tags/items/shields.json
 ad382fab0d3e5fa5d76a7bb780e7d633586c5f19 data/eclipse_do_caos/tags/items/staffs.json
@@ -35,7 +35,7 @@ fb0a0318ddacee6922fcd29d79050c29151cd379 data/minecraft/tags/items/shovels.json
 96190fa270e2cfd554468bee3f8382fd84a0b157 data/minecraft/tags/items/slabs.json
 20f4d56dfe1ce9c8ac5a7671c644608719b58258 data/minecraft/tags/items/small_flowers.json
 4fee2b31500f323b2a17c514344716b3c657ad5f data/minecraft/tags/items/stairs.json
-9382781e2baf8652c9b9194584e41327a466d8f0 data/minecraft/tags/items/swords.json
+9ed44356b785fb7a1ab0cef786d131192c31e1f8 data/minecraft/tags/items/swords.json
 f634f46649ca8f01235b46c1f10b3db36f223833 data/minecraft/tags/items/tools.json
 bf4dd6ea3fe2e2c7b86c928d5484fd0bf0e46b3e data/minecraft/tags/items/trapdoors.json
 69e0753cc7fd16fdd7bcd9decf556dc9fcdf53f5 data/minecraft/tags/items/villager_plantable_seeds.json

@@ -28,7 +28,7 @@ public class ClawsItem extends SwordItem {
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         Level world = attacker.level();
-            attacker.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 1), attacker);
+            target.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 1), attacker);
                 world.playSound(null, target, ModSounds.CLAWS_HIT.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
 
         return super.hurtEnemy(stack, target, attacker);

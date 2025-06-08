@@ -116,8 +116,8 @@ public class ModItems {
     public static final RegistryObject<Item> ODIN_DAGGER = ITEMS.register("odin_dagger",
             () -> new OdinDaggerItem(ModToolTiers.ESSENCE, -1, 1f, new Item.Properties()));
 
-    public static final RegistryObject<Item> HILDA_SCYTHE = ITEMS.register("hilda_scythe",
-            () -> new HildaScytheItem(ModToolTiers.ESSENCE, 0, 0.5f, new Item.Properties()));
+    public static final RegistryObject<Item> HILDA_SICKLE = ITEMS.register("hilda_sickle",
+            () -> new HildaSickleItem(ModToolTiers.ESSENCE, 0, 0.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> SAI = ITEMS.register("sai",
             () -> new SaiItem(ModToolTiers.ESSENCE, -2, 1.5f, new Item.Properties()));
