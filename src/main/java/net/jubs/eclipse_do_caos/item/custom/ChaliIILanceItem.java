@@ -44,13 +44,19 @@ public class ChaliIILanceItem extends SwordItem {
             double dashDistance = 12.0;
             double directionX = -Math.sin(Math.toRadians(player.getYRot())) * dashDistance;
             double directionZ = Math.cos(Math.toRadians(player.getYRot())) * dashDistance;
-            if (player.onGround()) {
-                player.setDeltaMovement(directionX, player.getDeltaMovement().y, directionZ);
-            } else {
-                double airResistance = 0.15;
-                player.setDeltaMovement(directionX * airResistance, player.getDeltaMovement().y, directionZ * airResistance);
+            double airResistance = 0.15;
+            LivingEntity mover = player;
+
+            if (player.getVehicle() instanceof LivingEntity mount) {
+                mover = mount;
             }
-            player.hurtMarked = true;
+
+            if (mover.onGround()) {
+                mover.setDeltaMovement(directionX, mover.getDeltaMovement().y, directionZ);
+            } else {
+                mover.setDeltaMovement(directionX * airResistance, mover.getDeltaMovement().y, directionZ * airResistance);
+            }
+            mover.hurtMarked = true;
 
             // Adiciona partículas na área de efeito
             if (!world.isClientSide()) {
@@ -73,7 +79,8 @@ public class ChaliIILanceItem extends SwordItem {
                 Vec3 startPos = player.position();
                 Vec3 endPos = startPos.add(player.getLookAngle().scale(8));
                 AABB box = new AABB(startPos, endPos).inflate(1.0, 1.0, 1.0);
-                List<LivingEntity> entities = world.getEntitiesOfClass(LivingEntity.class, box, entity -> entity != player);
+                List<LivingEntity> entities = world.getEntitiesOfClass(LivingEntity.class, box,
+                        entity -> entity != player && entity != player.getVehicle());
 
                 for (LivingEntity entity : entities) {
                     if (entity.getBoundingBox().intersects(box)) {
@@ -98,6 +105,7 @@ public class ChaliIILanceItem extends SwordItem {
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.chali_ii_lanceline2.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.chali_ii_lance2.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.chali_ii_lancemount.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.space.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.chali_ii_lanceeffect1.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.eclipse_do_caos.chali_ii_lanceeffect2.tooltip"));
