@@ -47,7 +47,7 @@ public class ErakBattleaxeItem extends AxeItem {
         List<LivingEntity> entities = world.getEntitiesOfClass(LivingEntity.class, area);
 
         for (LivingEntity entity : entities) {
-            if (entity != player) {
+            if (entity != player && entity != player.getVehicle()) {
                 boolean isHostile = entity instanceof Monster || entity instanceof Shulker;
 
                 if (isHostile) {

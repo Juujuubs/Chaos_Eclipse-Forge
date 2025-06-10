@@ -35,7 +35,7 @@ public class FrogItem extends Item {
             AABB area = new AABB(pos).inflate(radius);
             List<LivingEntity> entities = world.getEntitiesOfClass(LivingEntity.class, area);
             for (LivingEntity entity : entities) {
-                if (entity != player) {
+                if (entity != player && entity != player.getVehicle()) {
                     entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2));
                     entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 200, 1));
                 }

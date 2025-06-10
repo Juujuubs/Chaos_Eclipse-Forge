@@ -45,7 +45,7 @@ public class OdinDaggerItem extends SwordItem {
             AABB area = new AABB(pos).inflate(radius);
             List<LivingEntity> entities = world.getEntitiesOfClass(LivingEntity.class, area);
             for (LivingEntity entity : entities) {
-                if (entity != player) {
+                if (entity != player && entity != player.getVehicle()) {
                     entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 1));
                     entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 0));
                 }

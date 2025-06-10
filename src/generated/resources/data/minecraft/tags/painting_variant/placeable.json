@@ -37,6 +37,10 @@
       "required": false
     },
     {
+      "id": "eclipse_do_caos:reus",
+      "required": false
+    },
+    {
       "id": "eclipse_do_caos:beloria_bonissimo",
       "required": false
     }

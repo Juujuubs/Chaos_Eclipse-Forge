@@ -42,7 +42,7 @@ public class QrazStaffItem extends Item {
         BlockState leaves = Blocks.OAK_LEAVES.defaultBlockState();
 
         for (LivingEntity entity : entities) {
-            if (entity != player && !entity.isSpectator() && !(entity instanceof Player && ((Player)entity).isCreative())) {
+            if (entity != player && entity != player.getVehicle() && !entity.isSpectator() && !(entity instanceof Player && ((Player)entity).isCreative())) {
                 entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 120, 2));
                 entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 240, 1));
 

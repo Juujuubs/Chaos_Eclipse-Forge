@@ -44,7 +44,7 @@ public class LadonDragonGlaiveItem extends SwordItem {
             AABB area = new AABB(pos).inflate(radius);
             List<LivingEntity> entities = world.getEntitiesOfClass(LivingEntity.class, area);
             for (LivingEntity entity : entities) {
-                if (entity != player) {
+                if (entity != player && entity != player.getVehicle()) {
                     entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 200, 0));
                     entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 0));
                 }

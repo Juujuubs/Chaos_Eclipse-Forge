@@ -29,6 +29,8 @@ public class ModPaintings {
             () -> new PaintingVariant(16, 16));
     public static final RegistryObject<PaintingVariant> VEX = PAINTING_VARIANTS.register("vex",
             () -> new PaintingVariant(16, 16));
+    public static final RegistryObject<PaintingVariant> REUS = PAINTING_VARIANTS.register("reus",
+            () -> new PaintingVariant(16, 16));
     public static final RegistryObject<PaintingVariant> BELORIA_BONISSIMO = PAINTING_VARIANTS.register("beloria_bonissimo",
             () -> new PaintingVariant(16, 32));
 

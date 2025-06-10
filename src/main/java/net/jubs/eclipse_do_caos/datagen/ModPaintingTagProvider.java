@@ -28,6 +28,7 @@ public class ModPaintingTagProvider extends PaintingVariantTagsProvider {
                 .addOptional(new ResourceLocation(EclipseDoCaos.MOD_ID, "raven"))
                 .addOptional(new ResourceLocation(EclipseDoCaos.MOD_ID, "veigar"))
                 .addOptional(new ResourceLocation(EclipseDoCaos.MOD_ID, "vex"))
+                .addOptional(new ResourceLocation(EclipseDoCaos.MOD_ID, "reus"))
                 .addOptional(new ResourceLocation(EclipseDoCaos.MOD_ID, "beloria_bonissimo"));
     }
 }
