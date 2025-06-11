@@ -87,7 +87,9 @@ public class ModItems {
             () -> new QuarterstaffItem(ModToolTiers.ESSENCE, 6, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<Item> LADON_DRAGON_GLAIVE = ITEMS.register("ladon_dragon_glaive",
-            () -> new LadonDragonGlaiveItem(ModToolTiers.ESSENCE, 7, -3.2f, new Item.Properties()));
+            () -> new LadonDragonGlaiveItem(ModToolTiers.ESSENCE, 8, -3.2f, new Item.Properties()));
+    public static final RegistryObject<Item> AGATHA_BONESAW = ITEMS.register("agatha_bonesaw",
+            () -> new AgathaBonesawItem(ModToolTiers.ESSENCE, 7, -3.1f, new Item.Properties()));
 
     public static final RegistryObject<Item> HELENA_BASEBALL_BAT = ITEMS.register("helena_baseball_bat",
             () -> new HelenaBaseballBatItem(ModToolTiers.ESSENCE, 4, -2.6f, new Item.Properties()));

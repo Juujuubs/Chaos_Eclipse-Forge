@@ -79,7 +79,7 @@ public class PallisShieldItem extends ShieldItem {
                 useCooldown = 70;
                 return InteractionResultHolder.pass(stack);
             } else {
-                player.displayClientMessage(Component.literal("Cooldown remaining: " + useCooldown / 2 + " seconds"), true);
+                player.displayClientMessage(Component.literal("§lCooldown remaining§r: " + useCooldown / 2 + " seconds"), true);
                 return InteractionResultHolder.fail(player.getItemInHand(hand));
             }
         }

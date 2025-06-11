@@ -38,6 +38,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SAW_EATER.get())
                 .add(ModItems.LADON_DRAGON_GLAIVE.get())
                 .add(ModItems.CHALI_II_LANCE.get())
+                .add(ModItems.AGATHA_BONESAW.get())
                 .add(ModItems.SAI.get());
 
         this.tag(ItemTags.FISHES)
@@ -120,6 +121,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.GAUNTLET.get())
                 .add(ModItems.NORR_FORR_HAMMER.get())
                 .add(ModItems.CHALI_II_LANCE.get())
+                .add(ModItems.AGATHA_BONESAW.get())
                 .add(ModItems.ZORA_BOW.get());
 
         this.tag(ModTags.Items.NOT_FROM_THIS_WORLD)
@@ -152,6 +154,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.BOSS_WEAPONS)
                 .add(ModItems.DIEGO_RAPIER.get())
+                .add(ModItems.CHALI_II_LANCE.get())
+                .add(ModItems.AGATHA_BONESAW.get())
                 .add(ModItems.AKIRA_KATANA.get());
 
         this.tag(ItemTags.PIGLIN_LOVED)

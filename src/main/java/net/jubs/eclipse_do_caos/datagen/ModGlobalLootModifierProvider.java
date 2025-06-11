@@ -252,6 +252,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.BELAIOS_WAND.get()),
                         new ItemEntry(ModItems.GAUNTLET.get()),
                         new ItemEntry(ModItems.NORR_FORR_HAMMER.get()),
+                        new ItemEntry(ModItems.AGATHA_BONESAW.get()),
                         new ItemEntry(ModItems.CHALI_II_LANCE.get())
                 ),
                 2, // Máximo de Itens que podem Aparecer
@@ -505,6 +506,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.VEIGAR_STAFF.get()),
                         new ItemEntry(ModItems.QRAZ_STAFF.get()),
                         new ItemEntry(ModItems.CLAWS.get()),
+                        new ItemEntry(ModItems.AGATHA_BONESAW.get()),
                         new ItemEntry(ModItems.ERAK_BATTLEAXE.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer
@@ -537,6 +539,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.VEIGAR_STAFF.get()),
                         new ItemEntry(ModItems.QRAZ_STAFF.get()),
                         new ItemEntry(ModItems.CLAWS.get()),
+                        new ItemEntry(ModItems.AGATHA_BONESAW.get()),
                         new ItemEntry(ModItems.ERAK_BATTLEAXE.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer
@@ -569,6 +572,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.VEIGAR_STAFF.get()),
                         new ItemEntry(ModItems.QRAZ_STAFF.get()),
                         new ItemEntry(ModItems.CLAWS.get()),
+                        new ItemEntry(ModItems.AGATHA_BONESAW.get()),
                         new ItemEntry(ModItems.ERAK_BATTLEAXE.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer
@@ -600,6 +604,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.QRAZ_STAFF.get()),
                         new ItemEntry(ModItems.CLAWS.get()),
                         new ItemEntry(ModItems.ERAK_BATTLEAXE.get()),
+                        new ItemEntry(ModItems.AGATHA_BONESAW.get()),
                         new ItemEntry(ModItems.BELAIOS_WAND.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer

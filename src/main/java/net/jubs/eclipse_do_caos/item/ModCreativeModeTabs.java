@@ -84,6 +84,7 @@ public static final RegistryObject<CreativeModeTab> ECLIPSE_TAB = CREATIVE_MODE_
                     pOutput.accept(ModItems.LADON_DRAGON_GLAIVE.get());
                     pOutput.accept(ModItems.NORR_FORR_HAMMER.get());
                     pOutput.accept(ModItems.ERAK_BATTLEAXE.get());
+                    pOutput.accept(ModItems.AGATHA_BONESAW.get());
                     pOutput.accept(ModItems.ARTORIAS_DESPAIR.get());
                     pOutput.accept(ModItems.SAW_EATER.get());
                     pOutput.accept(ModItems.CHALI_II_LANCE.get());
