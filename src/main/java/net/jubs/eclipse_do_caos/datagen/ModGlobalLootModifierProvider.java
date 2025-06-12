@@ -5,6 +5,7 @@ import net.jubs.eclipse_do_caos.block.ModBlocks;
 import net.jubs.eclipse_do_caos.item.ModItems;
 import net.jubs.eclipse_do_caos.loot.AddItemsModifier;
 import net.jubs.eclipse_do_caos.loot.AddItemsModifier.ItemEntry;
+import net.jubs.eclipse_do_caos.loot.ReplaceItemsModifier;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -900,18 +901,8 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                 1, // Máximo de Itens que podem Aparecer
                 0.35f // Chance dos Itens Aparecerem
         ));
-
-        add("tilapia_from_fishing", new AddItemsModifier(
-                new LootItemCondition[]{
-                        LootTableIdCondition.builder(new ResourceLocation("gameplay/fishing/fish")).build(),
-                        LootItemRandomChanceCondition.randomChance(1f).build()
-                },
-                List.of(
-                        new ItemEntry(ModItems.TILAPIA.get())
-                ),
-                1, // Máximo de Itens que podem Aparecer
-                0.35f // Chance dos Itens Aparecerem
-        ));
+        add("tilapia_from_fishing", new ReplaceItemsModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("gameplay/fishing/fish")).build() }, ModItems.TILAPIA.get()));
     }
 
 }
