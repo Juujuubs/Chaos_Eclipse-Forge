@@ -64,6 +64,8 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> SPIDER_DASH = registerSoundEvents("chali_ii_spider_dash");
     public static final RegistryObject<SoundEvent> BONESAW_HIT = registerSoundEvents("bonesaw_hit");
     public static final RegistryObject<SoundEvent> DEEP_SEA = registerSoundEvents("deep_sea");
+    public static final RegistryObject<SoundEvent> WALKING_CANE_HIT = registerSoundEvents("walking_cane_hit");
+    public static final RegistryObject<SoundEvent> FLAMES = registerSoundEvents("flames");
 
 
     public static final RegistryObject<SoundEvent> ECLIPSE_BEGINS = registerSoundEvents("eclipse_begins");

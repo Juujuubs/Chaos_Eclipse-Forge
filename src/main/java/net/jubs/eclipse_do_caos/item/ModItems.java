@@ -126,6 +126,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> DIEGO_RAPIER = ITEMS.register("diego_rapier",
             () -> new DiegoRapierItem(ModToolTiers.ESSENCE, 1, -1f, new Item.Properties()));
+    public static final RegistryObject<Item> REUS_WALKING_CANE = ITEMS.register("reus_walking_cane",
+            () -> new ReusWalkingCaneItem(ModToolTiers.ESSENCE, 3, -2f, new Item.Properties()));
 
     public static final RegistryObject<Item> GRIMOIRE = ITEMS.register("grimoire",
             () -> new GrimoireItem(new Item.Properties().stacksTo(1).durability(3000)));

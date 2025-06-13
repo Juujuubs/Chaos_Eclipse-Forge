@@ -145,6 +145,8 @@ public class EclipseDoCaos
             event.accept(ModItems.GAUNTLET);
             event.accept(ModItems.NORR_FORR_HAMMER);
             event.accept(ModItems.CHALI_II_LANCE);
+            event.accept(ModItems.AGATHA_BONESAW);
+            event.accept(ModItems.REUS_WALKING_CANE);
             event.accept(ModItems.ESSENCE_PAXEL);
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {

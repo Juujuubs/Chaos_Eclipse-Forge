@@ -39,6 +39,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.LADON_DRAGON_GLAIVE.get())
                 .add(ModItems.CHALI_II_LANCE.get())
                 .add(ModItems.AGATHA_BONESAW.get())
+                .add(ModItems.REUS_WALKING_CANE.get())
                 .add(ModItems.SAI.get());
 
         this.tag(ItemTags.FISHES)
@@ -122,6 +123,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.NORR_FORR_HAMMER.get())
                 .add(ModItems.CHALI_II_LANCE.get())
                 .add(ModItems.AGATHA_BONESAW.get())
+                .add(ModItems.REUS_WALKING_CANE.get())
                 .add(ModItems.ZORA_BOW.get());
 
         this.tag(ModTags.Items.NOT_FROM_THIS_WORLD)

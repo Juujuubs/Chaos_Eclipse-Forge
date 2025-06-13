@@ -64,7 +64,7 @@ public class AgathaBonesawItem extends SwordItem {
                         1, 0, 0, 0, 0.1);
             }
 
-            world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.DEEP_SEA.get(), SoundSource.PLAYERS, 2.0F, 1.0F);
+            world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.DEEP_SEA.get(), SoundSource.PLAYERS, 6.0F, 1.0F);
             player.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 1200, 0));
             player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 1));
             player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0));

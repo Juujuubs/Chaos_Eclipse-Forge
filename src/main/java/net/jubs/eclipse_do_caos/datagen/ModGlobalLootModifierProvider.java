@@ -151,6 +151,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new AddItemsModifier.ItemEntry(ModItems.GRIMOIRE.get()),
                         new AddItemsModifier.ItemEntry(ModItems.QUARTERSTAFF.get()),
                         new AddItemsModifier.ItemEntry(ModItems.CATALYST.get()),
+                        new AddItemsModifier.ItemEntry(ModItems.REUS_WALKING_CANE.get()),
                         new AddItemsModifier.ItemEntry(ModItems.PALLIS_SHIELD.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer
@@ -166,6 +167,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new AddItemsModifier.ItemEntry(ModItems.GRIMOIRE.get()),
                         new AddItemsModifier.ItemEntry(ModItems.QUARTERSTAFF.get()),
                         new AddItemsModifier.ItemEntry(ModItems.CATALYST.get()),
+                        new AddItemsModifier.ItemEntry(ModItems.REUS_WALKING_CANE.get()),
                         new AddItemsModifier.ItemEntry(ModItems.PALLIS_SHIELD.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer
@@ -254,6 +256,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.GAUNTLET.get()),
                         new ItemEntry(ModItems.NORR_FORR_HAMMER.get()),
                         new ItemEntry(ModItems.AGATHA_BONESAW.get()),
+                        new ItemEntry(ModItems.REUS_WALKING_CANE.get()),
                         new ItemEntry(ModItems.CHALI_II_LANCE.get())
                 ),
                 2, // Máximo de Itens que podem Aparecer
@@ -330,6 +333,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.GAUNTLET.get()),
                         new ItemEntry(ModItems.NORR_FORR_HAMMER.get()),
                         new ItemEntry(ModItems.CHALI_II_LANCE.get()),
+                        new ItemEntry(ModItems.REUS_WALKING_CANE.get()),
                         new ItemEntry(ModItems.DELS.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer
@@ -431,6 +435,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.VEIGAR_STAFF.get()),
                         new ItemEntry(ModItems.NORR_FORR_HAMMER.get()),
                         new ItemEntry(ModItems.CHALI_II_LANCE.get()),
+                        new ItemEntry(ModItems.REUS_WALKING_CANE.get()),
                         new ItemEntry(ModItems.DELS.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer
@@ -475,6 +480,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new ItemEntry(ModItems.NOVUS_GRIMOIRE.get()),
                         new ItemEntry(ModItems.OLD_GRIMOIRE.get()),
                         new ItemEntry(ModItems.LADON_DRAGON_GLAIVE.get()),
+                        new ItemEntry(ModItems.REUS_WALKING_CANE.get()),
                         new ItemEntry(ModItems.CHALI_II_LANCE.get())
                 ),
                 1, // Máximo de Itens que podem Aparecer
