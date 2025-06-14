@@ -165,6 +165,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.ODIN_DAGGER.get())
                 .add(ModItems.CARSON_CANNON.get())
                 .add(ModItems.GRIMOIRE.get())
+                .add(ModItems.REUS_WALKING_CANE.get())
                 .add(ModItems.OLD_GRIMOIRE.get());
 
         this.tag(ItemTags.BOOKSHELF_BOOKS)
