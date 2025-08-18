@@ -107,7 +107,7 @@ public class BelaiosWandItem extends Item {
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
         if (this == ModItems.BELAIOS_WAND.get())
-            return 6400;
+            return 1600;
         return 0;
     }
 }

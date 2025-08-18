@@ -86,7 +86,7 @@ public class FrogItem extends Item {
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
         if (this == ModItems.FROG.get())
-            return 6400;
+            return 1600;
         return 0;
     }
 

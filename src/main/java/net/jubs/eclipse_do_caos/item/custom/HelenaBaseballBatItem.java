@@ -77,7 +77,7 @@ public class HelenaBaseballBatItem extends SwordItem {
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
         if (this == ModItems.HELENA_BASEBALL_BAT.get())
-            return 6400;
+            return 3200;
         return 0;
     }
 }

@@ -53,7 +53,7 @@ public class ZoraBowItem extends BowItem {
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
         if (this == ModItems.ZORA_BOW.get())
-            return 6400;
+            return 3200;
         return 0;
     }
 }
