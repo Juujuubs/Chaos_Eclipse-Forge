@@ -84,7 +84,7 @@ public class BelaiosWandItem extends Item {
             }
         }
 
-        return super.use(world, player, hand);
+        return InteractionResultHolder.consume(stack);
     }
 
     @Override

@@ -56,7 +56,7 @@ public class ArtoriasDespairItem extends AxeItem {
 
         }
 
-        return InteractionResultHolder.pass(stack);
+        return InteractionResultHolder.consume(stack);
     }
 
     @Override

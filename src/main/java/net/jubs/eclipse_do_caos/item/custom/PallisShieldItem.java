@@ -44,10 +44,10 @@ public class PallisShieldItem extends ShieldItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         player.startUsingItem(hand);
+        ItemStack stack = player.getItemInHand(hand);
+        BlockPos pos = player.blockPosition();
         if (!world.isClientSide()) {
             if (useCooldown == 0) {
-                ItemStack stack = player.getItemInHand(hand);
-                BlockPos pos = player.blockPosition();
                 int radius = 6;
                 AABB area = new AABB(pos).inflate(radius);
                 List<LivingEntity> entities = world.getEntitiesOfClass(LivingEntity.class, area);
@@ -77,14 +77,14 @@ public class PallisShieldItem extends ShieldItem {
                 player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 400, 1));
                 player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 1));
                 useCooldown = 70;
-                return InteractionResultHolder.pass(stack);
+
             } else {
                 player.displayClientMessage(Component.literal("§lCooldown remaining§r: " + useCooldown / 2 + " seconds"), true);
                 return InteractionResultHolder.fail(player.getItemInHand(hand));
             }
         }
 
-        return super.use(world, player, hand);
+        return InteractionResultHolder.pass(stack);
     }
 
     @Override

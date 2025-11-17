@@ -84,7 +84,7 @@ public class NovusGrimoireItem extends Item {
             stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
 
         }
-        return super.use(world, player, hand);
+        return InteractionResultHolder.consume(stack);
     }
 
     @Override

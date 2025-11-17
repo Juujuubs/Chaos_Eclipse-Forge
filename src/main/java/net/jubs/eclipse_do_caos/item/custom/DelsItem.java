@@ -60,7 +60,7 @@ public class DelsItem extends Item {
     }
 
     private void outputEssenceCoordinates(BlockPos blockPos, Player player, Block block) {
-        player.sendSystemMessage(Component.literal("Found " + I18n.get(block.getDescriptionId()) + " at " +
+        player.sendSystemMessage(Component.literal("Found §l" + I18n.get(block.getDescriptionId()) + "§r at " +
                 "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"));
     }
 

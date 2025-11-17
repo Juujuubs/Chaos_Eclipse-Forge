@@ -78,7 +78,7 @@ public class SaiItem extends SwordItem {
             player.getCooldowns().addCooldown(this, 200);
         }
 
-        return InteractionResultHolder.pass(stack);
+        return InteractionResultHolder.consume(stack);
     }
 
     @Override

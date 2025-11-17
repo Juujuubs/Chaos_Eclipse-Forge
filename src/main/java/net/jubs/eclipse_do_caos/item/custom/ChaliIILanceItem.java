@@ -91,7 +91,7 @@ public class ChaliIILanceItem extends SwordItem {
             }
 
         }
-        return super.use(world, player, hand);
+        return InteractionResultHolder.consume(stack);
     }
 
     @Override

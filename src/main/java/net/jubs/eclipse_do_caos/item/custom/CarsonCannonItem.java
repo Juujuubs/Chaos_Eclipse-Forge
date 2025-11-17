@@ -78,11 +78,10 @@ public class CarsonCannonItem extends Item {
 
                 stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
 
-                return InteractionResultHolder.pass(stack);
             }
         }
 
-        return InteractionResultHolder.pass(stack);
+        return InteractionResultHolder.consume(stack);
     }
 
     private ItemStack findCannonball(Player player) {

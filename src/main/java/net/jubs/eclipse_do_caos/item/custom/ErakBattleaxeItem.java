@@ -83,7 +83,7 @@ public class ErakBattleaxeItem extends AxeItem {
 
             }
 
-        return InteractionResultHolder.pass(stack);
+        return InteractionResultHolder.consume(stack);
     }
 
     @Override

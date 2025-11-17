@@ -71,7 +71,7 @@ public class AkiraKatanaItem extends SwordItem {
 
             }
 
-        return InteractionResultHolder.pass(stack);
+        return InteractionResultHolder.consume(stack);
     }
 
     @Override

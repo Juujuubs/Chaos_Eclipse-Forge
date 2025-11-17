@@ -57,10 +57,9 @@ public class OldGrimoireItem extends Item {
 
             stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
 
-            return InteractionResultHolder.consume(stack);
         }
 
-        return InteractionResultHolder.pass(stack);
+        return InteractionResultHolder.consume(stack);
     }
 
     @Override

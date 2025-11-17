@@ -78,11 +78,10 @@ public class BeanSackItem extends Item {
 
                 stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(hand));
 
-                return InteractionResultHolder.pass(stack);
             }
         }
 
-        return InteractionResultHolder.pass(stack);
+        return InteractionResultHolder.consume(stack);
     }
 
     private ItemStack findBean(Player player) {
